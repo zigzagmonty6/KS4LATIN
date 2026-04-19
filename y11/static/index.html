@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trinity Academy Latin - GCSE</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{--navy:#002147;--sky:#DCEEFB;--blue:#4A90D9;--coral:#E8413C;--green:#1DB954;--white:#FFFFFF;--bg:#DCEEFB;--card:#F0F4F8;--grey:#7B8794;--lgrey:#CBD2D9;--dark:#111827;--green-bright:#00C853;--red-bright:#FF1744;--gold:#F5A623}
+    html,body{height:100%;font-size:16px}
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--navy);overflow-x:hidden}
+    .latin{font-family:'Crimson Text',serif;font-style:italic;color:var(--dark);font-weight:700}
+    button{font-family:'Inter',sans-serif;cursor:pointer;border:none;border-radius:12px;font-weight:700;transition:all .12s;display:inline-flex;flex-direction:column;align-items:center;justify-content:center}
+    button:active:not(:disabled){transform:scale(.96)}
+    button:disabled{opacity:0.6;cursor:not-allowed}
+    .btn{padding:18px 36px;font-size:1.2rem;min-width:200px}
+    .btn-primary{background:var(--navy);color:var(--white)}
+    .btn-green{background:var(--green-bright);color:var(--white)}
+    .btn-outline{background:transparent;border:3px solid var(--navy);color:var(--navy);padding:15px 33px;font-size:1.2rem}
+    .btn-grey{background:var(--lgrey);color:var(--navy)}
+    .keyhint{font-size:.8rem;font-weight:600;opacity:.7;margin-top:6px}
+    .fullscreen{width:100%;min-height:100vh;display:flex;flex-direction:column}
+    .topbar{background:var(--navy);color:var(--white);padding:20px 40px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);z-index:10}
+    .topbar h1{font-family:'Crimson Text',serif;font-size:1.6rem;letter-spacing:.1em;text-transform:uppercase}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+    .anim-fade{animation:fadeIn 0.4s ease forwards}
+    .login-page{flex:1;display:flex;flex-direction:column}
+    .login-body{flex:1;display:flex;flex-direction:column;align-items:center;padding:60px 40px}
+    .pupil-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;width:100%;max-width:1200px;margin-top:30px}
+    .pupil-btn{padding:28px 20px;font-size:1.4rem;background:var(--white);border:3px solid var(--lgrey);border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,.04)}
+    .pupil-btn:hover{border-color:var(--blue);background:#eef6fc}
+    .dash-body{flex:1;padding:40px 60px;background:var(--bg)}
+    .section-label{font-size:1.1rem;font-weight:900;text-transform:uppercase;color:var(--grey);margin:50px 0 20px;border-bottom:3px solid var(--lgrey);padding-bottom:12px}
+    .set-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+    .set-card{background:var(--white);border-radius:20px;padding:32px 24px;border:3px solid var(--lgrey);cursor:pointer;position:relative;min-height:140px;box-shadow:0 6px 16px rgba(0,0,0,.04)}
+    .set-card:hover:not(.locked){border-color:var(--blue);transform:translateY(-4px)}
+    .set-card.passed{border-color:var(--green-bright);background:#e8fdf0}
+    .set-card.locked{opacity:.4;cursor:default}
+    .set-card.optional-card{border-style:dashed}
+    .set-card h3{font-size:1.4rem;color:var(--navy);margin-top:16px;line-height:1.3}
+    .tag-badge{position:absolute;top:20px;left:24px;font-size:0.75rem;font-weight:800;color:var(--white);padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:0.05em}
+    .modal-overlay{position:fixed;inset:0;background:rgba(0,33,71,0.6);z-index:200;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px)}
+    .modal-content{max-width:1100px;width:95%;max-height:90vh;overflow-y:auto;background:var(--white);padding:60px 40px;border-radius:24px;box-shadow:0 24px 80px rgba(0,0,0,0.3);text-align:center;position:relative}
+    .front-page{flex:1;display:flex;align-items:center;justify-content:center;padding:40px}
+    .front-box{background:var(--white);border-radius:24px;padding:80px;text-align:center;max-width:960px;width:100%;box-shadow:0 12px 40px rgba(0,0,0,.08)}
+    .front-box h2{font-size:3.5rem;margin-bottom:24px;color:var(--navy)}
+    .front-box p{font-size:1.5rem;color:var(--grey);line-height:1.6;white-space:pre-line}
+    .activity{flex:1;display:flex;flex-direction:column;background:var(--card)}
+    .activity-bar{padding:24px 60px;display:flex;align-items:center;gap:24px;background:var(--white);box-shadow:0 2px 10px rgba(0,0,0,.05)}
+    .progress-track{flex:1;height:16px;background:var(--lgrey);border-radius:8px;overflow:hidden}
+    .progress-fill{height:100%;background:var(--blue);border-radius:8px;transition:width .35s ease-out}
+    .activity-body{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:6vh 60px 60px;text-align:center;overflow-y:auto;}
+    .flashcard{background:var(--white);border-radius:32px;width:100%;max-width:1100px;min-height:450px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 40px;box-shadow:0 12px 40px rgba(0,0,0,.08)}
+    .flashcard h1{font-size:4.5rem;color:var(--navy);line-height:1.2}
+    .mc-prompt h2{font-size:2.5rem;line-height:1.5;margin-bottom:50px;max-width:1200px;color:var(--dark)}
+    .mc-options{display:grid;grid-template-columns:1fr 1fr;gap:24px;width:100%;max-width:1200px}
+    .mc-opt{padding:40px;font-size:1.8rem;background:var(--white);border:4px solid var(--lgrey);border-radius:24px;font-weight:700;color:var(--navy)}
+    .mc-opt:hover:not(:disabled){border-color:var(--blue);background:#eef6fc}
+    .mc-opt.correct{border-color:var(--green-bright);background:#d4f7e0}
+    .mc-opt.wrong{border-color:var(--red-bright);background:#ffeaec}
+    .feedback{padding:24px 40px;border-radius:16px;font-size:1.5rem;font-weight:700;margin-top:30px;max-width:1100px;width:100%}
+    .feedback.ok{background:#d4f7e0;color:#065f46;border:3px solid var(--green-bright)}
+    .feedback.bad{background:#ffeaec;color:#991b1b;border:3px solid var(--red-bright)}
+    .feedback.warn{background:#FEF3C7;color:#92400E;border:3px solid #F59E0B}
+    .typed-input,.fb-input{width:100%;max-width:800px;padding:28px 40px;font-size:2.2rem;border:4px solid var(--lgrey);border-radius:20px;text-align:center;font-weight:700;font-family:'Inter',sans-serif;color:var(--navy)}
+    .typed-input:focus,.fb-input:focus{color:var(--navy);border-color:var(--blue);outline:none}
+    .typed-input.ok,.fb-input.ok{border-color:var(--green-bright)}
+    .typed-input.bad,.fb-input.bad{border-color:var(--red-bright)}
+    .dynamic-latin{margin-bottom:40px;font-weight:700;color:var(--dark);font-family:'Crimson Text',serif;font-style:italic}
+    .results{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg);padding:40px}
+    .big-score{font-size:10rem;font-weight:900;line-height:1}
+    .big-score.pass{color:var(--green-bright)}
+    .big-score.fail{color:var(--red-bright)}
+    .t-dash{flex:1;padding:40px;background:var(--bg);display:flex;flex-direction:column}
+    .t-nav{display:flex;gap:16px;margin-bottom:30px;border-bottom:3px solid var(--lgrey);padding-bottom:16px}
+    .t-tab{font-size:1.2rem;font-weight:800;padding:12px 24px;border-radius:12px;cursor:pointer;color:var(--grey)}
+    .t-tab.active{background:var(--navy);color:white}
+    .t-table{width:100%;border-collapse:collapse;background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+    .t-table th{background:var(--navy);color:white;padding:20px;text-align:left;font-size:1.1rem}
+    .t-table td{padding:16px 20px;border-bottom:1px solid var(--lgrey);font-size:1.1rem;font-weight:600}
+    /* Parts row - building_parts sets */
+    .parts-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:30px}
+    .part-chip{font-family:'Crimson Text',serif;font-style:italic;font-size:1.7rem;font-weight:700;color:var(--dark);background:var(--white);border:2px solid var(--lgrey);border-radius:14px;padding:12px 20px;white-space:nowrap;min-width:100px;display:inline-flex;flex-direction:column;align-items:center;text-align:center;}
+    .part-chip .chip-eng{font-family:'Inter',sans-serif;font-style:normal;font-size:0.75rem;font-weight:600;color:var(--grey);margin-top:4px;}
+    .part-sep{font-size:1.6rem;color:var(--lgrey);font-weight:400;margin:0 4px}
+    .gap-input{font-family:'Crimson Text',serif;font-style:italic;font-size:2.2rem;font-weight:700;color:var(--navy);background:var(--white);border:4px solid var(--blue);border-radius:14px;padding:16px 28px;text-align:center;min-width:200px;outline:none}
+    .gap-input:focus{border-color:var(--navy)}
+    .gap-input.ok{border-color:var(--green-bright)}
+    .gap-input.bad{border-color:var(--red-bright)}
+    .full-reveal{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;background:#f0fdf4;border:3px solid var(--green-bright);border-radius:16px;padding:20px 32px;margin-top:16px}
+    .full-reveal span.rv{font-family:'Crimson Text',serif;font-style:italic;font-size:2rem;font-weight:700;color:#065f46}
+    .full-reveal span.sep{color:var(--lgrey);font-size:1.4rem}
+    /* Intro */
+    .intro-body{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:60px;overflow-y:auto}
+    .intro-card{background:var(--white);border-radius:24px;padding:60px;max-width:1200px;width:100%;box-shadow:0 12px 40px rgba(0,0,0,.08)}
+    .intro-card h2{font-size:2.5rem;color:var(--navy);margin-bottom:24px}
+    .intro-card p{font-size:1.3rem;color:var(--grey);line-height:1.5;margin-bottom:20px}
+    .intro-example{background:var(--bg);border-radius:16px;padding:24px 32px;margin:20px 0;text-align:center}
+    .intro-example .lat-sent{font-family:'Crimson Text',serif;font-style:italic;font-size:2.5rem;font-weight:700;color:var(--dark);margin-bottom:8px}
+    .intro-example .eng-sent{font-size:1.3rem;color:var(--grey);margin-bottom:8px}
+    .intro-example .note{font-size:1rem;color:var(--gold);font-weight:700}
+    .pp-table{width:100%;border-collapse:collapse;margin:20px 0}
+    .pp-table th{background:var(--navy);color:white;padding:8px 14px;text-align:left;font-size:1rem}
+    .pp-table td{padding:7px 14px;border-bottom:1px solid var(--lgrey);font-size:1.15rem}
+    .pp-table tbody tr:nth-child(even) td{background:#f8f8f8}
+    .pp-table td.lat-cell{font-family:'Crimson Text',serif;font-style:italic;font-size:1.4rem;font-weight:700;color:var(--dark)}
+    .conj-table{width:100%;border-collapse:collapse;margin:20px 0}
+    .conj-table th{background:var(--navy);color:white;padding:8px 14px;text-align:left;font-size:1rem}
+    .conj-table td{padding:7px 14px;border-bottom:1px solid var(--lgrey);font-size:1.15rem}
+    .conj-table tbody tr:nth-child(even) td{background:#f8f8f8}
+    .colour-key{display:flex;flex-wrap:wrap;justify-content:center;gap:32px;margin-top:12px;padding:12px 14px;background:#f8f8f8;border:1px solid var(--lgrey);border-radius:10px;font-size:0.9rem;font-weight:700;font-style:normal}
+    .colour-key-item{display:flex;align-items:center;gap:5px}
+    .colour-chip{width:13px;height:13px;border-radius:3px;flex-shrink:0;display:inline-block}
+    /* Pattern screen */
+    .pattern-box{background:#fffbea;border:3px solid var(--gold);border-radius:20px;padding:36px 40px;max-width:900px;width:100%;margin-bottom:40px}
+    .pattern-box h3{font-size:1.5rem;color:var(--navy);margin-bottom:8px}
+    .pattern-rule{font-size:1.2rem;color:var(--grey);margin-bottom:20px;font-style:italic}
+    .pattern-examples{width:100%;border-collapse:collapse}
+    .pattern-examples th{font-size:0.85rem;color:var(--grey);text-align:left;padding:6px 14px;text-transform:uppercase;letter-spacing:0.05em;border-bottom:2px solid var(--lgrey)}
+    .pattern-examples td{padding:10px 14px;border-top:1px solid var(--lgrey);font-size:1.15rem}
+    .pattern-examples td.stem-cell{font-family:'Crimson Text',serif;font-style:italic;font-weight:700;color:var(--dark)}
+    .pattern-examples td.end-cell{font-family:'Crimson Text',serif;font-style:italic;font-weight:700;color:var(--blue)}
+    .pattern-examples td.full-cell{font-family:'Crimson Text',serif;font-style:italic;font-weight:700;color:var(--dark)}
+    .pattern-note{margin-top:16px;font-size:0.9rem;color:var(--grey);font-weight:500;font-style:italic}
+    /* Timer bar */
+    .timer-bar{width:100%;max-width:1000px;height:8px;background:var(--lgrey);border-radius:4px;margin-bottom:30px;overflow:hidden}
+    .timer-fill{height:100%;border-radius:4px;transition:width 1s linear,background .3s}
+    /* Vocab overview */
+    .vocab-overview{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;width:100%;max-width:900px;margin:20px 0 30px}
+    .vocab-chip{background:var(--white);border:2px solid var(--lgrey);border-radius:12px;padding:12px 16px;text-align:center}
+    .vocab-chip .lat{font-size:1.3rem}
+    .vocab-chip .eng{font-size:0.9rem;color:var(--grey);margin-top:4px}
+  </style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+  const { useState, useEffect, useRef } = React;
+  const api = p=>fetch(p,{headers:{'Content-Type':'application/json'}}).then(r=>r.json());
+  const post=(p,b)=>fetch(p,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)}).then(r=>r.json());
+  // Shuffle once and lock - do NOT re-shuffle on state update
+  const shuffleOnce = arr => { const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]} return a };
+
+  // Render ordinal suffixes as superscript: 1st → 1<sup>st</sup>
+  const renderOrdinals = text => {
+    if(!text) return text;
+    return text.replace(/(\d+)(st|nd|rd|th)\b/g, (m,n,s)=>`${n}<sup>${s}</sup>`);
+  };
+
+  // Verbs that take the dative — show a note on their flashcard
+  const DATIVE_VERBS = new Set(['impero','imperare','imperavi','imperatus','persuadeo','persuadere','persuasi','persuasus']);
+
+  const renderScaffolded = text => {
+    if(!text || !text.includes('-')) return <span className="latin">{text}</span>;
+    return <span className="latin">{text.split('').map((c,i)=>
+      c==='-'?<span key={i} style={{color:'#bbb',fontWeight:400}}>-</span>:<span key={i}>{c}</span>
+    )}</span>;
+  };
+
+  const renderVocabLatin = (v) => {
+    if(v.display_label && v.pos!=='pronoun'){
+      return <><span className="latin">{v.latin}</span><span style={{fontSize:'0.6em',color:'var(--white)',fontWeight:800,fontStyle:'normal',marginLeft:6,padding:'3px 8px',background:'#0D9488',borderRadius:6,textTransform:'uppercase',verticalAlign:'middle'}}>{v.display_label}</span></>;
+    }
+    if(v.dative_note){
+      return <><span className="latin">{v.latin}</span><span style={{fontSize:'0.6em',color:'var(--white)',fontWeight:800,fontStyle:'normal',marginLeft:6,padding:'3px 8px',background:'#0D9488',borderRadius:6,textTransform:'uppercase',verticalAlign:'middle'}}>+DAT</span></>;
+    }
+    return <span className="latin">{v.latin}</span>;
+  };
+
+  const COLOR_WORDS={'coral':'var(--coral)','red':'var(--coral)','blue':'var(--blue)','purple':'#7C3AED','gold':'var(--gold)','yellow':'var(--gold)'};
+  const renderTextWithKey = text => {
+    if (!text) return null;
+    // Accept "Colour key:" either mid-string (preceded by \n) OR at the very
+    // start of the string (the Future table_note has no body, just the key).
+    let ckIdx = text.indexOf('\nColour key:');
+    let mainPart, ckRaw;
+    if (ckIdx === -1) {
+      if (text.startsWith('Colour key:')) { mainPart = ''; ckRaw = text; }
+      else return renderText(text);
+    } else {
+      mainPart = text.slice(0, ckIdx);
+      ckRaw = text.slice(ckIdx + 1);
+    }
+    // Parse colour key lines: each "**colour** = label"
+    const ckLines = ckRaw.replace(/^Colour key:\n?/,'').split('\n').filter(l=>l.trim());
+    const chips = ckLines.map(line=>{
+      const m = line.match(/\*+([a-zA-Z]+)\*+\s*=\s*(.+)/i);
+      if(!m) return null;
+      const col = COLOR_WORDS[m[1].toLowerCase()]||m[1];
+      return {color:col, label:m[2].trim(), name:m[1]};
+    }).filter(Boolean);
+    return (
+      <>
+        {mainPart&&<span style={{display:'block',marginBottom:8}}>{renderText(mainPart)}</span>}
+        {chips.length>0&&<div className="colour-key">
+          {chips.map((c,i)=>(
+            <span key={i} className="colour-key-item">
+              <span className="colour-chip" style={{background:c.color,border:'1px solid rgba(0,0,0,0.12)'}}></span>
+              <span style={{color:'var(--navy)'}}>{c.name}</span>
+              <span style={{color:'var(--grey)',fontWeight:500,fontStyle:'normal'}}>= {renderText(c.label)}</span>
+            </span>
+          ))}
+        </div>}
+      </>
+    );
+  };
+  const renderText = text => {
+    if(!text) return null;
+    return text.split('\n').map((line,l)=>(
+      <React.Fragment key={l}>
+        {line.split(/(\*\*.*?\*\*|\*[^*]+\*)/g).map((part,i)=>{
+          if(part.startsWith('**')&&part.endsWith('**')){
+            const inner=part.slice(2,-2);
+            const col=COLOR_WORDS[inner.toLowerCase()];
+            if(col) return <strong key={i} style={{fontWeight:900,color:col}}>{inner}</strong>;
+            return <strong key={i} style={{fontWeight:900,color:'var(--navy)'}} dangerouslySetInnerHTML={{__html:renderOrdinals(inner)}}/>;
+          }
+          if(part.startsWith('*')&&part.endsWith('*')) return <em key={i} className="latin">{part.slice(1,-1)}</em>;
+          return <span key={i} dangerouslySetInnerHTML={{__html:renderOrdinals(part)}}/>;
+        })}
+        {l<text.split('\n').length-1&&<br/>}
+      </React.Fragment>
+    ));
+  };
+
+  // renderExplanation: splits explanation on newlines only (period+space must NOT split, as it breaks parenthetical abbreviations like "masc. sg. nom.")
+  const renderExplanation = text => {
+    if(!text) return null;
+    const parts = text.split('\n').filter(p=>p.trim());
+    // Bullet format: "• <latin head> (<gloss>) — <rest>".
+    // Wrap the Latin head in the Latin serif font so it visually matches
+    // the sentence text above.
+    const BULLET_RE = /^(\s*•\s*)([^()]+?)(\s*\([^)]*\)\s*(?:—|-).*)$/;
+    return (
+      <div style={{lineHeight:1.9}}>
+        {parts.map((part,i)=>{
+          const raw = part.trim().replace(/\.$/,'');
+          const m = raw.match(BULLET_RE);
+          if(m){
+            return (
+              <div key={i}>
+                <span>{m[1]}</span>
+                <span className="latin">{m[2]}</span>
+                {renderText(m[3])}
+              </div>
+            );
+          }
+          return <div key={i}>{renderText(raw)}</div>;
+        })}
+      </div>
+    );
+  };
+
+  const grade=s=>s===100?'TRAILBLAZER!':s>=95?'PHENOMENAL!':s>=90?'SUPERB!':s>=85?'GREAT!':s>=80?'PASSED!':'KEEP PRACTISING!';
+  const tagColor=t=>({intro:'#4A90D9',vocab:'#F5A623',building_parts:'#0D9488',tense_id:'#7C3AED',translate_form:'#2563EB',parsing:'#002147',parsing_mcq:'#002147',sentences:'#E8413C',reference:'#8B5CF6',concept:'#8B5CF6',verbs:'#F5A623',review:'#E8413C'}[t]||'#7B8794');
+  const tagColorWithBadge=(t,badge)=>{if(badge==='Principal Part')return '#0D9488';if(badge==='test')return '#111827';return tagColor(t);};
+  const tagLabel=t=>{if(t==='building_parts')return 'principal parts';if(t==='translate_form')return 'tense endings';if(t==='reference'||t==='concept')return 'grammar';if(t==='vocab'||t==='verbs')return 'vocabulary';if(t==='tense_id')return 'tense id';if(t==='parsing_mcq')return 'translating';if(t==='sentences'||t==='review')return 'sentences';return t.replace('_',' ');};
+  const tagLabelWithBadge=(t,badge)=>{if(badge==='Principal Part')return 'principal part';if(badge==='test')return 'test';return tagLabel(t);};
+
+
+  // ── App ──────────────────────────────────────────────────────────────────────
+  function App(){
+    const [screen,setScreen]=useState('login');
+    const [pupil,setPupil]=useState(null);
+    const [currentSet,setCurrentSet]=useState(null);
+    const [sessionId,setSessionId]=useState(null);
+    const [isPreview,setIsPreview]=useState(false);
+
+    const login=p=>{setPupil(p);setIsPreview(false);setScreen('dashboard')};
+    const startPreview=()=>{setPupil({id:0,first_name:'Teacher Mode'});setIsPreview(true);setScreen('teacher_dash')};
+    const startSet=async s=>{
+      setCurrentSet(s);
+      if(!isPreview){const r=await post('/api/session/start',{pupil_id:pupil.id,set_id:s.id});setSessionId(r.session_id)}
+      window.scrollTo({top:0,behavior:'instant'});
+      setScreen('front');
+    };
+    const [dashKey,setDashKey]=useState(0);
+    const saveProgress=async score=>{if(!isPreview){if(sessionId)await post(`/api/session/end?session_id=${sessionId}`,{});await post('/api/complete',{pupil_id:pupil.id,set_id:currentSet.id,score})}};
+    const finishSet=async score=>{await saveProgress(score);setDashKey(k=>k+1);setScreen(isPreview?'teacher_dash':'dashboard')};
+    const saveAndNext=async(score,targetSet)=>{await saveProgress(score);const full=await api(`/api/sets/${targetSet.id}`);startSet(full)};
+    const backToDash=()=>{setDashKey(k=>k+1);setScreen(isPreview?'teacher_dash':'dashboard')};
+
+    if(screen==='login') return <Login onLogin={login} onPreview={startPreview}/>;
+    if(screen==='dashboard') return <Dashboard key={dashKey} pupil={pupil} onLogout={()=>setScreen('login')} onStart={startSet}/>;
+    if(screen==='teacher_dash') return <TeacherDashboard onLogout={()=>setScreen('login')} onStart={startSet}/>;
+    if(screen==='front') {
+      const isRefOverlay = currentSet.type==='reference'||currentSet.type==='concept';
+      const frontOverlay = <Front set={currentSet} onGo={()=>{window.scrollTo({top:0,behavior:'instant'});setScreen('play');}} onBack={backToDash} onComplete={()=>finishSet(100)} />;
+      if(isRefOverlay){
+        if(isPreview) return <TeacherDashboard onLogout={()=>setScreen('login')} onStart={startSet}>{frontOverlay}</TeacherDashboard>;
+        return <Dashboard key={dashKey} pupil={pupil} onLogout={()=>setScreen('login')} onStart={startSet}>{frontOverlay}</Dashboard>;
+      }
+      return frontOverlay;
+    }
+    if(screen==='play') return <Play pupil={pupil} set={currentSet} isPreview={isPreview} onFinish={finishSet} onSaveAndNext={saveAndNext} onBack={backToDash}/>;
+    return null;
+  }
+
+  function Login({onLogin,onPreview}){
+    const [pupils,setPupils]=useState([]);const [showT,setShowT]=useState(false);const [pwd,setPwd]=useState('');
+    useEffect(()=>{api('/api/pupils').then(setPupils)},[]);
+    const doT=()=>{if(pwd==='latinmagister')onPreview();else alert('Wrong password')};
+    return(
+      <div className="fullscreen login-page">
+        <div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="login-body anim-fade">
+          <h2 style={{fontSize:'3.5rem',marginBottom:20,color:'var(--navy)'}}>Select your name</h2>
+          <p style={{fontSize:'1.3rem',color:'var(--grey)',marginBottom:10}}>Year 11</p>
+          <div className="pupil-grid">{pupils.map(p=><button key={p.id} className="pupil-btn" onClick={()=>onLogin(p)}>{p.first_name}</button>)}</div>
+        </div>
+        <div style={{position:'fixed',bottom:30,right:40,fontSize:'1.2rem',color:'var(--grey)',cursor:'pointer',fontWeight:800}} onClick={()=>setShowT(!showT)}>Teacher Mode</div>
+        {showT&&<div className="anim-fade" style={{position:'fixed',bottom:80,right:40,background:'var(--white)',padding:30,borderRadius:20,boxShadow:'0 12px 40px rgba(0,0,0,.15)'}}>
+          <p style={{marginBottom:16,fontWeight:800,fontSize:'1.2rem',color:'var(--navy)'}}>Enter Teacher Password:</p>
+          <input type="password" value={pwd} onChange={e=>setPwd(e.target.value)} onKeyDown={e=>e.key==='Enter'&&doT()} autoFocus style={{padding:16,border:'3px solid var(--lgrey)',borderRadius:12,fontSize:'1.2rem',marginRight:12}}/>
+          <button className="btn btn-primary" onClick={doT}>Enter</button>
+        </div>}
+      </div>
+    );
+  }
+
+  function Dashboard({pupil,onLogout,onStart,children}){
+    const [sets,setSets]=useState([]);const [progress,setProgress]=useState([]);
+    const firstRef=useRef(null);
+    useEffect(()=>{api('/api/sets').then(s=>{setSets(s);api(`/api/pupil/${pupil.id}/progress`).then(setProgress)})},[pupil.id]);
+    useEffect(()=>{if(sets.length>0&&!children)setTimeout(()=>{if(firstRef.current)firstRef.current.scrollIntoView({behavior:'smooth',block:'center'})},400)},[sets.length,progress,children]);
+    const pm={};progress.forEach(p=>pm[p.set_id]=p);
+    // Group by node number (not string title) to avoid any label mismatch creating duplicate sections
+    const nodeMap={};const nodeOrder=[];
+    sets.forEach(s=>{
+      if(!(s.node in nodeMap)){nodeMap[s.node]={label:s.node_title,sets:[]};nodeOrder.push(s.node);}
+      nodeMap[s.node].sets.push(s);
+    });
+    const nodes=nodeOrder.map(n=>nodeMap[n]);
+    let foundFirst=false;
+    return(
+      <div className="fullscreen">
+        <div className="topbar"><h1>TRINITY ACADEMY LATIN</h1>
+          <div style={{display:'flex',gap:24,alignItems:'center'}}>
+            <span style={{fontSize:'1.2rem',fontWeight:700}}>{pupil.first_name}</span>
+            <button onClick={onLogout} style={{background:'rgba(255,255,255,.2)',color:'#fff',padding:'10px 20px',fontSize:'1rem',border:'none',borderRadius:10,fontWeight:700,cursor:'pointer'}}>Log out</button>
+          </div>
+        </div>
+        <div className="dash-body anim-fade">
+          {nodes.map(node=>(
+            <div key={node.label}>
+              <div className="section-label">{node.label}</div>
+              <div className="set-grid">{node.sets.map(s=>{
+                const p=pm[s.id]||{status:'locked'};
+                const effectiveStatus=p.status;
+                const isFirst=!foundFirst&&(p.status==='available'||p.status==='in_progress');
+                if(isFirst)foundFirst=true;
+                return(
+                  <div key={s.id} ref={isFirst?firstRef:null}
+                    className={`set-card ${effectiveStatus}${s.optional?' optional-card':''}`}
+                    onClick={()=>{if(effectiveStatus!=='locked')api(`/api/sets/${s.id}`).then(onStart)}}>
+                    <div className="tag-badge" style={{background:tagColorWithBadge(s.type,s.badge)}}>{tagLabelWithBadge(s.type,s.badge)}</div>
+                    <h3 dangerouslySetInnerHTML={{__html:renderOrdinals(s.title)}}></h3>
+                    {p.status==='passed'&&<span style={{color:'var(--green-bright)',position:'absolute',bottom:24,right:24,fontSize:'1.1rem',fontWeight:900}}>{Math.round(p.best_score)}%</span>}
+                  </div>
+                );
+              })}</div>
+            </div>
+          ))}
+        </div>
+        {children}
+      </div>
+    );
+  }
+
+  function TeacherDashboard({onLogout,onStart,children}){
+    const [tab,setTab]=useState('preview');const [sets,setSets]=useState([]);
+    const [overview,setOverview]=useState([]);const [weak,setWeak]=useState([]);const [misc,setMisc]=useState([]);
+    const [selPupil,setSelPupil]=useState(null);const [detail,setDetail]=useState([]);
+    useEffect(()=>{api('/api/sets').then(setSets);api('/api/teacher/overview').then(setOverview);api('/api/teacher/weak-verbs').then(setWeak);api('/api/teacher/misconceptions').then(setMisc)},[]);
+    const loadPupil=async p=>{const d=await api(`/api/teacher/pupil/${p.id}`);setSelPupil(p);setDetail(d);setTab('pupil')};
+    const nodeMap2={};const nodeOrder2=[];
+    sets.forEach(s=>{if(!(s.node in nodeMap2)){nodeMap2[s.node]={label:s.node_title,sets:[]};nodeOrder2.push(s.node);}nodeMap2[s.node].sets.push(s);});
+    const nodes=nodeOrder2.map(n=>nodeMap2[n]);
+    return(
+      <div className="fullscreen">
+        <div className="topbar"><h1>TRINITY ACADEMY LATIN - TEACHER PORTAL</h1>
+          <div style={{display:'flex',gap:24,alignItems:'center'}}>
+            <span style={{fontSize:'1.2rem',fontWeight:700}}>Magister</span>
+            <button onClick={onLogout} style={{background:'rgba(255,255,255,.2)',color:'#fff',padding:'10px 20px',fontSize:'1rem',border:'none',borderRadius:10,fontWeight:700,cursor:'pointer'}}>Log out</button>
+          </div>
+        </div>
+        <div className="t-dash anim-fade">
+          <div className="t-nav">
+            {['preview','overview','weak','misconceptions'].map(t=><div key={t} className={`t-tab ${tab===t?'active':''}`} onClick={()=>setTab(t)}>{t==='overview'?'Pupils':t==='weak'?'Weak Verbs':t==='misconceptions'?'Misconceptions':'Preview Sets'}</div>)}
+            {selPupil&&<div className={`t-tab ${tab==='pupil'?'active':''}`} onClick={()=>setTab('pupil')}>{selPupil.first_name}</div>}
+          </div>
+          {tab==='overview'&&<table className="t-table"><thead><tr><th>Name</th><th>Sets Passed</th><th>Last Active</th></tr></thead><tbody>
+            {overview.map((p,i)=><tr key={i} style={{cursor:'pointer'}} onClick={()=>loadPupil(p)}><td style={{color:'var(--blue)',fontWeight:700}}>{p.first_name}</td><td><strong style={{color:'var(--green-bright)'}}>{p.sets_passed}</strong></td><td>{p.last_active==='Never'?'Never':p.last_active.substring(0,10)}</td></tr>)}
+          </tbody></table>}
+          {tab==='weak'&&<div style={{maxWidth:900}}><h2 style={{fontSize:'2rem',marginBottom:20}}>Most Missed Verb Forms</h2>
+            <table className="t-table"><thead><tr><th>Form asked</th><th>Correct answer</th><th>Times wrong</th></tr></thead><tbody>
+              {weak.slice(0,20).map((r,i)=><tr key={i}><td className="latin" style={{fontSize:'1.4rem'}}>{r.question_text}</td><td className="latin" style={{fontSize:'1.4rem',color:'var(--green-bright)'}}>{r.correct_answer}</td><td><strong style={{color:'var(--red-bright)'}}>{r.wrong_count}</strong></td></tr>)}
+            </tbody></table></div>}
+          {tab==='misconceptions'&&<div style={{maxWidth:900}}><h2 style={{fontSize:'2rem',marginBottom:20}}>Common Wrong Answers</h2>
+            <table className="t-table"><thead><tr><th>Question</th><th>Wrote</th><th>Correct</th><th>Times</th></tr></thead><tbody>
+              {misc.slice(0,20).map((r,i)=><tr key={i}><td>{r.question_text}</td><td className="latin" style={{color:'var(--red-bright)'}}>{r.pupil_answer}</td><td className="latin" style={{color:'var(--green-bright)'}}>{r.correct_answer}</td><td>{r.occurrences}</td></tr>)}
+            </tbody></table></div>}
+          {tab==='preview'&&<div>
+            <p style={{fontSize:'1.2rem',color:'var(--grey)',marginBottom:20}}>Click any set to preview. Progress will not be saved.</p>
+            {nodes.map(node=>(<div key={node.label}><div className="section-label">{node.label}</div>
+              <div className="set-grid">{node.sets.map(s=>(<div key={s.id} className="set-card passed" onClick={()=>api(`/api/sets/${s.id}`).then(onStart)}>
+                <div className="tag-badge" style={{background:tagColorWithBadge(s.type,s.badge)}}>{tagLabelWithBadge(s.type,s.badge)}</div>
+                <h3 dangerouslySetInnerHTML={{__html:renderOrdinals(s.title)}}></h3>
+              </div>))}</div></div>))}
+          </div>}
+          {tab==='pupil'&&selPupil&&<div style={{maxWidth:900}}>
+            <h2 style={{fontSize:'2rem',marginBottom:20}}>{selPupil.first_name}</h2>
+            <table className="t-table"><thead><tr><th>Set</th><th>Status</th><th>Best Score</th><th>Attempts</th></tr></thead><tbody>
+              {detail.map((d,i)=>{const s=sets.find(s=>s.id===d.set_id);return <tr key={i}><td>{s?s.title:`Set ${d.set_id}`}</td><td>{d.status}</td><td>{d.best_score?Math.round(d.best_score)+'%':'-'}</td><td>{d.attempts}</td></tr>})}
+            </tbody></table>
+            <div style={{marginTop:20}}><a href="/api/teacher/export" style={{display:'inline-block',background:'var(--navy)',color:'white',padding:'14px 28px',borderRadius:12,fontWeight:700,textDecoration:'none'}}>Export CSV</a></div>
+          </div>}
+        </div>
+        {children}
+      </div>
+    );
+  }
+
+  // ── Front Overlay ─────────────────────────────────────────────────────────────
+  function Front({set,onGo,onBack,onComplete}){
+    const isOverlay = set.type==='reference'||set.type==='concept';
+    const complete = onComplete||onBack;
+    useEffect(()=>{const h=e=>{if(e.key==='Escape')onBack();if(e.key==='Enter'){isOverlay?complete():onGo()}};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)},[onBack,onGo,isOverlay,complete]);
+    
+    // Check if the set content is screens-based (e.g. concept)
+    const screens = set.screens||[];
+    const [screenIdx,setScreenIdx] = useState(0);
+    useEffect(()=>{window.scrollTo({top:0,behavior:'instant'})},[screenIdx]);
+
+    // If it's a concept, we act as an intro modal scrolling through screens. If standard reference or standard set, we just show the title/sell
+    if (isOverlay && screens.length > 0) {
+       const s = screens[screenIdx];
+       return (
+        <div className="modal-overlay anim-fade">
+          <div className="modal-content" style={{textAlign:'left'}}>
+            <h2 style={{fontSize:'2.5rem',color:'var(--navy)',marginBottom:24}} dangerouslySetInnerHTML={{__html:renderOrdinals(s.heading)}}></h2>
+            {s.warning&&<div style={{background:'#ffeaec',border:'3px solid var(--red-bright)',borderRadius:12,padding:'16px 20px',marginBottom:16,fontWeight:700,color:'#991b1b'}}>{renderText(s.warning)}</div>}
+            {s.body&&<p style={{fontSize:'1.3rem',color:'var(--grey)',lineHeight:1.5,marginBottom:20,textAlign:s.body_align||'left'}}>{renderTextWithKey(s.body)}</p>}
+            {s.principal_parts_table&&<table className="pp-table" style={{marginBottom:16}}>
+              <thead><tr><th>Principal Part</th><th>Name</th><th>Latin form</th><th>English meaning</th></tr></thead>
+              <tbody>{s.principal_parts_table.map((r,i)=><tr key={i}><td style={{fontWeight:800}}>{r.part}</td><td>{r.name}</td><td className="lat-cell">{r.latin}</td><td style={{color:'var(--grey)'}}>{r.english}</td></tr>)}</tbody>
+            </table>}
+            {s.table&&<table className="conj-table">
+              <thead><tr><th>Person & Number</th><th>Ending</th><th>Example</th></tr></thead>
+              <tbody>{s.table.map((r,i)=><tr key={i}><td style={{fontWeight:800}}>{r.conjugation}</td><td><span className="latin">{r.infinitive_ending}</span></td><td>{r.ep?r.ep.map((p,pi)=><span key={pi} className="latin" style={{color:p[1]==='blue'?'var(--blue)':(p[1]==='coral'||p[1]==='red')?'var(--coral)':p[1]==='purple'?'#7C3AED':p[1]==='pink'?'#C026D3':(p[1]==='gold'||p[1]==='yellow')?'var(--gold)':p[1]==='green'?'#16a34a':'var(--dark)'}}>{p[0]}</span>):<span className="latin">{r.example}</span>}{r.tr&&<span style={{color:'var(--grey)',fontStyle:'italic',fontSize:'0.9em',marginLeft:6}}>({r.tr})</span>}</td></tr>)}</tbody>
+            </table>}
+            {s.table_note&&<p style={{marginTop:10,fontSize:'0.9rem',color:'var(--grey)',fontStyle:'italic'}}>{renderTextWithKey(s.table_note)}</p>}
+            <div style={{marginTop:20,display:'flex',gap:24,justifyContent:'center'}}>
+               {screenIdx>0&&<button className="btn btn-outline" onClick={()=>setScreenIdx(i=>i-1)}>Back</button>}
+               {screenIdx<screens.length-1?<button className="btn btn-primary" autoFocus onClick={()=>setScreenIdx(i=>i+1)}>Next<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+                 :<button className="btn btn-primary" autoFocus onClick={complete}>Got it<span className="keyhint" style={{color:'white'}}>Esc</span></button>}
+            </div>
+          </div>
+        </div>
+       );
+    }
+
+    return(
+      <div className={isOverlay?"modal-overlay anim-fade":"fullscreen"}>
+        {!isOverlay&&<div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>}
+        <div className={isOverlay?"modal-content":"front-page anim-fade"}>
+          <div className={isOverlay?"":"front-box"}>
+            <h2 style={{fontSize:isOverlay?'3.5rem':'3.5rem',marginBottom:24,color:'var(--navy)'}} dangerouslySetInnerHTML={{__html:renderOrdinals(set.title)}}></h2>
+            <p style={{fontSize:'1.5rem',color:'var(--grey)',lineHeight:1.5,whiteSpace:'pre-line',marginBottom:40,textAlign:'center'}}>{renderText(set.sell)}</p>
+            {set.footnote&&<p style={{color:'var(--lgrey)',fontSize:'0.9rem',marginTop:8,marginBottom:8,fontStyle:'italic'}}>{renderTextWithKey(set.footnote)}</p>}
+            {set.pass_mark?<p style={{fontWeight:800,color:'var(--navy)',fontSize:'1.4rem'}}>Pass mark: {set.pass_mark}%</p>:null}
+            <div style={{marginTop:60,display:'flex',gap:24,justifyContent:'center'}}>
+              {isOverlay?<button className="btn btn-primary" autoFocus onClick={complete}>Got it<span className="keyhint" style={{color:'white'}}>Esc</span></button>
+               :<>
+                 <button className="btn btn-outline" onClick={onBack}>Back<span className="keyhint">Esc</span></button>
+                 <button className="btn btn-primary" autoFocus onClick={onGo}>Begin<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+               </>}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ── Play router ───────────────────────────────────────────────────────────────
+  function Play({pupil,set,isPreview,onFinish,onSaveAndNext,onBack}){
+    const [phase,setPhase]=useState('init');
+    const [targetPhase,setTargetPhase]=useState(null);
+    const [confirmQuit,setConfirmQuit]=useState(false);
+    const [res,setRes]=useState({correct:0,wrong:[]});
+    const totalRef=useRef(0);
+
+    useEffect(()=>{
+      window.scrollTo({top:0,behavior:'instant'});
+      let target = set.type;
+      if(set.type==='vocab'||set.type==='verbs'){
+        const n=set.verbs?(set.verbs||[]).length:(set.vocab||[]).length;
+        totalRef.current=n*2;target='vocab_overview';
+      }else if(set.type==='building_parts'){
+        const verbs=(set.verbs||[]);const mode=set.mode;
+        const countVerbs=mode==='ppps'?verbs.filter(v=>v.ppp!==null).length:verbs.length;
+        if(mode==='all_four_from_present') totalRef.current=verbs.length;
+        else if(mode==='all_four'){
+          // one question per gap position per verb (gaps 2 and 3 only now)
+          const gapPos=set.gap_positions||[2,3];
+          totalRef.current=verbs.reduce((acc,v)=>{
+            const parts=[v.present,v.infinitive,v.perfect,v.ppp];
+            return acc+gapPos.filter(g=>parts[g]!=null).length;
+          },0);
+        }
+        else if(mode==='all_four_progressive'){
+          // phase1: all verbs (gap=perfect), phase2: PPP-having verbs (gap=PPP), phase3: all verbs (all_four_from_present)
+          const pppCount=verbs.filter(v=>v.ppp!==null).length;
+          totalRef.current=verbs.length + pppCount + verbs.length;
+        }
+        else totalRef.current=countVerbs;
+        target=(mode==='all_four_from_present'||mode==='all_four_progressive')?'bp_typed':'bp_pattern';
+      }else if(set.type==='tense_id'){totalRef.current=(set.questions||[]).length;target='tense_id';
+      }else if(set.type==='parsing'){totalRef.current=(set.questions||[]).length;target='parsing';
+      }else if(set.type==='parsing_mcq'){totalRef.current=(set.questions||[]).length;target='parsing_mcq';
+      }else if(set.type==='translate_form'){totalRef.current=(set.questions||[]).length*2;target='translate_form';
+      }else if(set.type==='sentences'){totalRef.current=(set.sentences||[]).length;target='sentences';
+      }else if(set.type==='review'){
+        const sCount=(set.sentences||[]).length;
+        const ptCount=(set.parse_translate||[]).length;
+        totalRef.current=sCount+ptCount;target='parse_translate';
+      }else if(set.type==='intro'||set.type==='reference'||set.type==='concept'){totalRef.current=1;target='intro';}
+      
+      if(set.screens && set.screens.length>0 && target!=='intro'){
+        setTargetPhase(target);
+        setPhase('intro');
+      }else{
+        setPhase(target);
+      }
+    },[]);
+
+    useEffect(()=>{
+      if(phase==='results')return;
+      const h=e=>{
+        if(e.key==='Escape')setConfirmQuit(q=>!q);
+        if(e.ctrlKey && e.altKey && e.key.toLowerCase()==='s'){totalRef.current=1;setRes({correct:1,wrong:[]});setPhase('results')}
+      };
+      window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h);
+    },[phase]);
+
+    const addC=()=>setRes(p=>({...p,correct:p.correct+1}));
+    const addW=w=>setRes(p=>({...p,wrong:[...p.wrong,w]}));
+    const pct=totalRef.current>0?Math.min(100,(res.correct/totalRef.current)*100):0;
+    const done=()=>setPhase('results');
+
+    // Stable shuffled arrays - only computed once
+    const vocabItems=useRef(shuffleOnce(set.vocab
+      ? (set.vocab||[]).map(v=>({...v, dative_note: v.dative_note || DATIVE_VERBS.has(v.latin)}))
+      : (set.verbs||[]).map(v=>({latin:v.present,english:[v.eng_present],pos:'verb',id:v.present,dative_note:DATIVE_VERBS.has(v.present)}))
+    ));
+    const vocabItemsTyped=useRef(shuffleOnce(set.vocab
+      ? (set.vocab||[]).map(v=>({...v, dative_note: v.dative_note || DATIVE_VERBS.has(v.latin)}))
+      : (set.verbs||[]).map(v=>({latin:v.present,english:[v.eng_present],pos:'verb',id:v.present,dative_note:DATIVE_VERBS.has(v.present)}))
+    ));
+    const bpVerbs=useRef(shuffleOnce([...(set.verbs||[])]));
+    const tenseQs=useRef([...(set.questions||[])]);  // server shuffles already
+    const parsingQs=useRef([...(set.questions||[])]);
+    const sentences=useRef([...(set.sentences||[])]);
+    const tfTypedQs=useRef(shuffleOnce([...(set.questions||[])]));
+    const parseTrQs=useRef([...(set.parse_translate||[])]);
+
+    let content=null;
+    if(phase==='intro') content=<Intro set={set} screens={set.screens||[]} isPreview={isPreview} pupil={pupil} onDone={()=>targetPhase?setPhase(targetPhase):done()} pct={pct}/>;
+    else if(phase==='vocab_overview') content=<VocabOverview set={set} items={set.vocab||set.verbs||[]} onDone={()=>setPhase('vocab_fc')}/>;
+    else if(phase==='vocab_fc') content=<VocabFC pupil={pupil} set={set} items={vocabItems.current} isPreview={isPreview} onDone={()=>setPhase('vocab_mc')} pct={pct}/>;
+    else if(phase==='vocab_mc') content=<VocabMC pupil={pupil} set={set} items={vocabItems.current} isPreview={isPreview} onDone={()=>setPhase('vocab_typed')} addC={addC} addW={addW} pct={pct}/>;
+    else if(phase==='vocab_typed') content=<VocabTyped pupil={pupil} set={set} items={vocabItemsTyped.current} isPreview={isPreview} onDone={done} addC={addC} addW={addW} pct={pct}/>;
+    else if(phase==='bp_pattern') content=<BPPattern set={set} onDone={()=>setPhase(set.mode==='all_four'?'bp_typed':'bp_fc')}/>;
+    else if(phase==='bp_fc') content=<BPFC pupil={pupil} set={set} verbs={bpVerbs.current} isPreview={isPreview} onDone={()=>setPhase('bp_typed')} pct={pct}/>;
+    else if(phase==='bp_typed') content=<BPTyped pupil={pupil} set={set} verbs={bpVerbs.current} isPreview={isPreview} onDone={done} addC={addC} addW={addW} pct={pct}/>;
+    else if(phase==='tense_id') content=<TenseId pupil={pupil} set={set} qs={tenseQs.current} isPreview={isPreview} onDone={done} addC={addC} addW={addW} pct={pct}/>;
+    else if(phase==='parsing') content=<FullParsing pupil={pupil} set={set} qs={parsingQs.current} isPreview={isPreview} onDone={done} addC={addC} addW={addW} pct={pct}/>;
+    else if(phase==='parsing_mcq') content=<Parsing pupil={pupil} set={set} qs={set.questions||[]} isPreview={isPreview} onDone={done} addC={addC} addW={addW} pct={pct}/>;
+    else if(phase==='translate_form') content=<TranslateForm pupil={pupil} set={set} qs={set.questions||[]} isPreview={isPreview} onDone={()=>setPhase('tf_typed')} addC={addC} addW={addW} pct={pct}/>;
+    else if(phase==='tf_typed') content=<TFTyped pupil={pupil} set={set} qs={tfTypedQs.current} isPreview={isPreview} onDone={done} addC={addC} addW={addW} pct={pct}/>;
+    else if(phase==='sentences') content=<Sentences pupil={pupil} set={set} qs={sentences.current} isPreview={isPreview} onDone={done} addC={addC} addW={addW} pct={pct}/>;
+    else if(phase==='parse_translate') content=<ParseAndTranslate pupil={pupil} set={set} qs={parseTrQs.current} isPreview={isPreview} onDone={set.type==='review'?()=>setPhase('sentences'):done} addC={addC} addW={addW} pct={pct}/>;
+    else if(phase==='results') content=<Results res={res} set={set} total={totalRef.current} onFinish={onFinish} onSaveAndNext={onSaveAndNext}/>;
+
+    return(<>
+      {content}
+      {phase!=='results'&&<div style={{position:'fixed',top:24,right:40,zIndex:50,display:'flex',gap:12}}>
+        <button onClick={()=>setConfirmQuit(true)} style={{background:'rgba(255,255,255,0.15)',color:'white',border:'2px solid rgba(255,255,255,0.4)',borderRadius:8,padding:'6px 14px',fontSize:'0.85rem',fontWeight:700,minWidth:0}}>Menu</button>
+      </div>}
+      {confirmQuit&&<div style={{position:'fixed',inset:0,background:'rgba(0,0,0,0.55)',zIndex:200,display:'flex',alignItems:'center',justifyContent:'center'}}>
+        <div className="anim-fade" style={{background:'white',borderRadius:20,padding:'60px 80px',maxWidth:520,width:'90%',textAlign:'center',boxShadow:'0 20px 60px rgba(0,0,0,0.3)'}}>
+          <p style={{fontSize:'1.3rem',fontWeight:800,color:'var(--navy)',marginBottom:10}}>Leave this set?</p>
+          <p style={{color:'var(--grey)',marginBottom:40}}>Your progress won't be saved.</p>
+          <div style={{display:'flex',gap:32,justifyContent:'center'}}>
+            <button className="btn btn-outline" onClick={()=>setConfirmQuit(false)}>Keep going<span className="keyhint">Esc</span></button>
+            <button className="btn btn-primary" onClick={onBack}>Leave<span className="keyhint" style={{color:'white'}}>→ Menu</span></button>
+          </div>
+        </div>
+      </div>}
+    </>);
+  }
+
+  // ── Intro ─────────────────────────────────────────────────────────────────────
+  function Intro({set,screens,isPreview,pupil,onDone,pct}){
+    const [idx,setIdx]=useState(0);const s=screens[idx];const total=screens.length;
+    const finish=async()=>{if(!isPreview && (set.type==='intro'||set.type==='reference'||set.type==='concept'))await post('/api/complete',{pupil_id:pupil.id,set_id:set.id,score:100});onDone()};
+    useEffect(()=>{window.scrollTo({top:0,behavior:'instant'})},[idx]);
+    useEffect(()=>{const h=e=>{if(e.key==='Enter'){if(idx<total-1)setIdx(i=>i+1);else finish()}};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)},[idx,total]);
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade">
+          <div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${((idx+1)/total)*100}%`}}></div></div><span style={{fontWeight:700,color:'var(--grey)'}}>{idx+1} / {total}</span></div>
+          <div className="intro-body"><div className="intro-card">
+            <h2 dangerouslySetInnerHTML={{__html:renderOrdinals(s.heading)}}></h2>
+            {s.body&&<p style={{textAlign:s.body_align||'left'}}>{renderText(s.body)}</p>}
+            {s.example_latin&&<div className="intro-example">
+              <div className="lat-sent">{s.example_latin}</div>
+              <div className="eng-sent">{s.example_english}</div>
+              {s.note&&<p style={{marginTop:12,fontSize:'1.1rem',color:'var(--gold)',fontWeight:700}}>{renderText(s.note)}</p>}
+            </div>}
+            {s.principal_parts_table&&<table className="pp-table">
+              <thead><tr><th>Principal Part</th><th>Name</th><th>Latin form</th><th>English meaning</th></tr></thead>
+              <tbody>{s.principal_parts_table.map((r,i)=><tr key={i}><td style={{fontWeight:800}}>{r.part}</td><td>{r.name}</td><td className="lat-cell">{r.latin}</td><td style={{color:'var(--grey)'}}>{r.english}</td></tr>)}</tbody>
+            </table>}
+            {s.table&&<>
+              <table className="conj-table">
+                <thead><tr><th>Person & Number</th><th>{s.infinitive_ending_header||'Ending'}</th><th>Example</th></tr></thead>
+                <tbody>{s.table.map((r,i)=><tr key={i}><td style={{fontWeight:800}}>{r.conjugation}</td><td><span className="latin">{r.infinitive_ending}</span></td><td>{r.ep?r.ep.map((p,pi)=><span key={pi} className="latin" style={{color:p[1]==='blue'?'var(--blue)':(p[1]==='coral'||p[1]==='red')?'var(--coral)':p[1]==='purple'?'#7C3AED':p[1]==='pink'?'#C026D3':(p[1]==='gold'||p[1]==='yellow')?'var(--gold)':p[1]==='green'?'#16a34a':'var(--dark)'}}>{p[0]}</span>):<span className="latin">{r.example}</span>}{r.tr&&<span style={{color:'var(--grey)',fontStyle:'italic',fontSize:'0.9em',marginLeft:6}}>({r.tr})</span>}</td></tr>)}</tbody>
+              </table>
+              {s.table_note&&<div style={{marginTop:12,fontSize:'1rem',color:'var(--grey)',fontStyle:'italic'}}>{renderTextWithKey(s.table_note)}</div>}
+            </>}
+            <div style={{marginTop:40,display:'flex',gap:24,justifyContent:'center'}}>
+              {idx>0&&<button className="btn btn-outline" onClick={()=>setIdx(i=>i-1)}>Back</button>}
+              {idx<total-1?<button className="btn btn-primary" autoFocus onClick={()=>setIdx(i=>i+1)}>Next<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+                :<button className="btn btn-primary" autoFocus onClick={finish}>Done<span className="keyhint" style={{color:'white'}}>Enter</span></button>}
+            </div>
+          </div></div>
+        </div>
+      </div>
+    );
+  }
+
+  // ── Vocab Overview ─────────────────────────────────────────────────────────────
+  function VocabOverview({set,items,onDone}){
+    useEffect(()=>{const h=e=>{if(e.key==='Enter')onDone()};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)},[onDone]);
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:'1%'}}></div></div></div>
+        <div className="activity-body">
+          <p style={{fontSize:'1.5rem',fontWeight:800,color:'var(--navy)',marginBottom:8}}>Here are all {items.length} words in this set</p>
+          <p style={{color:'var(--grey)',marginBottom:24,fontSize:'1.1rem'}}>Study them, then begin the set.</p>
+          <div className="vocab-overview">
+            {items.map((v,i)=><div key={i} className="vocab-chip">
+              <div className="lat" style={{fontSize:'1.3rem'}}>{renderVocabLatin({...v,latin:v.latin||v.present})}</div>
+              {v.pos==='pronoun' && v.display_label && <div style={{fontSize:'0.75rem',color:'#B5179E',fontStyle:'italic',fontWeight:600,marginTop:2}}>({v.display_label})</div>}
+              <div className="eng" style={{color:'var(--grey)',fontSize:'0.9rem',marginTop:4}}>{(v.english||[v.eng_present||'']).join(', ')}</div>
+            </div>)}
+          </div>
+          <button className="btn btn-primary" autoFocus onClick={onDone} style={{marginTop:10}}>Begin<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+        </div></div>
+      </div>
+    );
+  }
+
+  // ── Vocab FC (flashcard - Press 1 Hard, Press 2 Got it) ───────────────────────
+  function VocabFC({pupil,set,items,isPreview,onDone,pct}){
+    const [queue,setQueue]=useState(()=>[...items]);
+    const [idx,setIdx]=useState(0);const [rev,setRev]=useState(false);const [busy,setBusy]=useState(false);
+    const rate=async r=>{
+      if(busy)return;setBusy(true);
+      const currentQ=queue[idx];
+      if(!isPreview)await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'flashcard_rating',question_text:currentQ.latin,pupil_answer:r});
+      if(r==='again'){
+        const newQueue=[...queue,{...currentQ}];
+        setBusy(false);setRev(false);
+        if(idx+1>=newQueue.length)onDone();else setIdx(i=>i+1);
+        setQueue(newQueue);
+      } else {
+        setBusy(false);setRev(false);
+        if(idx+1>=queue.length)onDone();else setIdx(i=>i+1);
+      }
+    };
+    const q=queue[idx];
+    useEffect(()=>{const h=e=>{if(e.code==='Space'&&!rev){e.preventDefault();setRev(true)};if(rev&&e.key==='1')rate('again');if(rev&&e.key==='2')rate('got_it')};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)});
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${pct}%`}}></div></div></div>
+        <div className="activity-body">
+          <div className="flashcard">
+            <h1 className="latin">{q.latin}</h1>
+            {q.display_label&&(q.pos==='pronoun'?<span style={{fontSize:'0.65rem',color:'#B5179E',fontStyle:'italic',fontWeight:600,marginTop:4,display:'block',letterSpacing:'0.03em'}}>({q.display_label})</span>:<span style={{fontSize:'0.8rem',color:'var(--white)',fontWeight:800,fontStyle:'normal',marginTop:8,padding:'4px 12px',background:'#0D9488',borderRadius:6,textTransform:'uppercase',letterSpacing:'0.05em',display:'inline-block'}}>{q.display_label}</span>)}
+            {rev&&<div className="anim-fade" style={{marginTop:30,textAlign:'center'}}>
+              <p style={{fontSize:'2.5rem',fontWeight:800,color:'#1a73e8'}}>{q.english.join(', ')}</p>
+              {q.dative_note&&<p style={{marginTop:12,fontSize:'1rem',fontWeight:700,color:'#0D9488',background:'#e6f7f5',borderRadius:8,padding:'6px 16px',display:'inline-block'}}>+ dative</p>}
+            </div>}
+          </div>
+          {rev&&<div className="anim-fade" style={{marginTop:50,display:'flex',gap:32}}>
+            <button className="btn btn-grey" disabled={busy} onClick={()=>rate('again')}>Hard<span className="keyhint">Press 1</span></button>
+            <button className="btn btn-primary" disabled={busy} onClick={()=>rate('got_it')}>Easy<span className="keyhint" style={{color:'white'}}>Press 2</span></button>
+          </div>}
+          {!rev&&<p style={{marginTop:60,color:'var(--grey)',fontSize:'1.4rem',fontWeight:700}}>Press SPACE to reveal</p>}
+          <div style={{marginTop:16,display:'flex',gap:16,alignItems:'center'}}>
+            <span style={{fontSize:'0.9rem',fontWeight:700,color:'var(--lgrey)'}}>Card {idx+1} of {queue.length}</span>
+            <div style={{width:200,height:6,background:'var(--lgrey)',borderRadius:3,overflow:'hidden'}}>
+              <div style={{width:`${((idx+1)/Math.max(queue.length,1))*100}%`,height:'100%',background:'var(--blue)',borderRadius:3,transition:'width .3s'}}></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    );
+  }
+
+  function VocabMC({pupil,set,items,isPreview,onDone,addC,addW,pct}){
+    const [queue,setQueue]=useState(()=>[...items]);
+    const [qIdx,setQIdx]=useState(0);
+    const [sel,setSel]=useState(null);const [fb,setFb]=useState(null);const [busy,setBusy]=useState(false);
+    const [timeLeft,setTimeLeft]=useState(10);
+    const q=queue[qIdx];
+    const ansText = q?.english.join(', ')||'';
+    // Compute options once per question, locked in ref
+    const optsRef=useRef(null);
+    if(optsRef.current===null||optsRef.current.qIdx!==qIdx){
+      const otherItems=shuffleOnce(items.filter(it=>it!==q));
+      const uniqueOthers=[];
+      for(const it of otherItems){const txt=it.english.join(', ');if(txt!==ansText&&!uniqueOthers.includes(txt)&&uniqueOthers.length<3)uniqueOthers.push(txt);}
+      optsRef.current={qIdx,opts:shuffleOnce([ansText,...uniqueOthers])};
+    }
+    const opts=optsRef.current.opts;
+
+    useEffect(()=>{
+      if(fb||busy)return;
+      if(timeLeft<=0){
+        const handleTimeout=async()=>{
+          setBusy(true);setSel('timeout');
+          const chkRes=!isPreview?await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'mc',question_text:q.id||q.latin,pupil_answer:'TIMEOUT',correct_answer:ansText}):null;
+          const res={counts_as_correct:false,message:`Time's up! The answer is: **${chkRes?.correct_answer||ansText}**`};
+          setFb(res);
+          if(!q.failed){addW({latin:q.latin,correct:chkRes?.correct_answer||ansText});setQueue(prev=>[...prev,{...q,failed:true}]);}
+          setBusy(false);
+        };handleTimeout();return;
+      }
+      const t=setInterval(()=>setTimeLeft(x=>x-1),1000);return()=>clearInterval(t);
+    },[timeLeft,fb,busy]);
+
+    const pick=async o=>{
+      if(fb||busy)return;setBusy(true);setSel(o);
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'mc',question_text:q.id||q.latin,pupil_answer:o,correct_answer:ansText});
+      setFb(res);
+      if(res.counts_as_correct){if(!q.failed)addC()}
+      else{if(!q.failed){addW({latin:q.latin,correct:res.correct_answer||ansText});setQueue(prev=>[...prev,{...q,failed:true}]);}}
+      setBusy(false);
+    };
+    const nx=()=>{optsRef.current=null;setFb(null);setSel(null);setTimeLeft(10);if(qIdx+1>=queue.length)onDone();else setQIdx(i=>i+1)};
+    useEffect(()=>{const h=e=>{if(e.ctrlKey&&e.altKey&&e.key.toLowerCase()==='k'&&!fb){addW({latin:q.latin||getPromptTop(q),correct:ansText||correct}); setQueue(prev=>[...prev,{...q,failed:true}]); nx();return;}if(fb&&e.key==='Enter')nx();if(!fb){const n=parseInt(e.key);if(n>=1&&n<=4&&opts[n-1])pick(opts[n-1])}};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)});
+    if(!q)return null;
+    const isRetry=q.failed;
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${pct}%`}}></div></div></div>
+        <div className="activity-body">
+          <div className="timer-bar"><div className="timer-fill" style={{width:`${(timeLeft/10)*100}%`,background:fb?(fb.counts_as_correct?'var(--green-bright)':'var(--red-bright)'):(timeLeft<=3?'var(--red-bright)':'var(--blue)'),transition:fb?'none':'width 1s linear, background .3s'}}></div></div>
+          <div style={{minHeight:40,display:'flex',justifyContent:'center',alignItems:'center',marginBottom:8}}>
+            {isRetry&&<div className="anim-fade" style={{background:'var(--gold)',border:'2px solid #c28500',borderRadius:10,padding:'6px 16px',fontWeight:800,color:'var(--dark)',fontSize:'0.9rem',display:'inline-block'}}>Try this again! You got it wrong before.</div>}
+          </div>
+          <div className="mc-prompt"><h2 style={{display:'flex',justifyContent:'center',alignItems:'center',gap:12}}>What does {renderVocabLatin(q)} mean?</h2></div>
+          <div className="mc-options">{opts.map((o,i)=><button key={i} className={`mc-opt ${fb?(o===ansText?'correct':o===sel?'wrong':''):''}`} disabled={busy&&!fb} onClick={()=>pick(o)}><span className="keyhint" style={{display:'block',marginBottom:12}}>Press {i+1}</span>{o}</button>)}</div>
+          {fb&&<div className="anim-fade" style={{minHeight:140,display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <div className={`feedback ${fb.counts_as_correct?'ok':'bad'}`}>{renderText(fb.message)}</div>
+            <button className="btn btn-primary" disabled={busy} onClick={nx} style={{marginTop:24}}>Next<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+          </div>}
+          {!fb&&<div style={{minHeight:140}}></div>}
+        </div></div>
+      </div>
+    );
+  }
+
+  // ── Typed base (reused for vocab and building_parts typed) ────────────────────
+  function TypedBase({pupil,set,items,getPromptTop,getKey,getPromptSub,getSubStyle,getCorrect,isLatin,isPreview,onDone,addC,addW,pct}){
+    const [queue,setQueue]=useState(()=>[...items]);
+    const [qIdx,setQIdx]=useState(0);
+    const [ans,setAns]=useState('');const [fb,setFb]=useState(null);
+    const [retype,setRetype]=useState(false);const [rtAns,setRtAns]=useState('');const [rtFb,setRtFb]=useState(null);
+    const [busy,setBusy]=useState(false);const inRef=useRef();const rtRef=useRef();
+    const q=queue[qIdx];
+    const correct=q?getCorrect(q):'';
+    useEffect(()=>{if(!fb)inRef.current?.focus();if(retype)rtRef.current?.focus()},[qIdx,fb,retype]);
+    const qtype=isLatin?'latin_typed':'vocab';
+    const getKeyFn = getKey || getPromptTop;
+    const submit=async()=>{
+      if(busy||!q)return;setBusy(true);
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:qtype,question_text:getKeyFn(q),pupil_answer:ans,correct_answer:correct});
+      setFb(res);
+      if(res.counts_as_correct){if(!q.failed)addC()}
+      else{
+        if(!q.failed)addW({latin:getPromptTop(q),correct:res.correct_answer||correct});
+        setQueue(prev=>[...prev,{...q,failed:true}]);
+        setRetype(true);
+      }
+      setBusy(false);
+    };
+    const rtSubmit=async()=>{
+      if(busy)return;setBusy(true);
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:qtype,question_text:getKeyFn(q),pupil_answer:rtAns,correct_answer:correct});
+      if(res.counts_as_correct)nx();else setRtFb('Not quite. Try again.');
+      setBusy(false);
+    };
+    const nx=()=>{setAns('');setFb(null);setRetype(false);setRtAns('');setRtFb(null);if(qIdx+1>=queue.length)onDone();else setQIdx(i=>i+1)};
+    useEffect(()=>{const h=e=>{if(e.ctrlKey&&e.altKey&&e.key.toLowerCase()==='k'&&!fb){addW({latin:q.latin||getPromptTop(q),correct:ansText||correct}); setQueue(prev=>[...prev,{...q,failed:true}]); nx();return;}if(e.key==='Enter'){if(retype)rtSubmit();else if(fb&&!retype)nx();else if(!fb)submit()}};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)});
+    const inputStyle=isLatin?{fontFamily:'Crimson Text, serif',fontStyle:'italic',fontSize:'2.2rem'}:{};
+    const isRetry=q?.failed;
+    if(!q)return null;
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${pct}%`}}></div></div></div>
+        <div className="activity-body">
+          <div style={{minHeight:40,display:'flex',justifyContent:'center',alignItems:'center',marginBottom:8}}>
+            {isRetry&&<div className="anim-fade" style={{background:'var(--gold)',border:'2px solid #c28500',borderRadius:10,padding:'6px 16px',fontWeight:800,color:'var(--dark)',fontSize:'0.9rem',display:'inline-block'}}>Try this again! You got it wrong before.</div>}
+          </div>
+          {isLatin
+            ?<h1 className="latin dynamic-latin" style={{fontSize:String(getPromptTop(q)).length>15?'3rem':'4.5rem'}}>{getPromptTop(q)}</h1>
+            :<div style={{marginBottom:8,textAlign:'center',display:'flex',flexDirection:'column',alignItems:'center'}}><span style={{fontSize:String(q.latin||'').length>12?'3rem':'4.5rem',fontFamily:'Crimson Text,serif',fontStyle:'italic',fontWeight:700,color:'var(--dark)'}}>{q.latin}</span>{q.display_label&&(q.pos==='pronoun'?<span style={{fontSize:'1rem',color:'var(--grey)',fontStyle:'italic',fontWeight:400,marginTop:4}}>({q.display_label})</span>:<span style={{fontSize:'0.7em',color:'white',fontWeight:800,fontStyle:'normal',marginTop:6,padding:'4px 10px',background:'#0D9488',borderRadius:6,textTransform:'uppercase'}}>{q.display_label}</span>)}</div>
+          }
+          {getPromptSub&&<p style={getSubStyle||{color:'var(--grey)',marginBottom:8,fontWeight:600,fontSize:'1.2rem'}}>{getPromptSub(q)}</p>}
+          <p style={{color:'var(--grey)',marginBottom:40,fontWeight:700,fontSize:'1.3rem',marginTop:getPromptSub?16:0}}>{isLatin?<>Type the <strong style={{color:'var(--navy)',fontSize:'1.4rem'}}>{set.mode==='infinitives'?'infinitive':set.mode==='perfects'?'perfect':set.mode==='ppps'?'PPP':set.mode==='all_four'?'missing part':'answer'}</strong></>:'Type the English translation'}</p>
+          <div style={{minHeight:250,display:'flex',flexDirection:'column',alignItems:'center',width:'100%'}}>
+            {!fb?<>
+              <input ref={inRef} className="typed-input" style={inputStyle} disabled={busy} value={ans} onChange={e=>setAns(e.target.value)} placeholder="..."/>
+              <button className="btn btn-primary" disabled={busy} onClick={submit} style={{marginTop:30}}>Check<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+            </>:<>
+              <input className={`typed-input ${fb.counts_as_correct?'ok':'bad'}`} style={inputStyle} value={ans} disabled/>
+              {!retype&&<div className={`feedback anim-fade ${fb.counts_as_correct?(fb.is_typo?'warn':'ok'):'bad'}`}>{renderText(fb.message)}</div>}
+              {fb.counts_as_correct&&!retype&&fb.correct_answer&&ans.trim().toLowerCase().replace(/[^a-z0-9 /]/g,'').replace(/\s+/g,' ').trim()!==fb.correct_answer.trim().toLowerCase().replace(/[^a-z0-9 /]/g,'').replace(/\s+/g,' ').trim()&&<div className="anim-fade" style={{marginTop:16,padding:'12px 16px',background:'#f0fdf4',border:'2px solid #16a34a',borderRadius:12,textAlign:'left',maxWidth:700,width:'100%'}}><p style={{fontWeight:700,fontSize:'0.8rem',color:'#16a34a',textTransform:'uppercase',letterSpacing:'0.05em',marginBottom:4}}>Ideal answer</p><p style={{fontSize:'1.2rem',fontWeight:800,color:'var(--dark)'}}>{fb.correct_answer}</p></div>}
+              {retype&&<div className="anim-fade" style={{marginTop:16,width:'100%',maxWidth:800,padding:'24px',background:'var(--white)',border:'2px solid var(--lgrey)',borderRadius:20}}>
+                {fb?.message&&<div style={{background:'var(--coral)',color:'white',padding:'10px 18px',borderRadius:10,fontWeight:700,marginBottom:20,display:'inline-block',fontSize:'1rem'}}>{renderText(fb.message)}</div>}
+                <div style={{marginBottom:24,padding:'20px',background:'#f0fdf4',border:'2px solid #16a34a',borderRadius:16,textAlign:'left'}}><p style={{fontWeight:800,fontSize:'0.9rem',color:'#16a34a',marginBottom:8,textTransform:'uppercase',letterSpacing:'0.05em'}}>The correct answer is</p><p className={isLatin?'latin':''} style={{fontSize:'1.8rem',fontWeight:800,color:'var(--dark)'}}>{fb?.correct_answer||correct}</p></div>
+                <p style={{fontSize:'1.2rem',marginBottom:12,fontWeight:800,color:'var(--navy)'}}>Type the correct answer to continue:</p>
+                <input ref={rtRef} className="typed-input" style={{...inputStyle,borderColor:rtFb?'var(--red-bright)':''}} value={rtAns} onChange={e=>{setRtAns(e.target.value);setRtFb(null)}} placeholder="..."/>
+                {rtFb&&<div style={{color:'var(--red-bright)',marginTop:12,fontWeight:700}}>{rtFb}</div>}
+                <button className="btn btn-outline" disabled={busy} onClick={rtSubmit} style={{marginTop:20}}>Continue<span className="keyhint">Enter</span></button>
+              </div>}
+              {!retype&&<button className="btn btn-primary anim-fade" disabled={busy} onClick={nx} style={{marginTop:30}}>Next<span className="keyhint" style={{color:'white'}}>Enter</span></button>}
+            </>}
+          </div>
+        </div></div>
+      </div>
+    );
+  }
+
+  function VocabTyped({pupil,set,items,isPreview,onDone,addC,addW,pct}){
+    return <TypedBase pupil={pupil} set={set} items={items} isPreview={isPreview} onDone={onDone} addC={addC} addW={addW} pct={pct} isLatin={false}
+      getPromptTop={q=>q.latin} getKey={q=>q.id||q.latin} getPromptSub={null} getCorrect={q=>q.english[0]}/>;
+  }
+
+  // ── Building Parts Pattern Screen ─────────────────────────────────────────────
+  function BPPattern({set,onDone}){
+    const ps=set.pattern_screen;
+    useEffect(()=>{const h=e=>{if(e.key==='Enter')onDone()};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)},[onDone]);
+    if(!ps){onDone();return null;}
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:'5%'}}></div></div></div>
+        <div className="activity-body">
+          <div className="pattern-box" style={{maxWidth:860}}>
+            <h3 style={{fontSize:'1.6rem',marginBottom:12}} dangerouslySetInnerHTML={{__html:renderOrdinals(ps.title||ps.heading)}}></h3>
+            <p className="pattern-rule" style={{marginBottom:28}}>{renderText(ps.subtitle||ps.rule)}</p>
+            <div style={{display:'flex',flexDirection:'column',gap:10,marginBottom:20}}>
+              {ps.examples.map((e,i)=>(
+                <div key={i} style={{display:'flex',alignItems:'center',gap:12,padding:'10px 0',borderBottom:i<ps.examples.length-1?'1px solid var(--lgrey)':'none',flexWrap:'wrap'}}>
+                  {(e.present||e.stem)?<><span className="latin" style={{fontSize:'1.3rem',color:'var(--dark)',whiteSpace:'nowrap'}}>{e.present||e.stem+'o'}</span><span style={{color:'var(--lgrey)',fontSize:'1.2rem'}}>→</span></>:null}
+                  {(e.infinitive||e.inf)&&<><span className="latin" style={{fontSize:'1.3rem',color:'var(--dark)',whiteSpace:'nowrap'}}>{(e.infinitive||e.inf).slice(0,-2)}<span style={{color:'var(--coral)'}}>re</span></span><span style={{color:'var(--lgrey)',fontSize:'1.2rem'}}>→</span></>}
+                  {e.perfect&&<><span className="latin" style={{fontSize:'1.3rem',color:'var(--dark)',fontWeight:700,whiteSpace:'nowrap'}}>{(()=>{
+                    // Highlight the perfect-tense marker: -v- for 1st conj,
+                    // -s- for 3rd, -u- for 2nd. We find the last v/s/u before
+                    // the final -i and colour-highlight it in purple.
+                    const pf=e.perfect;
+                    const m=pf.match(/^(.*?)([vsu])(i|isti|it|imus|istis|erunt)$/);
+                    if(!m) return pf;
+                    return <>{m[1]}<span style={{color:'#7C3AED'}}>{m[2]}</span>{m[3]}</>;
+                  })()}</span><span style={{color:'var(--lgrey)',fontSize:'1.2rem'}}>→</span></>}
+                  <span className="latin" style={{fontSize:'1.3rem',fontWeight:700,whiteSpace:'nowrap'}}>
+                    {e.full.slice(0,e.full.length-e.ending.length)}<span style={{color:(e.ending==='tus'||e.ending==='sus')?'var(--gold)':'#7C3AED',fontWeight:700}}>{e.ending.startsWith('v')?'v':e.ending}</span>{e.ending.startsWith('v')?e.ending.slice(1):''}{e.declension&&<span style={{color:'var(--grey)',fontWeight:400,fontSize:'1rem'}}> {e.declension}</span>}
+                  </span>
+                  <span style={{color:'var(--grey)',fontSize:'0.95rem',fontStyle:'italic',marginLeft:4}}>- {e.english}</span>
+                </div>
+              ))}
+            </div>
+            {(ps.footnote||ps.note)&&<p className="pattern-note">{renderTextWithKey(ps.footnote||ps.note)}</p>}
+          </div>
+          <button className="btn btn-primary" autoFocus onClick={onDone}>I'm ready<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+        </div></div>
+      </div>
+    );
+  }
+
+  // ── Building Parts FC (flashcard phase) ───────────────────────────────────────
+  // For mode=infinitives: shows present / [blank] using the gap-fill visual
+  // For mode=perfects: shows present / infinitive / [blank]
+  // For mode=ppps: shows present / infinitive / perfect / [blank]
+  // FC here just shows the answer - no rating, just flip and move on
+  function BPFC({pupil,set,verbs,isPreview,onDone,pct}){
+    const [queue,setQueue]=useState(()=>[...verbs]);
+    const [qIdx,setQIdx]=useState(0);
+    const [rev,setRev]=useState(false);const [busy,setBusy]=useState(false);
+    const v=queue[qIdx];
+    if(!v){onDone();return null;}
+    const mode=set.mode;
+    const known=set.show_parts_so_far||1;
+    const labels=['present','infinitive','perfect','PPP'];
+    const shownParts=[];
+    for(let i=0;i<known;i++){
+      const vals=[v.present,v.infinitive,v.perfect,v.ppp];
+      if(vals[i]!==null&&vals[i]!==undefined) shownParts.push(vals[i]);
+    }
+    const back=mode==='infinitives'?v.infinitive:mode==='perfects'?v.perfect:v.ppp;
+    const backEng=mode==='infinitives'?v.eng_infinitive:mode==='perfects'?v.eng_perfect:v.eng_ppp;
+    const noPPP = mode==='ppps' && v.ppp===null;
+
+    const rate=async(r)=>{
+      if(busy)return;setBusy(true);
+      if(!isPreview) await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'flashcard_rating',question_text:v.present,pupil_answer:r});
+      if(r==='again'){
+        setQueue(q=>{const next=[...q];next.push({...v});return next;});
+      }
+      setRev(false);setBusy(false);
+      if(qIdx+1>=queue.length+(r==='again'?1:0)) onDone();
+      else setQIdx(i=>i+1);
+    };
+    useEffect(()=>{
+      const h=e=>{
+        if(e.code==='Space'&&!rev){e.preventDefault();setRev(true);}
+        if(rev&&e.key==='1') rate('again');
+        if(rev&&e.key==='2') rate('got_it');
+        // no-PPP verbs: space again just advances
+        if(rev&&noPPP&&e.code==='Space'){e.preventDefault();rate('got_it');}
+      };
+      window.addEventListener('keydown',h);
+      return()=>window.removeEventListener('keydown',h);
+    });
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${pct}%`}}></div></div></div>
+        <div className="activity-body">
+          <p style={{color:'var(--grey)',marginBottom:20,fontWeight:700,fontSize:'1.2rem'}}>
+            What is the <strong style={{color:'var(--navy)'}}>{labels[known]}</strong> of this verb?
+          </p>
+          <div style={{display:'flex',alignItems:'center',gap:16,marginBottom:20,flexWrap:'wrap',justifyContent:'center'}}>
+            {shownParts.map((p,i)=>(
+              <React.Fragment key={i}>
+                {i>0&&<span className="part-sep">/</span>}
+                <div style={{textAlign:'center'}}>
+                  <span className="part-chip">{p}</span>
+                  <p style={{color:'var(--grey)',fontSize:'0.85rem',marginTop:4,fontStyle:'italic'}}>
+                    {i===0?v.eng_present:i===1?v.eng_infinitive:i===2?v.eng_perfect:v.eng_ppp}
+                  </p>
+                </div>
+              </React.Fragment>
+            ))}
+            <span className="part-sep">/</span>
+            <div style={{textAlign:'center'}}>
+              {noPPP
+                ?<>
+                  <span className="part-chip" style={{borderColor:'var(--grey)',color:'var(--grey)',fontStyle:'normal',fontSize:'1rem'}}>
+                    {rev ? '— no PPP' : '?'}
+                  </span>
+                  {rev&&<p className="anim-fade" style={{color:'var(--grey)',fontSize:'0.85rem',marginTop:4,fontStyle:'italic'}}>This verb has no PPP</p>}
+                </>
+                :<>
+                  <span className="part-chip" style={{borderColor:'var(--blue)',color:rev?'#1a73e8':'var(--blue)'}}>
+                    {rev?(mode==='infinitives'?<span>{back.slice(0,-2)}<span style={{color:'var(--coral)',fontWeight:700}}>re</span></span>:mode==='perfects'?(back.endsWith('vi')?<span>{back.slice(0,-2)}<span style={{color:'#7C3AED',fontWeight:700}}>v</span>i</span>:<span>{back}</span>):mode==='ppps'?<span>{back.slice(0,-3)}<span style={{color:'var(--gold)',fontWeight:700}}>tus</span></span>:back):'?'}
+                  </span>
+                  {rev&&<p className="anim-fade" style={{color:'var(--grey)',fontSize:'0.85rem',marginTop:4,fontStyle:'italic'}}>{backEng}</p>}
+                </>
+              }
+            </div>
+          </div>
+          {rev
+            ?<div className="anim-fade" style={{display:'flex',gap:32,marginTop:24}}>
+               <button className="btn btn-grey" disabled={busy} onClick={()=>rate('again')}>Hard<span className="keyhint">Press 1</span></button>
+               <button className="btn btn-primary" disabled={busy} onClick={()=>rate('got_it')}>Easy<span className="keyhint" style={{color:'white'}}>Press 2</span></button>
+             </div>
+            :<p style={{marginTop:24,color:'var(--grey)',fontSize:'1.3rem',fontWeight:700}}>Press SPACE to reveal</p>
+          }
+          <div style={{marginTop:16,display:'flex',gap:12,alignItems:'center'}}>
+            <span style={{fontSize:'0.85rem',fontWeight:700,color:'var(--lgrey)'}}>Card {qIdx+1} of {queue.length}</span>
+            <div style={{width:160,height:5,background:'var(--lgrey)',borderRadius:3,overflow:'hidden'}}>
+              <div style={{width:`${((qIdx+1)/Math.max(queue.length,1))*100}%`,height:'100%',background:'var(--blue)',borderRadius:3,transition:'width .3s'}}></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    );
+  }
+
+
+  // ── Building Parts Typed (gap-fill visual for all modes) ─────────────────────
+  function BPTyped({pupil,set,verbs,isPreview,onDone,addC,addW,pct}){
+    const mode=set.mode;
+    const labels=['present','infinitive','perfect','PPP'];
+    const known=set.show_parts_so_far||1;
+    const gapPositions=set.gap_positions||[known];
+
+    // all_four_from_present = one question per verb: show present, type all remaining parts
+    const isAllFourFromPresent = mode==='all_four_from_present';
+    // all_four = one question per gap position per verb (fill in one missing at a time)
+    const isAllFour = mode==='all_four';
+    // all_four_progressive = phase1: gap at pos 2 (all verbs), phase2: gap at pos 3 (ppp verbs only), phase3: all_four_from_present
+    const isProgressive = mode==='all_four_progressive';
+
+    const [qs]=useState(()=>{
+      const getP = v => [v.present, v.infinitive, v.perfect, v.ppp];
+      if(isAllFourFromPresent){
+        // Single question per verb
+        return shuffleOnce(verbs.map(v=>({v,g:-1})));  // g=-1 = "all remaining"
+      }
+      if(isAllFour){
+        // One question per gap position per verb, but only gaps 2 and 3 (perf/PPP)
+        return shuffleOnce(verbs.flatMap(v=>gapPositions.filter(g=>getP(v)[g]!=null).map(g=>({v,g}))));
+      }
+      if(isProgressive){
+        // Phase 1: gap at position 2 (perfect) for all verbs - show present+infinitive, type perfect
+        const phase1 = shuffleOnce(verbs.map(v=>({v,g:2,phase:1})));
+        // Phase 2: gap at position 3 (PPP) for verbs that have a PPP - show present+infinitive+perfect, type PPP
+        const phase2 = shuffleOnce(verbs.filter(v=>v.ppp!==null).map(v=>({v,g:3,phase:2})));
+        // Phase 3: all_four_from_present for all verbs
+        const phase3 = shuffleOnce(verbs.map(v=>({v,g:-1,phase:3})));
+        return [...phase1, ...phase2, ...phase3];
+      }
+      return shuffleOnce(verbs.filter(v=>mode!=='ppps'||v.ppp!==null).map(v=>({v,g:known})));
+    });
+
+    const [idx,setIdx]=useState(0);const [ans,setAns]=useState('');const [fb,setFb]=useState(null);
+    const [showReveal,setShowReveal]=useState(false);
+    const [retype,setRetype]=useState(false);const [rtAns,setRtAns]=useState('');const [rtFb,setRtFb]=useState(null);
+    const [busy,setBusy]=useState(false);const inRef=useRef();const rtRef=useRef();
+
+    if(!qs||qs.length===0){onDone();return null;}
+    const {v,g}=qs[idx]||qs[0];
+    const parts=[v.present,v.infinitive,v.perfect,v.ppp];
+
+    // correct answer string
+    let correct;
+    if(g===-1){
+      // all_four_from_present or progressive phase 3
+      correct = v.ppp ? `${v.infinitive} ${v.perfect} ${v.ppp}` : `${v.infinitive} ${v.perfect}`;
+    } else {
+      correct = parts[g];
+    }
+
+    // For all_four (individual gap) show only up to and including the gap position
+    // For all_four_from_present show all 4 (the input handles "remaining" parts)
+    const shownCount = isAllFourFromPresent ? 4 : isAllFour ? (g+1) : 4;
+
+    useEffect(()=>{if(!fb)inRef.current?.focus();if(retype)rtRef.current?.focus()},[idx,fb,retype]);
+
+    const submit=async()=>{
+      if(busy)return;setBusy(true);
+      let res;
+      if(isAllFourMode){
+        res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'all_four_typed',question_text:v.present,pupil_answer:ans,correct_answer:correct});
+      } else {
+        res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'latin_typed',question_text:`${labels[g]} of ${v.present}`,pupil_answer:ans,correct_answer:correct});
+      }
+      setFb(res);
+      if(res.counts_as_correct){if(!qs[idx].failed)addC()}
+      else{
+        if(!qs[idx].failed)addW({latin:v.present,correct:res.correct_answer});
+        if(!qs.find(q=>q.v===v && q.failed)){
+            qs.push({v, g, failed:true});
+        }
+        setShowReveal(true);setRetype(true)
+      }
+      setBusy(false);
+    };
+    const rtSubmit=async()=>{
+      if(busy)return;setBusy(true);
+      const qt2=isAllFourMode?'all_four_typed':'latin_typed';
+      const qt2text=isAllFourMode?v.present:`${labels[g]} of ${v.present}`;
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:qt2,question_text:qt2text,pupil_answer:rtAns,correct_answer:correct});
+      if(res.counts_as_correct){ nx(); }else setRtFb('Not quite. Check the spelling.');
+      setBusy(false);
+    };
+    const nx=()=>{setAns('');setFb(null);setShowReveal(false);setRetype(false);setRtAns('');setRtFb(null);if(idx+1>=qs.length)onDone();else setIdx(i=>i+1)};
+    useEffect(()=>{const h=e=>{if(e.key==='Enter'){if(retype)rtSubmit();else if(fb&&!retype)nx();else if(!fb)submit()}};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)});
+
+    const inputStyle={fontFamily:'Crimson Text, serif',fontStyle:'italic',fontSize:'2.2rem',fontWeight:700};
+    // all_four_typed (multi-part answer) only for all_four_from_present and progressive phase 3
+    // isAllFour mode fills ONE gap at a time using latin_typed, not all_four_typed
+    const isAllFourMode = isAllFourFromPresent || (isProgressive && g===-1);
+    const isProgressiveSingleGap = isProgressive && g>=0;
+
+    // For progressive phase display: determine show_parts_so_far based on gap position
+    const progressiveShownCount = isProgressiveSingleGap ? (g===2 ? 3 : 4) : 4;
+    const effectiveShownCount = isAllFour ? 4 : (isProgressiveSingleGap ? progressiveShownCount : shownCount);
+
+    // Phase label for progressive mode
+    const currentPhase = qs[idx]?.phase;
+    const phaseLabel = isProgressive ? (currentPhase===1 ? 'Phase 1: Type the perfect' : currentPhase===2 ? 'Phase 2: Type the PPP' : 'Phase 3: All principal parts') : null;
+
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${pct}%`}}></div></div></div>
+        <div className="activity-body">
+          <div style={{minHeight:40,display:'flex',justifyContent:'center',alignItems:'center',marginBottom:8}}>
+            {qs[idx]?.failed&&<div className="anim-fade" style={{background:'var(--gold)',border:'2px solid #c28500',borderRadius:10,padding:'6px 16px',fontWeight:800,color:'var(--dark)',fontSize:'0.9rem',display:'inline-block'}}>Try this again! You got it wrong before.</div>}
+          </div>
+          <p style={{color:'var(--grey)',marginBottom:8,fontWeight:700,fontSize:'1.3rem'}}>
+            {isAllFourMode
+              ? <>Type the <strong style={{color:'var(--navy)',fontSize:'1.4rem'}}>remaining principal parts</strong>, in order, separated by spaces:</>
+              : <>Type the <strong style={{color:'var(--navy)',fontSize:'1.4rem'}}>{labels[g]}</strong>:</>}
+          </p>
+          {isAllFourMode
+            ?<div style={{display:'flex',flexDirection:'column',alignItems:'center',gap:16,width:'100%',maxWidth:900}}>
+              <div className="parts-row">
+                <span className="part-chip"><span>{v.present}</span><span className="chip-eng">{v.eng_present}</span></span>
+                <span className="part-sep">/</span>
+                <span style={{color:'var(--blue)',fontFamily:'Crimson Text,serif',fontStyle:'italic',fontSize:'1.5rem',fontWeight:700}}>
+                  {v.ppp ? 'infinitive / perfect / PPP' : 'infinitive / perfect'}
+                </span>
+              </div>
+              <input ref={inRef} className={`gap-input ${fb?(fb.counts_as_correct?'ok':'bad'):''}`} value={ans} onChange={e=>setAns(e.target.value)} disabled={!!fb}
+                placeholder="..."
+                style={{...inputStyle,minWidth:380,textAlign:'left',paddingLeft:24}}/>
+              {!v.ppp&&!fb&&<p style={{fontSize:'0.9rem',color:'var(--grey)',fontStyle:'italic',marginTop:4}}>Note: this verb has no PPP — type only infinitive and perfect.</p>}
+            </div>
+            :<div className="parts-row">
+              {Array.from({length:effectiveShownCount},(_,i)=>{
+                const engLabels=[v.eng_present,v.eng_infinitive,v.eng_perfect,v.eng_ppp];
+                if(i===g) return <React.Fragment key={i}>{i>0&&<span className="part-sep">/</span>}<input ref={inRef} className={`gap-input ${fb?(fb.counts_as_correct?'ok':'bad'):''}`} value={ans} onChange={e=>setAns(e.target.value)} disabled={!!fb} placeholder="..." style={inputStyle}/></React.Fragment>;
+                if(parts[i]===null||parts[i]===undefined) return null;
+                return <React.Fragment key={i}>{i>0&&<span className="part-sep">/</span>}<span className="part-chip"><span>{parts[i]}</span></span></React.Fragment>;
+              })}
+            </div>}
+          {showReveal&&<div className="full-reveal anim-fade">
+            {(g===-1?parts:parts.slice(0,g+1)).filter(p=>p!=null).map((p,i)=><React.Fragment key={i}>{i>0&&<span className="sep">/</span>}<span className="rv">{p}</span></React.Fragment>)}
+          </div>}
+          <div style={{minHeight:250,display:'flex',flexDirection:'column',alignItems:'center',width:'100%'}}>
+            {!fb?<button className="btn btn-primary" disabled={busy} onClick={submit} style={{marginTop:20}}>Check<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+              :<>
+              {!retype&&<div className={`feedback anim-fade ${fb.counts_as_correct?'ok':'bad'}`}>{renderText(fb.message)}</div>}
+              {retype&&<div className="anim-fade" style={{marginTop:16,width:'100%',maxWidth:800,padding:'24px',background:'var(--white)',border:'2px solid var(--lgrey)',borderRadius:20}}>
+                {fb?.message&&<div style={{background:'var(--coral)',color:'white',padding:'10px 18px',borderRadius:10,fontWeight:700,marginBottom:20,display:'inline-block',fontSize:'1rem'}}>{renderText(fb.message)}</div>}
+                <div style={{marginBottom:24,padding:'20px',background:'#f0fdf4',border:'2px solid #16a34a',borderRadius:16,textAlign:'left'}}><p style={{fontWeight:800,fontSize:'0.9rem',color:'#16a34a',marginBottom:8,textTransform:'uppercase',letterSpacing:'0.05em'}}>The correct answer is</p><p className="latin" style={{fontSize:'1.8rem',fontWeight:800,color:'var(--dark)'}}>{correct}</p></div>
+                <p style={{fontSize:'1.2rem',marginBottom:12,fontWeight:800,color:'var(--navy)'}}>Type the correct answer to continue:</p>
+                <input ref={rtRef} className="typed-input" style={{...inputStyle,borderColor:rtFb?'var(--red-bright)':''}} value={rtAns} onChange={e=>{setRtAns(e.target.value);setRtFb(null)}} placeholder="..."/>
+                {rtFb&&<div style={{color:'var(--red-bright)',marginTop:12,fontWeight:700}}>{rtFb}</div>}
+                <button className="btn btn-outline" disabled={busy} onClick={rtSubmit} style={{marginTop:20}}>Continue<span className="keyhint">Enter</span></button>
+              </div>}
+              {!retype&&<button className="btn btn-primary anim-fade" disabled={busy} onClick={nx} style={{marginTop:30}}>Next<span className="keyhint" style={{color:'white'}}>Enter</span></button>}
+            </>}
+          </div>
+        </div></div>
+      </div>
+    );
+  }
+
+  // ── Tense ID - fixed-order buttons, no timer, scaffolded forms ────────────────
+  function TenseId({pupil,set,qs,isPreview,onDone,addC,addW,pct}){
+    const [idx,setIdx]=useState(0);const [sel,setSel]=useState(null);const [fb,setFb]=useState(null);const [busy,setBusy]=useState(false);
+    const q=qs[idx];
+    const tenseOpts=set.tense_options||['present','future','imperfect','perfect','pluperfect'];
+    const pick=async o=>{
+      if(fb||busy)return;setBusy(true);setSel(o);
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'parsing_mcq',question_text:q.plain_form||q.form,pupil_answer:o,correct_answer:q.tense});
+      setFb(res);if(res.counts_as_correct){if(!q.failed)addC()}else{if(!q.failed)addW({latin:q.form,correct:q.tense})};
+      setBusy(false);
+    };
+    const nx=()=>{setFb(null);setSel(null);if(idx+1>=qs.length)onDone();else setIdx(i=>i+1)};
+    useEffect(()=>{const h=e=>{if(e.ctrlKey&&e.altKey&&e.key.toLowerCase()==='k'&&!fb){addW({latin:q.latin||getPromptTop(q),correct:ansText||correct}); setQueue(prev=>[...prev,{...q,failed:true}]); nx();return;}if(fb&&e.key==='Enter')nx();if(!fb){const n=parseInt(e.key);if(n>=1&&n<=tenseOpts.length)pick(tenseOpts[n-1])}};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)});
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${pct}%`}}></div></div></div>
+        <div className="activity-body">
+          <div className="mc-prompt"><h2>What tense is {renderScaffolded(q.form)}?</h2></div>
+          <div className="mc-options" style={{gridTemplateColumns:'1fr 1fr 1fr',maxWidth:1100}}>
+            {tenseOpts.map((o,i)=><button key={i} className={`mc-opt ${fb?(o===q.tense?'correct':o===sel?'wrong':''):''}`} disabled={busy&&!fb} onClick={()=>pick(o)} style={{padding:'28px 16px',fontSize:'1.5rem'}}>
+              <span className="keyhint" style={{display:'block',marginBottom:10}}>Press {i+1}</span>{o}
+            </button>)}
+          </div>
+          {fb&&<div className="anim-fade" style={{minHeight:140,display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <div className={`feedback ${fb.counts_as_correct?'ok':'bad'}`}>{renderText(fb.message)}</div>
+            {fb.counts_as_correct&&<p style={{marginTop:12,fontSize:'1.2rem',color:'var(--grey)'}}><span className="latin">{q.plain_form}</span> = <em>{q.translation}</em></p>}
+            <button className="btn btn-primary" disabled={busy} onClick={nx} style={{marginTop:24}}>Next<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+          </div>}
+          {!fb&&<div style={{minHeight:140}}></div>}
+        </div></div>
+      </div>
+    );
+  }
+
+  // ── Parsing MCQ - fixed option order, 10s timer ───────────────────────────────
+  // ── Translate the Form ───────────────────────────────────────────────────────
+  function TranslateForm({pupil,set,qs,isPreview,onDone,addC,addW,pct}){
+    const [queue,setQueue]=useState(()=>[...qs]);
+    const [qIdx,setQIdx]=useState(0);
+    const [sel,setSel]=useState(null);const [fb,setFb]=useState(null);const [busy,setBusy]=useState(false);
+    const [timeLeft,setTimeLeft]=useState(10);
+    const q=queue[qIdx];
+    
+    useEffect(()=>{
+      if(fb||busy||!q||q.failed)return; // no timer on retries
+      if(timeLeft<=0){
+        const handleTimeout=async()=>{
+          setBusy(true);setSel('timeout');
+          const res={counts_as_correct:false,message:`Time's up! The answer is: **${q.correct}**`};
+          if(!isPreview)await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'translate_form',question_text:q.form,pupil_answer:'TIMEOUT',correct_answer:q.correct});
+          setFb(res);if(!q.failed)addW({latin:q.form,correct:q.correct});
+          setQueue(prev=>[...prev,{...q,failed:true}]);
+          setBusy(false);
+        };handleTimeout();return;
+      }
+      const t=setInterval(()=>setTimeLeft(x=>x-1),1000);return()=>clearInterval(t);
+    },[timeLeft,fb,busy,q,isPreview,pupil.id,set.id,addW]);
+
+    const nx=()=>{setSel(null);setFb(null);setTimeLeft(10);if(qIdx+1>=queue.length)onDone();else setQIdx(i=>i+1)};
+    const pick=async(o)=>{
+      if(fb||busy||!q)return;setBusy(true);setSel(o);
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'translate_form',
+        question_text:q.form,pupil_answer:o,correct_answer:q.correct});
+      setFb(res);
+      if(res.counts_as_correct){if(!q.failed)addC();}
+      else{
+        if(!q.failed){addW({latin:q.form,correct:q.correct});}
+        // Re-add to queue for retry
+        setQueue(prev=>[...prev,{...q,failed:true}]);
+      }
+      setBusy(false);
+    };
+    useEffect(()=>{
+      const h=e=>{
+        if(fb&&e.key==='Enter'){nx();return;}
+        if(!fb&&q){const n=parseInt(e.key);if(n>=1&&n<=(q.options?.length||0))pick(q.options[n-1]);}
+      };
+      window.addEventListener('keydown',h);
+      return()=>window.removeEventListener('keydown',h);
+    });
+    if(!q)return null;
+    const isRetry=q.failed;
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${pct}%`}}></div></div></div>
+        <div className="activity-body">
+          {!isRetry&&<div className="timer-bar"><div className="timer-fill" style={{width:`${(timeLeft/10)*100}%`,background:fb?(fb.counts_as_correct?'var(--green-bright)':'var(--red-bright)'):(timeLeft<=3?'var(--red-bright)':'var(--blue)'),transition:fb?'none':'width 1s linear, background .3s'}}></div></div>}
+          {isRetry&&<div className="anim-fade" style={{background:'var(--coral)',border:'2px solid #c0392b',borderRadius:10,padding:'6px 16px',marginBottom:16,fontWeight:800,color:'white',fontSize:'0.9rem',display:'inline-block'}}>Try again — you got this one wrong.</div>}
+          <div className="mc-prompt"><h1 className="latin dynamic-latin" style={{fontSize:'3.8rem'}}>{q.form}</h1></div>
+          <p style={{color:'var(--grey)',marginBottom:24,fontWeight:700}}>What does this mean?</p>
+          <div className="mc-options" style={{gridTemplateColumns:'1fr 1fr 1fr',maxWidth:1000}}>
+            {(q.options||[]).map((o,i)=>(
+              <button key={i} className={`mc-opt ${fb?(o===q.correct?'correct':o===sel?'wrong':''):''}`}
+                disabled={busy&&!fb} onClick={()=>pick(o)}>
+                <span className="keyhint" style={{display:'block',marginBottom:8}}>Press {i+1}</span>
+                {o}
+              </button>
+            ))}
+          </div>
+          {fb&&<div className="anim-fade" style={{display:'flex',flexDirection:'column',alignItems:'center',marginTop:16}}>
+            <div className={`feedback ${fb.counts_as_correct?'ok':'bad'}`}>{renderText(fb.message)}</div>
+            <button className="btn btn-primary" onClick={nx} style={{marginTop:20}}>Next<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+          </div>}
+        </div></div>
+      </div>
+    );
+  }
+
+
+  // ── Full Parsing (Hoi Polloi Logoi style) ─────────────────────────────────
+  // Student clicks Tense + Person + Number buttons, then presses Check
+  function FullParsing({pupil,set,qs,isPreview,onDone,addC,addW,pct}){
+    const TENSES=['present','imperfect','future','perfect','pluperfect'];
+    const PERSON_NUMBERS=[
+        {id:'1-s',label:'I',p:'1st',n:'singular'},{id:'2-s',label:'you (sg)',p:'2nd',n:'singular'},{id:'3-s',label:'he/she/it',p:'3rd',n:'singular'},
+        {id:'1-p',label:'we',p:'1st',n:'plural'},{id:'2-p',label:'you (pl.)',p:'2nd',n:'plural'},{id:'3-p',label:'they',p:'3rd',n:'plural'}
+    ];
+    const [idx,setIdx]=useState(0);
+    const [selTense,setSelTense]=useState(null);
+    const [selPerson,setSelPerson]=useState(null);
+    const [selNumber,setSelNumber]=useState(null);
+    const selPN = (selPerson && selNumber) ? `${selPerson}-${selNumber}`.substring(0,3) : null;
+    const [fb,setFb]=useState(null);
+    const [busy,setBusy]=useState(false);
+    const q=qs[idx];
+    const nx=()=>{setSelTense(null);setSelPerson(null);setSelNumber(null);setFb(null);if(idx+1>=qs.length)onDone();else setIdx(i=>i+1)};
+    const check=async()=>{
+      if(!selTense||!selPerson||!selNumber||busy)return;
+      setBusy(true);
+      const correctKey=`${q.tense}|${q.person}|${q.number}`;
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'parsing',
+        question_text:q.plain||q.form,pupil_answer:`${selTense}|${selPerson}|${selNumber}`,
+        correct_answer:correctKey,tense:selTense,person:selPerson,number:selNumber});
+      setFb(res);
+      if(res.counts_as_correct){if(!q.failed)addC();}
+      else{if(!q.failed)addW({latin:q.form,correct:`${q.tense} ${q.person} ${q.number}`});}
+      setBusy(false);
+    };
+    useEffect(()=>{const h=e=>{if(fb&&e.key==='Enter')nx();if(!fb&&e.key==='Enter'&&selTense&&selPerson&&selNumber)check();};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h);});
+    const BtnGroup=({options,selected,onSelect,label})=>(
+      <div style={{marginBottom:20}}>
+        <p style={{fontWeight:800,color:'var(--grey)',fontSize:'0.85rem',textTransform:'uppercase',letterSpacing:'0.08em',marginBottom:8}}>{label}</p>
+        <div style={{display:'flex',gap:10,flexWrap:'wrap',justifyContent:'center'}}>
+          {options.map(o=><button key={o} disabled={!!fb}
+            onClick={()=>onSelect(o===selected?null:o)}
+            style={{padding:'10px 20px',borderRadius:12,border:`2px solid ${o===selected?'var(--navy)':'var(--lgrey)'}`,
+              background:o===selected?'var(--navy)':'var(--white)',color:o===selected?'var(--white)':'var(--dark)',
+              fontWeight:700,fontSize:'1rem',cursor:fb?'default':'pointer',transition:'all .15s'}}>
+            {o}
+          </button>)}
+        </div>
+      </div>
+    );
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${pct}%`}}></div></div></div>
+        <div className="activity-body">
+          <div className="flashcard" style={{maxWidth:800}}>
+            <h1 className="latin dynamic-latin" style={{fontSize:q?.form?.length>15?'2.8rem':'3.6rem',marginBottom:24}}>{q?.form}</h1>
+            {q?.translation&&!fb&&<p style={{color:'var(--grey)',fontSize:'1rem',marginBottom:20,fontStyle:'italic'}}>({q.translation})</p>}
+            <BtnGroup label="Tense" options={TENSES} selected={selTense} onSelect={setSelTense}/>
+            <div style={{marginBottom:20}}>
+              <p style={{fontWeight:800,color:'var(--grey)',fontSize:'0.85rem',textTransform:'uppercase',letterSpacing:'0.08em',marginBottom:8}}>Person / Number</p>
+              <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',gap:10}}>
+                {PERSON_NUMBERS.map(pn=><button key={pn.id} disabled={!!fb}
+                  onClick={()=>{if(pn.id===selPN){setSelPerson(null);setSelNumber(null)}else{setSelPerson(pn.p);setSelNumber(pn.n)}}}
+                  style={{padding:'14px 10px',borderRadius:12,border:`2px solid ${pn.id===selPN?'var(--navy)':'var(--lgrey)'}`,
+                    background:pn.id===selPN?'var(--navy)':'var(--white)',color:pn.id===selPN?'var(--white)':'var(--dark)',
+                    fontWeight:700,fontSize:'1.1rem',cursor:fb?'default':'pointer',transition:'all .15s'}}>
+                  {pn.label}
+                </button>)}
+              </div>
+            </div>
+            {fb&&<div className={`feedback anim-fade ${fb.counts_as_correct?'ok':'bad'}`} style={{marginTop:12}}>{renderText(fb.message)}</div>}
+          </div>
+          {!fb&&<button className="btn btn-primary" disabled={!selTense||!selPerson||!selNumber||busy}
+            onClick={check} style={{marginTop:30,opacity:(!selTense||!selPerson||!selNumber)?0.4:1}}>
+            Check<span className="keyhint" style={{color:'white'}}>Enter</span>
+          </button>}
+          {fb&&<button className="btn btn-primary anim-fade" onClick={nx} style={{marginTop:30}}>
+            Next<span className="keyhint" style={{color:'white'}}>Enter</span>
+          </button>}
+          <p style={{marginTop:16,color:'var(--lgrey)',fontSize:'0.9rem',fontWeight:700}}>
+            Question {idx+1} of {qs.length}
+          </p>
+        </div></div>
+      </div>
+    );
+  }
+
+
+  function Parsing({pupil,set,qs,isPreview,onDone,addC,addW,pct}){
+    const [idx,setIdx]=useState(0);const [sel,setSel]=useState(null);const [fb,setFb]=useState(null);const [busy,setBusy]=useState(false);
+    const [timeLeft,setTimeLeft]=useState(10);
+    const q=qs[idx];
+
+    useEffect(()=>{
+      if(fb||busy||!q)return;
+      if(timeLeft<=0){
+        const handleTimeout=async()=>{
+          setBusy(true);setSel('timeout');
+          const res={counts_as_correct:false,message:`Time's up! The answer is: **${q.correct}**`};
+          if(!isPreview)await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'parsing_mcq',question_text:q.plain_form||q.form,pupil_answer:'TIMEOUT',correct_answer:q.correct});
+          setFb(res);if(!q.failed)addW({latin:q.form,correct:q.correct});setBusy(false);
+        };handleTimeout();return;
+      }
+      const t=setInterval(()=>setTimeLeft(x=>x-1),1000);return()=>clearInterval(t);
+    },[timeLeft,fb,busy,q]);
+
+    const pick=async o=>{
+      if(fb||busy||!q)return;setBusy(true);setSel(o);
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'parsing_mcq',question_text:q.plain_form||q.form,pupil_answer:o,correct_answer:q.correct});
+      setFb(res);if(res.counts_as_correct){if(!q.failed)addC()}else{if(!q.failed)addW({latin:q.form,correct:q.correct})};
+      setBusy(false);
+    };
+    const nx=()=>{setFb(null);setSel(null);setTimeLeft(10);if(idx+1>=qs.length)onDone();else setIdx(i=>i+1)};
+    useEffect(()=>{const h=e=>{if(fb&&e.key==='Enter')nx();if(!fb&&q){const n=parseInt(e.key);if(n>=1&&n<=4&&q.options)pick(q.options[n-1])}};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)});
+
+    if(!q)return null;
+
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${pct}%`}}></div></div></div>
+        <div className="activity-body">
+          {!fb&&<div className="timer-bar"><div className="timer-fill" style={{width:`${(timeLeft/10)*100}%`,background:timeLeft<=3?'var(--red-bright)':'var(--blue)'}}></div></div>}
+          <div className="mc-prompt"><h1 className="latin dynamic-latin" style={{fontSize:q?.form?.length>20?'3rem':'4rem'}}>{q?.plain_form||q?.form}</h1></div>
+          <div className="mc-options" style={{gridTemplateColumns:'1fr 1fr',maxWidth:800}}>
+            {(q.options||[]).map((o,i)=><button key={i} className={`mc-opt ${fb?(o===q.correct?'correct':o===sel?'wrong':''):''}`} disabled={busy&&!fb} onClick={()=>pick(o)}><span className="keyhint" style={{display:'block',marginBottom:12}}>Press {i+1}</span>{o}</button>)}
+          </div>
+          {fb&&<div className="anim-fade" style={{minHeight:140,display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <div className={`feedback ${fb.counts_as_correct?'ok':'bad'}`}>{renderText(fb.message)}</div>
+            <button className="btn btn-primary" disabled={busy} onClick={nx} style={{marginTop:24}}>Next<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+          </div>}
+          {!fb&&<div style={{minHeight:140}}></div>}
+        </div></div>
+      </div>
+    );
+  }
+
+  // ── Sentences ─────────────────────────────────────────────────────────────────
+  function Sentences({pupil,set,qs,isPreview,onDone,addC,addW,pct}){
+    const [queue,setQueue]=useState(()=>[...qs]);
+    const [qIdx,setQIdx]=useState(0);
+    const [ans,setAns]=useState('');const [fb,setFb]=useState(null);
+    const [retype,setRetype]=useState(false);const [rtAns,setRtAns]=useState('');const [rtFb,setRtFb]=useState(null);
+    const [busy,setBusy]=useState(false);const inRef=useRef();const rtRef=useRef();
+    const q=queue[qIdx];
+    useEffect(()=>{if(!fb)inRef.current?.focus();if(retype)rtRef.current?.focus()},[qIdx,fb,retype]);
+    const submit=async()=>{
+      if(busy)return;setBusy(true);
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'sentence',question_text:q.latin,pupil_answer:ans,correct_answer:'',sentence_index:q.original_index});
+      setFb(res);
+      if(res.counts_as_correct){if(!q.failed)addC()}
+      else{if(!q.failed)addW({latin:q.latin,correct:res.correct_answer});setQueue(prev=>[...prev,{...q,failed:true}]);setRetype(true);}
+      setBusy(false);
+    };
+    const rtSubmit=async()=>{
+      if(busy)return;setBusy(true);
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'sentence',question_text:q.latin,pupil_answer:rtAns,correct_answer:'',sentence_index:q.original_index});
+      if(res.counts_as_correct){nx();}else setRtFb(res.message);
+      setBusy(false);
+    };
+    // CRITICAL: nx clears ALL state before moving on
+    const nx=()=>{
+      setAns('');setFb(null);setRetype(false);setRtAns('');setRtFb(null);
+      if(qIdx+1>=queue.length)onDone();else setQIdx(i=>i+1);
+    };
+    useEffect(()=>{
+      // Only bind Enter to nx/submit if NOT in retype mode (retype has its own button)
+      const h=e=>{
+        if(e.ctrlKey&&e.altKey&&e.key.toLowerCase()==='k'&&!fb){addW({latin:q.latin,correct:(q.english&&q.english[0])||''}); setQueue(prev=>[...prev,{...q,failed:true}]); nx();return;}
+        if(e.key==='Enter'){
+          if(retype){rtSubmit();return;}
+          if(fb&&!retype)nx();
+          else if(!fb)submit();
+        }
+      };
+      window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h);
+    },[qIdx,fb,retype,ans,rtAns,queue]);
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${pct}%`}}></div></div></div>
+        <div className="activity-body">
+          <div style={{minHeight:58,display:'flex',justifyContent:'center',alignItems:'center'}}>
+            {q?.failed&&<div className="anim-fade" style={{background:'var(--coral)',color:'white',padding:'10px 24px',borderRadius:12,fontWeight:800,fontSize:'1.1rem'}}>Try again — you got this one wrong.</div>}
+          </div>
+          <p style={{color:'var(--grey)',marginBottom:20,fontWeight:700,fontSize:'1.3rem'}}>Translate into English:</p>
+          <h1 className="latin dynamic-latin" style={{fontSize:q?.latin.length>30?'3rem':'4rem'}}>{q?.latin}</h1>
+          <div style={{minHeight:220,display:'flex',flexDirection:'column',alignItems:'center',width:'100%'}}>
+            {!fb?<>
+              <input ref={inRef} className="typed-input" style={{maxWidth:900}} disabled={busy} value={ans} onChange={e=>setAns(e.target.value)} placeholder="..."/>
+              <button className="btn btn-primary" disabled={busy} onClick={submit} style={{marginTop:30}}>Check<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+            </>:<>
+              <input className={`typed-input ${fb.counts_as_correct?'ok':'bad'}`} style={{maxWidth:900}} value={ans} disabled/>
+              {!retype&&<div className={`feedback anim-fade ${fb.counts_as_correct?(fb.is_typo?'warn':'ok'):'bad'}`}>{renderText(fb.message)}</div>}
+              {fb.counts_as_correct&&!retype&&fb.correct_answer&&ans.trim().toLowerCase().replace(/[^a-z0-9 /]/g,'').replace(/\s+/g,' ').trim()!==fb.correct_answer.trim().toLowerCase().replace(/[^a-z0-9 /]/g,'').replace(/\s+/g,' ').trim()&&<div className="anim-fade" style={{marginTop:16,padding:'12px 16px',background:'#f0fdf4',border:'2px solid #16a34a',borderRadius:12,textAlign:'left',maxWidth:900,width:'100%'}}><p style={{fontWeight:700,fontSize:'0.8rem',color:'#16a34a',textTransform:'uppercase',letterSpacing:'0.05em',marginBottom:4}}>Ideal answer</p><p style={{fontSize:'1.2rem',fontWeight:800,color:'var(--dark)'}}>{fb.correct_answer}</p></div>}
+              {!retype&&q?.explanation&&<div className="anim-fade" style={{marginTop:16,padding:'16px 20px',background:'#F5F3FF',border:'2px solid #7C3AED',borderRadius:12,maxWidth:900,textAlign:'left',lineHeight:1.8}}><p style={{fontWeight:800,fontSize:'0.82rem',color:'#7C3AED',textTransform:'uppercase',letterSpacing:'0.06em',marginBottom:10}}>Explanation</p>{renderExplanation(q.explanation)}</div>}
+              {!fb.counts_as_correct&&!retype&&fb.correct_answer&&<div className="anim-fade" style={{marginTop:16,padding:'16px 20px',background:'#f0fdf4',border:'2px solid #16a34a',borderRadius:12,maxWidth:900,width:'100%',textAlign:'left'}}><p style={{fontWeight:700,fontSize:'0.85rem',color:'#16a34a',marginBottom:6,textTransform:'uppercase',letterSpacing:'0.05em'}}>Correct answer</p><p style={{fontSize:'1.3rem',fontWeight:800,color:'var(--dark)'}}>{fb.correct_answer}</p></div>}
+              {retype&&<div className="anim-fade" style={{marginTop:16,width:'100%',maxWidth:900,padding:'24px',background:'var(--white)',border:'2px solid var(--lgrey)',borderRadius:20}}>
+                {fb?.message&&<div style={{background:'var(--coral)',color:'white',padding:'10px 18px',borderRadius:10,fontWeight:700,marginBottom:20,display:'inline-block',fontSize:'1rem'}}>{renderText(fb.message)}</div>}
+                <div style={{marginBottom:24,padding:'20px',background:'#f0fdf4',border:'2px solid #16a34a',borderRadius:16,textAlign:'left'}}><p style={{fontWeight:800,fontSize:'0.9rem',color:'#16a34a',marginBottom:8,textTransform:'uppercase',letterSpacing:'0.05em'}}>The correct answer is</p><p style={{fontSize:'1.5rem',fontWeight:800,color:'var(--dark)'}}>{fb.correct_answer}</p></div>
+                {q?.explanation&&<div style={{marginBottom:20,padding:'16px 20px',background:'#F5F3FF',border:'2px solid #7C3AED',borderRadius:12,textAlign:'left',lineHeight:1.8}}><p style={{fontWeight:800,fontSize:'0.82rem',color:'#7C3AED',textTransform:'uppercase',letterSpacing:'0.06em',marginBottom:10}}>Explanation</p>{renderExplanation(q.explanation)}</div>}
+                <p style={{fontSize:'1.2rem',marginBottom:12,fontWeight:800,color:'var(--navy)'}}>Type the correct answer to continue:</p>
+                <input ref={rtRef} className="typed-input" style={{maxWidth:'900px',borderColor:rtFb?'var(--red-bright)':''}} value={rtAns} onChange={e=>{setRtAns(e.target.value);setRtFb(null)}} placeholder="..."/>
+                {rtFb&&<div style={{color:'var(--red-bright)',marginTop:12,fontWeight:700}}>{renderText(rtFb)}</div>}
+                <button className="btn btn-outline" disabled={busy} onClick={rtSubmit} style={{marginTop:20}}>Check<span className="keyhint">Enter</span></button>
+              </div>}
+            </>
+          }
+          </div>
+        </div></div>
+      </div>
+    );
+  }
+
+  // ── TF Typed (typed phase after TranslateForm MCQ) ───────────────────────────
+  // Shows the Latin form, asks for English translation (typed)
+  function TFTyped({pupil,set,qs,isPreview,onDone,addC,addW,pct}){
+    const [queue,setQueue]=useState(()=>[...qs]);
+    const [qIdx,setQIdx]=useState(0);
+    const [ans,setAns]=useState('');const [fb,setFb]=useState(null);
+    const [retype,setRetype]=useState(false);const [rtAns,setRtAns]=useState('');const [rtFb,setRtFb]=useState(null);
+    const [busy,setBusy]=useState(false);const inRef=useRef();const rtRef=useRef();
+    const q=queue[qIdx];
+    useEffect(()=>{if(!fb)inRef.current?.focus();if(retype)rtRef.current?.focus()},[qIdx,fb,retype]);
+    const submit=async()=>{
+      if(busy||!q)return;setBusy(true);
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'vocab',question_text:q.form,pupil_answer:ans,correct_answer:q.correct});
+      setFb(res);
+      if(res.counts_as_correct){if(!q.failed)addC();}
+      else{if(!q.failed)addW({latin:q.form,correct:q.correct});setQueue(prev=>[...prev,{...q,failed:true}]);setRetype(true);}
+      setBusy(false);
+    };
+    const rtSubmit=async()=>{
+      if(busy)return;setBusy(true);
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'vocab',question_text:q.form,pupil_answer:rtAns,correct_answer:q.correct});
+      if(res.counts_as_correct){nx();}else setRtFb('Not quite. Try again.');
+      setBusy(false);
+    };
+    const nx=()=>{setAns('');setFb(null);setRetype(false);setRtAns('');setRtFb(null);if(qIdx+1>=queue.length)onDone();else setQIdx(i=>i+1)};
+    useEffect(()=>{const h=e=>{if(e.key==='Enter'){if(retype)rtSubmit();else if(fb&&!retype)nx();else if(!fb)submit()}};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)});
+    if(!q)return null;
+    const isRetry=q.failed;
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${pct}%`}}></div></div></div>
+        <div className="activity-body">
+          <div style={{minHeight:40,display:'flex',justifyContent:'center',alignItems:'center',marginBottom:8}}>
+            {isRetry&&<div className="anim-fade" style={{background:'var(--gold)',border:'2px solid #c28500',borderRadius:10,padding:'6px 16px',fontWeight:800,color:'var(--dark)',fontSize:'0.9rem',display:'inline-block'}}>Try this again! You got it wrong before.</div>}
+          </div>
+          <h1 className="latin dynamic-latin" style={{fontSize:'4rem'}}>{q.form}</h1>
+          <p style={{color:'var(--grey)',marginBottom:40,fontWeight:700,fontSize:'1.3rem',marginTop:8}}>Type the English translation</p>
+          <div style={{minHeight:250,display:'flex',flexDirection:'column',alignItems:'center',width:'100%'}}>
+            {!fb?<>
+              <input ref={inRef} className="typed-input" disabled={busy} value={ans} onChange={e=>setAns(e.target.value)} placeholder="..."/>
+              <button className="btn btn-primary" disabled={busy} onClick={submit} style={{marginTop:30}}>Check<span className="keyhint" style={{color:'white'}}>Enter</span></button>
+            </>:<>
+              <input className={`typed-input ${fb.counts_as_correct?'ok':'bad'}`} value={ans} disabled/>
+              {!retype&&<div className={`feedback anim-fade ${fb.counts_as_correct?(fb.is_typo?'warn':'ok'):'bad'}`}>{renderText(fb.message)}</div>}
+              {fb.counts_as_correct&&!retype&&fb.correct_answer&&ans.trim().toLowerCase().replace(/[^a-z0-9 /]/g,'').replace(/\s+/g,' ').trim()!==fb.correct_answer.trim().toLowerCase().replace(/[^a-z0-9 /]/g,'').replace(/\s+/g,' ').trim()&&<div className="anim-fade" style={{marginTop:16,padding:'12px 16px',background:'#f0fdf4',border:'2px solid #16a34a',borderRadius:12,textAlign:'left',maxWidth:700,width:'100%'}}><p style={{fontWeight:700,fontSize:'0.8rem',color:'#16a34a',textTransform:'uppercase',letterSpacing:'0.05em',marginBottom:4}}>Ideal answer</p><p style={{fontSize:'1.2rem',fontWeight:800,color:'var(--dark)'}}>{fb.correct_answer}</p></div>}
+              {retype&&<div className="anim-fade" style={{marginTop:16,width:'100%',maxWidth:800,padding:'24px',background:'var(--white)',border:'2px solid var(--lgrey)',borderRadius:20}}>
+                {fb?.message&&<div style={{background:'var(--coral)',color:'white',padding:'10px 18px',borderRadius:10,fontWeight:700,marginBottom:20,display:'inline-block',fontSize:'1rem'}}>{renderText(fb.message)}</div>}
+                <div style={{marginBottom:24,padding:'20px',background:'#f0fdf4',border:'2px solid #16a34a',borderRadius:16,textAlign:'left'}}><p style={{fontWeight:800,fontSize:'0.9rem',color:'#16a34a',marginBottom:8,textTransform:'uppercase',letterSpacing:'0.05em'}}>The correct answer is</p><p style={{fontSize:'1.8rem',fontWeight:800,color:'var(--dark)'}}>{q.correct}</p></div>
+                <p style={{fontSize:'1.2rem',marginBottom:12,fontWeight:800,color:'var(--navy)'}}>Type the correct answer to continue:</p>
+                <input ref={rtRef} className="typed-input" style={{borderColor:rtFb?'var(--red-bright)':''}} value={rtAns} onChange={e=>{setRtAns(e.target.value);setRtFb(null)}} placeholder="..."/>
+                {rtFb&&<div style={{color:'var(--red-bright)',marginTop:12,fontWeight:700}}>{rtFb}</div>}
+                <button className="btn btn-outline" disabled={busy} onClick={rtSubmit} style={{marginTop:20}}>Continue<span className="keyhint">Enter</span></button>
+              </div>}
+              {!retype&&<button className="btn btn-primary anim-fade" disabled={busy} onClick={nx} style={{marginTop:30}}>Next<span className="keyhint" style={{color:'white'}}>Enter</span></button>}
+            </>}
+          </div>
+        </div></div>
+      </div>
+    );
+  }
+
+  // ── Parse and Translate (review set) ─────────────────────────────────────────
+  function ParseAndTranslate({pupil,set,qs,isPreview,onDone,addC,addW,pct}){
+    const TENSES=['present','imperfect','future','perfect','pluperfect'];
+    const PERSON_NUMBERS=[
+      {id:'1-s',label:'I',p:'1st',n:'singular'},{id:'2-s',label:'you (sg)',p:'2nd',n:'singular'},{id:'3-s',label:'he/she/it',p:'3rd',n:'singular'},
+      {id:'1-p',label:'we',p:'1st',n:'plural'},{id:'2-p',label:'you (pl)',p:'2nd',n:'plural'},{id:'3-p',label:'they',p:'3rd',n:'plural'}
+    ];
+    const [idx,setIdx]=useState(0);
+    const [selTense,setSelTense]=useState(null);
+    const [selPerson,setSelPerson]=useState(null);
+    const [selNumber,setSelNumber]=useState(null);
+    const [transAns,setTransAns]=useState('');
+    const [fb,setFb]=useState(null);
+    const [busy,setBusy]=useState(false);
+    const inRef=useRef();
+    const selPN=(selPerson&&selNumber)?`${selPerson[0]}-${selNumber[0]}`:null;
+    const q=qs[idx];
+    useEffect(()=>{if(!fb)inRef.current?.focus()},[idx,fb]);
+    const nx=()=>{setSelTense(null);setSelPerson(null);setSelNumber(null);setTransAns('');setFb(null);if(idx+1>=qs.length)onDone();else setIdx(i=>i+1)};
+    const check=async()=>{
+      if(!selTense||!selPerson||!selNumber||!transAns.trim()||busy)return;
+      setBusy(true);
+      const correctKey=`${q.tense}|${q.person}|${q.number}|${q.translation}`;
+      const res=await post('/api/check',{pupil_id:pupil.id,set_id:set.id,question_type:'parse_translate',
+        question_text:q.form,pupil_answer:transAns,correct_answer:correctKey,
+        tense:selTense,person:selPerson,number:selNumber});
+      setFb(res);
+      if(res.counts_as_correct){addC();}
+      else{addW({latin:q.form,correct:`${q.tense} ${q.person} ${q.number} — ${q.translation}`});}
+      setBusy(false);
+    };
+    useEffect(()=>{const h=e=>{if(fb&&e.key==='Enter')nx();if(!fb&&e.key==='Enter'&&selTense&&selPerson&&selNumber&&transAns.trim())check();};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h);});
+    if(!q)return null;
+    return(
+      <div className="fullscreen"><div className="topbar"><h1>TRINITY ACADEMY LATIN</h1></div>
+        <div className="activity anim-fade"><div className="activity-bar"><div className="progress-track"><div className="progress-fill" style={{width:`${pct}%`}}></div></div></div>
+        <div className="activity-body">
+          <p style={{color:'var(--grey)',marginBottom:8,fontWeight:700,fontSize:'1.2rem'}}>Parse this verb and translate it into English:</p>
+          <h1 className="latin dynamic-latin" style={{fontSize:'4rem',marginBottom:24}}>{q.form}</h1>
+          <div style={{background:'var(--white)',borderRadius:20,padding:'32px 40px',maxWidth:860,width:'100%',boxShadow:'0 8px 24px rgba(0,0,0,.06)',marginBottom:24}}>
+            <div style={{marginBottom:20}}>
+              <p style={{fontWeight:800,color:'var(--grey)',fontSize:'0.85rem',textTransform:'uppercase',letterSpacing:'0.08em',marginBottom:8}}>Tense</p>
+              <div style={{display:'flex',gap:10,flexWrap:'wrap',justifyContent:'center'}}>
+                {TENSES.map(t=><button key={t} disabled={!!fb}
+                  onClick={()=>setSelTense(t===selTense?null:t)}
+                  style={{padding:'10px 20px',borderRadius:12,border:`2px solid ${t===selTense?'var(--navy)':'var(--lgrey)'}`,
+                    background:t===selTense?'var(--navy)':'var(--white)',color:t===selTense?'var(--white)':'var(--dark)',
+                    fontWeight:700,fontSize:'1rem',cursor:fb?'default':'pointer',transition:'all .15s'}}>
+                  {t}
+                </button>)}
+              </div>
+            </div>
+            <div style={{marginBottom:20}}>
+              <p style={{fontWeight:800,color:'var(--grey)',fontSize:'0.85rem',textTransform:'uppercase',letterSpacing:'0.08em',marginBottom:8}}>Person / Number</p>
+              <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',gap:10}}>
+                {PERSON_NUMBERS.map(pn=>{
+                  const isSelected=pn.p===selPerson&&pn.n===selNumber;
+                  return <button key={pn.id} disabled={!!fb}
+                    onClick={()=>{if(isSelected){setSelPerson(null);setSelNumber(null)}else{setSelPerson(pn.p);setSelNumber(pn.n)}}}
+                    style={{padding:'14px 10px',borderRadius:12,border:`2px solid ${isSelected?'var(--navy)':'var(--lgrey)'}`,
+                      background:isSelected?'var(--navy)':'var(--white)',color:isSelected?'var(--white)':'var(--dark)',
+                      fontWeight:700,fontSize:'1rem',cursor:fb?'default':'pointer',transition:'all .15s'}}>
+                    {pn.label}
+                  </button>;
+                })}
+              </div>
+            </div>
+            <div>
+              <p style={{fontWeight:800,color:'var(--grey)',fontSize:'0.85rem',textTransform:'uppercase',letterSpacing:'0.08em',marginBottom:8}}>Translation</p>
+              <input ref={inRef} className={`typed-input ${fb?(fb.counts_as_correct?'ok':'bad'):''}`}
+                value={transAns} onChange={e=>setTransAns(e.target.value)} disabled={!!fb}
+                placeholder="Type the English translation..." style={{fontSize:'1.5rem',padding:'20px 28px'}}/>
+            </div>
+          </div>
+          {fb&&<div className={`feedback anim-fade ${fb.counts_as_correct?'ok':'bad'}`} style={{maxWidth:860,marginBottom:16}}>{renderText(fb.message)}</div>}
+          {!fb&&<button className="btn btn-primary" disabled={!selTense||!selPerson||!selNumber||!transAns.trim()||busy}
+            onClick={check} style={{opacity:(!selTense||!selPerson||!selNumber||!transAns.trim())?0.4:1}}>
+            Check<span className="keyhint" style={{color:'white'}}>Enter</span>
+          </button>}
+          {fb&&<button className="btn btn-primary anim-fade" onClick={nx}>
+            Next<span className="keyhint" style={{color:'white'}}>Enter</span>
+          </button>}
+          <p style={{marginTop:16,color:'var(--lgrey)',fontSize:'0.9rem',fontWeight:700}}>
+            Question {idx+1} of {qs.length}
+          </p>
+        </div></div>
+      </div>
+    );
+  }
+
+  // ── Results ───────────────────────────────────────────────────────────────────
+  function Results({res,set,total,onFinish,onSaveAndNext}){
+    const score=total>0?Math.min(100,Math.round((res.correct/total)*100)):100;
+    const passed=score>=(set.pass_mark||80);
+    const [nextN,setNextN]=useState(null);
+    useEffect(()=>{api('/api/sets').then(all=>{const idx=all.findIndex(x=>x.id===set.id);setNextN(idx>=0&&idx+1<all.length?all[idx+1]:null);})},[set.id]);
+    useEffect(()=>{const h=e=>{if(e.key==='Escape')onFinish(score);if(e.key==='Enter'){if(passed&&nextN)onSaveAndNext(score,nextN);else onFinish(score)}};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)},[score,passed,nextN]);
+    return(
+      <div className="fullscreen results anim-fade">
+        <h1 style={{fontSize:'3rem',color:'var(--navy)',marginBottom:20}}>{passed?'Set Complete!':'Set Failed'}</h1>
+        <div className={`big-score ${passed?'pass':'fail'}`}>{score}%</div>
+        <p style={{fontSize:'1.5rem',fontWeight:800,color:'var(--navy)',marginTop:20,marginBottom:40}}>{grade(score)}</p>
+        {res.wrong.length>0&&<div style={{textAlign:'left',background:'var(--white)',borderRadius:20,padding:'40px',margin:'30px 0',maxWidth:900,width:'100%',border:'4px solid var(--red-bright)'}}>
+          <h3 style={{color:'var(--red-bright)',marginBottom:20,fontSize:'1.5rem'}}>Review these:</h3>
+          {res.wrong.map((w,i)=><div key={i} style={{padding:'16px 0',borderBottom:'2px solid var(--lgrey)',fontSize:'1.3rem'}}><strong className={w.latin?'latin':''}>{w.latin||w.question}</strong> - <span style={{color:'#1a73e8',fontWeight:700}}>{w.correct}</span></div>)}
+        </div>}
+        <div style={{display:'flex',gap:24,marginTop:40}}>
+          <button className="btn btn-outline" style={{fontSize:'1.4rem'}} onClick={()=>onFinish(score)}>Menu<span className="keyhint">Esc</span></button>
+          {passed&&nextN&&<button className="btn btn-green" style={{fontSize:'1.4rem'}} onClick={()=>onSaveAndNext(score,nextN)}>Next Set<span className="keyhint" style={{color:'white'}}>Enter</span></button>}
+        </div>
+      </div>
+    );
+  }
+
+  const root=ReactDOM.createRoot(document.getElementById('root'));
+  root.render(<App/>);
+</script>
+</body>
+</html>

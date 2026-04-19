@@ -1,0 +1,3487 @@
+{
+  "1": {
+    "label": "1st Conjugation",
+    "sets": {
+      "4": {
+        "label": "Present",
+        "sentences": [
+          {
+            "num": 1,
+            "latin": "puella deam amat.",
+            "ideal": "The girl loves the goddess.",
+            "alternatives": [
+              "accept 'likes' for 'amat' (GCSE allows love/like)"
+            ],
+            "teacher_notes": [
+              "accept 'a girl' / 'the girl' — no article in Latin ALWAYS ACCEPT THE/A SWITCHING ROUND UNLESS SAID OTHERWISE. E.G. A GIRL LOVES A GODDESS."
+            ]
+          },
+          {
+            "num": 2,
+            "latin": "pater filiam rogat.",
+            "ideal": "The father asks his daughter.",
+            "alternatives": [
+              "accept 'asks the daughter' / 'asks his daughter' (no possessive in Latin — both fine)",
+              "accept 'questions' for 'rogat' IS ASKS FOR ALSO VALID?"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 3,
+            "latin": "femina in insula habitat.",
+            "ideal": "The woman lives on the island.",
+            "alternatives": [
+              "accept 'on' or 'in' the island — both standard for 'in + abl' with geographical features"
+            ],
+            "teacher_notes": [
+              "accept 'is living' THERE SHOULD ALWAYS BE A VALID ACCEPTANCE FOR PRESENT TENSE VERBS AS “IS LIVING” OR “LIVES” THIS NEEDS TO BE FOR ALL PRESENT TENSE VERBS – AND AS SAID ABOVE IT SHOULD BE ALLOWED TO SAY “THE WOMAN LIVES ON AN ISLAND” HERE"
+            ]
+          },
+          {
+            "num": 4,
+            "latin": "dea pulchra ad terram navigat.",
+            "ideal": "The beautiful goddess sails toWARDS the land.",
+            "alternatives": [
+              "accept 'towards' TO for 'ad'",
+              "accept 'towards the land' / 'to land' / 'towards the country' (terra = land)",
+              "accept 'a beautiful goddess'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 5,
+            "latin": "regina tristis clamat, nam deus appropinquat.",
+            "ideal": "The sad queen shouts, for the god is approaching.",
+            "alternatives": [
+              "accept 'because' for 'nam'",
+              "accept 'unhappy' for 'tristis'",
+              "accept 'draws near' / 'comes near' / 'approaches' for 'appropinquat'",
+              "accept 'is shouting' / 'shouts'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 6,
+            "latin": "puella laeta patri imperat, et pater festinat.",
+            "ideal": "The happy girl orders her father, and the father hurries.",
+            "alternatives": [
+              "'patri' is dative — accept 'orders her father' (NOT 'orders to her father')",
+              "accept 'glad' / 'joyful' for 'laeta'",
+              "accept 'rushes' for 'festinat'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 7,
+            "latin": "ego feminam oro, sed dea non clamat.",
+            "ideal": "I beg the woman, but the goddess does not shout.",
+            "alternatives": [
+              "accept 'plead with' / 'pray to' for 'oro'",
+              "'ego' is emphatic — accept plain 'I' or emphatic 'I myself'",
+              "accept 'is not shouting'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 8,
+            "latin": "multi dei insulam oppugnant, et ibi feminae clamant.",
+            "ideal": "Many gods attack the island, and there the women are shouting.",
+            "alternatives": [
+              "'ibi' = there — accept at start of clause or after subject OR ALSO “AND THE WOMEN ARE SHOUTING THERE”",
+              "accept 'are attacking' / 'attack'",
+              "accept 'many of the gods'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 9,
+            "latin": "deus ingens per urbem festinat, et regina puellas liberat.",
+            "ideal": "The huge god hurries through the city, and the queen frees the girls.",
+            "alternatives": [
+              "accept 'enormous' / 'massive' / 'vast' for 'ingens'",
+              "accept 'sets free' for 'liberat'",
+              "accept 'rushes through'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 10,
+            "latin": "pater puellam necat, et dea tristis deos orat.",
+            "ideal": "The father kills the girl, and the sad goddess begs the gods.",
+            "alternatives": [
+              "accept 'prays to' for 'orat' (gods as object)",
+              "accept 'unhappy' for 'tristis'",
+              "accept 'murders' for 'necat' — though 'kills' is the GCSE default"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "8": {
+        "label": "Imperfect & Future",
+        "sentences": [
+          {
+            "num": 11,
+            "latin": "dea clamabat.",
+            "ideal": "The goddess was shouting.",
+            "alternatives": [
+              "accept 'used to shout' / 'kept shouting' / 'shouted' — any imperfect rendering"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 12,
+            "latin": "pater navigabit.",
+            "ideal": "The father will sail.",
+            "alternatives": [
+              "accept 'will be sailing' / 'is going to sail'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 13,
+            "latin": "puella tum clamabat, et pater navigabat.",
+            "ideal": "The girl was then shouting, and the father was sailing.",
+            "alternatives": [
+              "'tum' = then / at that time — accept at start, mid, or end",
+              "accept 'at that time' for 'tum'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 14,
+            "latin": "regina feminam rogabit, et femina deam orabit.",
+            "ideal": "The queen will ask the woman, and the woman will beg the goddess.",
+            "alternatives": [
+              "accept 'pray to' for 'orabit' (gods as object)",
+              "accept 'is going to ask'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 15,
+            "latin": "multi dei subito urbem oppugnabant, sed regina in insula habitabat.",
+            "ideal": "Many gods were suddenly attacking the city, but the queen was living on the island.",
+            "alternatives": [
+              "'subito' flexible: accept 'Suddenly, many gods...'",
+              "accept 'in the island' / 'on the island'",
+              "accept 'used to live' / 'was living'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 16,
+            "latin": "puella pulchra in urbem festinabit, et pater clamabit.",
+            "ideal": "The beautiful girl will hurry into the city, and the father will shout.",
+            "alternatives": [
+              "'in + acc' = into / to — accept either",
+              "accept 'will rush'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 17,
+            "latin": "dea me amabat, sed pater tum non orabat.",
+            "ideal": "The goddess used to love me, but the father was not then begging.",
+            "alternatives": [
+              "'tum' flexible position",
+              "accept 'was not praying' / 'did not pray at that time'"
+            ],
+            "teacher_notes": [
+              "accept 'loved me' / 'was loving me' IN INSTANCES LIKE THIS AS WELL AS ACCEPTING THE THE/A FLEXIBILITY, ONE COULD ALSO SAY “MY FATHER” HERE – CHECK FOR OTHR INSTANCES OF THAT TOO"
+            ]
+          },
+          {
+            "num": 18,
+            "latin": "dea patrem liberabit, et pater deae tum imperabit.",
+            "ideal": "The goddess will free the father, and the father will then order the goddess.",
+            "alternatives": [
+              "accept 'will set free' for 'liberabit'",
+              "'tum' flexible position"
+            ],
+            "teacher_notes": [
+              "'deae' is dative — 'order the goddess' (NOT 'to the goddess') COULD BE HER FATHER (BECAUSE THESE ARE ALL STANDALONE, THERE NEEDS TO BE EXTRA FLEIBILITY)"
+            ]
+          },
+          {
+            "num": 19,
+            "latin": "regina illa deum laetum putabat, sed dea non orabat. DOES ILLA TYPICALLY GO AFTER?",
+            "ideal": "That queen used to think the god happy, but the goddess was not begging.",
+            "alternatives": [
+              "'puto + double acc' — accept 'thought the god (to be) happy' / 'considered the god happy' YOU NEED TO ALWAYS ACCEPT -BA- AS WAS _ING OR WERE _ING – SO THAT QUEEN WAS THINKING",
+              "'illa' = that (accept 'the' / 'that famous')",
+              "accept 'was not praying'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 20,
+            "latin": "ingens navis per terram navigabat, et puella pulchra clamabat.",
+            "ideal": "A huge ship was sailing through the land, and the beautiful girl was shouting.",
+            "alternatives": [
+              "accept 'enormous' / 'massive' for 'ingens'",
+              "accept 'through the country' for 'per terram' IS THIS NOW BEING TOO LENIENT – IS THIS VALID?"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "12": {
+        "label": "Perfect & Pluperfect",
+        "sentences": [
+          {
+            "num": 21,
+            "latin": "puella clamavit.",
+            "ideal": "The girl shouted.",
+            "alternatives": [],
+            "teacher_notes": [
+              "accept 'has shouted' / 'did shout' YES IT SHOULD HAVE THIS FLEXIBILITY FOR ALL PERFECT"
+            ]
+          },
+          {
+            "num": 22,
+            "latin": "pater feminam rogavit.",
+            "ideal": "The father asked the woman.",
+            "alternatives": [
+              "accept 'questioned' / 'has asked'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 23,
+            "latin": "dea pulchra deum amavit, et deus clamavit.",
+            "ideal": "The beautiful goddess loved the god, and the god shouted.",
+            "alternatives": [
+              "accept 'liked' for 'amavit'",
+              "accept 'cried out' / 'called out' for 'clamavit' — NOT 'cried' (=wept)"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 24,
+            "latin": "regina filiam non liberaverat, sed pater domum festinavit.",
+            "ideal": "The queen had not freed her daughter, but the father hurried home.",
+            "alternatives": [
+              "'domum' = (to) home — accept 'home' / 'homewards' / 'to his home'",
+              "accept 'had not set free'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 25,
+            "latin": "multi dei ad insulam navigaverunt, et puellas necaverunt.",
+            "ideal": "Many gods sailed to the island, and killed the girls.",
+            "alternatives": [
+              "accept 'towards' for 'ad'",
+              "accept 'have sailed' / 'have killed'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 26,
+            "latin": "pater ingens puellam amaverat, sed puella tristis deum oraverat.",
+            "ideal": "The huge father had loved the girl, but the sad girl had begged the god.",
+            "alternatives": [
+              "accept 'enormous' for 'ingens'",
+              "accept 'pleaded with' / 'prayed to' for 'oraverat'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 27,
+            "latin": "illa dea ad feminam appropinquavit, nam tam tristis erat. DO YOU THINK WE SHOULD SAVE TAM FOR THE LATER NODE 5 ONLY?",
+            "ideal": "That goddess approached the woman, for she was so sad.",
+            "alternatives": [
+              "accept 'because' for 'nam'",
+              "'tam...erat' = was so — fixed idiom; accept 'so very sad' WHY ACCEPT VERY SAD, WOULD THAT NOT BE THE SUPERLATIVE?",
+              "accept 'drew near to' / 'came near to' for 'appropinquavit'",
+              "'illa' — accept 'the' / 'that famous'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 28,
+            "latin": "regina urbem oppugnavit, et prope insulam habitavit.",
+            "ideal": "The queen attacked the city, and lived near the island.",
+            "alternatives": [
+              "accept 'close to' / 'next to' for 'prope'",
+              "accept 'has attacked'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 29,
+            "latin": "ego deos rogaveram, sed etiam tum non clamaverant.",
+            "ideal": "I had asked the gods, but they still had not shouted at that time. THE IDEAL TRANSLATIONS SHOULD NEVER USE TRANSLATIONS THAT ARE NOT FROM THE ORIGINAL DOCUMENT WITH THE TRANSLATIONS – E.G. TUM IS ONLY “THEN”",
+            "alternatives": [
+              "'etiam' here = still / even now — accept 'still' / 'even' / 'even then'",
+              "'ego' emphatic: accept 'I' or 'I myself'",
+              "3pl of 'clamaverant' — subject must be 'they' (the gods)"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 30,
+            "latin": "pater mihi imperavit, et dea feminam pulchram putaverat.",
+            "ideal": "The father ordered me, and the goddess had thought the woman beautiful.",
+            "alternatives": [
+              "'mihi' is dative — 'ordered me' (NOT 'ordered to me')",
+              "'puto + double acc' — accept 'considered the woman beautiful'",
+              "accept 'had thought (that) the woman (was) beautiful'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "14": {
+        "label": "PPP / Passive review",
+        "sentences": [
+          {
+            "num": 31,
+            "latin": "puella liberata clamavit.",
+            "ideal": "The freed girl shouted. THE IDEAL TRANSLATIONS SHOULD ALWAYS TRANSLATE PPPS AS “HAVING BEEN XED” – SO THIS WOULD BE THE GIRL HAVING BEEN FREED SHOUTED",
+            "alternatives": [
+              "accept 'the girl who had been freed shouted'",
+              "accept 'once freed, the girl shouted' / 'having been freed'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 32,
+            "latin": "femina necata erat.",
+            "ideal": "The woman had been killed. THE WOMAN HAD BEEN KILLED",
+            "alternatives": [
+              "pluperfect passive — must be 'had been killed'",
+              "accept 'the woman had been murdered'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 33,
+            "latin": "dea oppugnata ad insulam navigabat.",
+            "ideal": "The attacked goddess was sailing to the island. THE GODDESS HAVING BEEN ATTACKED WAS SAILING TOWARDS THE ISLAND",
+            "alternatives": [
+              "accept 'the goddess who had been attacked was sailing...'",
+              "accept 'towards' for 'ad'",
+              "accept 'having been attacked, the goddess...'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 34,
+            "latin": "pater filiam amatam rogavit.",
+            "ideal": "The father asked his beloved daughter. NO SO THE IDEAL TRANSLATION SHOULD ALWAYS BE THE GRMATICALLY STRICT ONE BECAUSE THAT’S WHAT THE PUPIL WHO GETS IT WRONG WILL HAVE TO UNDERSTAND AND TRY TO REPLICATE – WE’RE GOING TO MAKE EXPLANATIONS TOO THAT WILL BE GRAMATICALLY EXPLAINING THE STRANSLATION SO IT DOESN’T MAKE SENSE TO MAKE IT IDIOMATIC, WHEN REALLY WE’RE FOCUSSING ON GRAMMAR HERE",
+            "alternatives": [
+              "'amatam' = PPP 'loved' — accept 'his loved daughter' / 'the daughter who was loved' / 'his dear daughter'",
+              "accept 'questioned'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 35,
+            "latin": "regina liberata puellam tristem amavit.",
+            "ideal": "The freed queen loved the sad girl.",
+            "alternatives": [
+              "accept 'the queen, (once) freed, loved...'",
+              "accept 'liked' for 'amavit'",
+              "accept 'unhappy' for 'tristem'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 36,
+            "latin": "deus necatus erat, et dea clamabat.",
+            "ideal": "The god had been killed, and the goddess was shouting.",
+            "alternatives": [
+              "pluperfect passive — 'had been killed'",
+              "accept 'kept shouting' / 'was shouting'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 37,
+            "latin": "multae feminae oratae erant, sed reginae laetae non festinaverunt.",
+            "ideal": "Many women had been begged, but the happy queens did not hurry.",
+            "alternatives": [
+              "'oratae erant' — pluperfect passive pl fem; accept 'had been pleaded with' / 'had been prayed to'",
+              "accept 'did not rush'",
+              "accept 'joyful' / 'glad' for 'laetae'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 38,
+            "latin": "puella oppugnata patrem oravit, et pater feminas liberavit.",
+            "ideal": "The attacked girl begged her father, and the father freed the women.",
+            "alternatives": [
+              "accept 'the girl who had been attacked'",
+              "accept 'pleaded with' for 'oravit'",
+              "accept 'set free' for 'liberavit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 39,
+            "latin": "dea tristis deum necatum amaverat, sed deus imperatus erat.",
+            "ideal": "The sad goddess had loved the killed god, but the god had been ordered.",
+            "alternatives": [
+              "'necatum' = PPP 'killed' — accept 'the god who had been killed' / 'the slain god'",
+              "'imperatus erat' rare pluperfect passive of impero — accept 'had been given orders' / 'had been commanded'",
+              "accept 'unhappy' for 'tristis'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 40,
+            "latin": "ingens navis oppugnata ad terram navigabat, et multi dei clamaverunt.",
+            "ideal": "The huge attacked ship was sailing to the land, and many gods shouted.",
+            "alternatives": [
+              "accept 'the huge ship, (once) attacked, was sailing...'",
+              "accept 'enormous' / 'vast' for 'ingens'",
+              "accept 'towards' for 'ad'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "16": {
+        "label": "Exam-level mixed",
+        "sentences": [
+          {
+            "num": 41,
+            "latin": "illa puella pulchra reginam oraverat, et dea puellam liberavit.",
+            "ideal": "That beautiful girl had begged the queen, and the goddess freed the girl.",
+            "alternatives": [
+              "'illa' — accept 'the' / 'that famous'",
+              "accept 'had pleaded with' / 'had prayed to' for 'oraverat'",
+              "accept 'set free' for 'liberavit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 42,
+            "latin": "multi dei ad ingentem urbem navigaverunt feminasque necaverunt.",
+            "ideal": "Many gods sailed to the huge city and killed the women.",
+            "alternatives": [
+              "'-que' = and — accept at start of English clause",
+              "accept 'towards' for 'ad'",
+              "accept 'enormous' / 'massive' for 'ingentem'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 43,
+            "latin": "pater tristis filiam amatam liberaverat, sed dea puellam oppugnavit.",
+            "ideal": "The sad father had freed his beloved daughter, but the goddess attacked the girl.",
+            "alternatives": [
+              "'amatam' PPP: accept 'loved' / 'dear' / 'who had been loved'",
+              "accept 'unhappy' for 'tristis'",
+              "accept 'had set free' for 'liberaverat'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 44,
+            "latin": "illa regina tum in insula habitabat, nam dei patrem necaverant.",
+            "ideal": "That queen was then living on the island, for the gods had killed the father.",
+            "alternatives": [
+              "'illa' — accept 'the' / 'that famous'",
+              "'tum' — accept anywhere natural",
+              "accept 'because' for 'nam'",
+              "accept 'used to live' / 'was living' / 'lived'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 45,
+            "latin": "femina pulchra deum rogavit, sed deus illud non putavit.",
+            "ideal": "The beautiful woman asked the god, but the god did not think so. SO THIS DOESN’T MAKE SENSE FOR THE PUPIL STRUGGLING",
+            "alternatives": [
+              "'illud' = that (thing) — accept 'so' / 'that' / 'this'",
+              "accept 'questioned' for 'rogavit'",
+              "accept 'did not think that' / 'did not believe that'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 46,
+            "latin": "dea ad terram ingentem navigabat, et puellae oppugnatae clamabant.",
+            "ideal": "The goddess was sailing to the huge land, and the attacked girls were shouting.",
+            "alternatives": [
+              "accept 'towards' for 'ad'",
+              "'oppugnatae' PPP — accept 'the girls who had been attacked'",
+              "accept 'enormous' / 'vast' for 'ingentem'",
+              "accept 'was sailing' / 'used to sail' / 'sailed'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 47,
+            "latin": "pater ad insulam appropinquavit, et filiam oppugnatam liberavit.",
+            "ideal": "The father approached the island, and freed his attacked daughter.",
+            "alternatives": [
+              "accept 'the daughter who had been attacked' / 'his attacked daughter'",
+              "accept 'set free'"
+            ],
+            "teacher_notes": [
+              "accept 'drew near to' / 'came near to' for 'appropinquavit' YOU SHOULD ALLOW APPROACHED TOWARDS THE ISLAND, OR APPROACHED TO THE ISLAND TO – ARGUABLY THAT’S THE IDEAL TRANSLATION BECAUSE THAT WILL BE THE GRAMATICALLY LITERAL ONE"
+            ]
+          },
+          {
+            "num": 48,
+            "latin": "multi dei reginam tristem oraverant, sed regina deis non imperavit.",
+            "ideal": "Many gods had begged the sad queen, but the queen did not order the gods.",
+            "alternatives": [
+              "'deis' dative — 'order the gods' (NOT 'to the gods')",
+              "accept 'had pleaded with' / 'had prayed to' for 'oraverant'",
+              "accept 'unhappy' for 'tristem'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 49,
+            "latin": "puella liberata in urbem festinabat, et pater deam tum oravit.",
+            "ideal": "The freed girl was hurrying into the city, and the father then begged the goddess.",
+            "alternatives": [
+              "accept 'the girl who had been freed'",
+              "'in + acc' = into / to — accept either",
+              "'tum' flexible",
+              "accept 'pleaded with' / 'prayed to' for 'oravit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 50,
+            "latin": "ille deus pulchras feminas oppugnatas amaverat, sed reginae tristes clamaverant.",
+            "ideal": "That god had loved the beautiful attacked women, but the sad queens had shouted.",
+            "alternatives": [
+              "'ille' — accept 'the' / 'that famous'",
+              "'oppugnatas' PPP — accept 'the beautiful women who had been attacked'",
+              "accept 'liked' for 'amaverat'",
+              "accept 'unhappy' for 'tristes'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      }
+    }
+  },
+  "2": {
+    "label": "2nd Conjugation",
+    "sets": {
+      "4": {
+        "label": "Present",
+        "sentences": [
+          {
+            "num": 1,
+            "latin": "amicus gladium habet.",
+            "ideal": "The friend has a sword.",
+            "alternatives": [
+              "accept 'a/the friend', 'a/the sword' — no articles in Latin",
+              "accept 'holds' for 'habet' only when context demands (here 'has' is standard)"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 2,
+            "latin": "filius patrem videt.",
+            "ideal": "The son sees his father.",
+            "alternatives": [
+              "accept 'sees a/the father'",
+              "accept 'can see' for 'videt' — both are standard GCSE renderings"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 3,
+            "latin": "silva ingens apparet.",
+            "ideal": "A huge wood appears.",
+            "alternatives": [
+              "accept 'forest' / 'woods' for 'silva'",
+              "accept 'enormous' / 'vast' / 'massive' for 'ingens'",
+              "accept 'comes into view' for 'apparet'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 4,
+            "latin": "deae filios tenent.",
+            "ideal": "The goddesses are holding the sons.",
+            "alternatives": [
+              "accept 'hold' / 'are holding'",
+              "'deae' here is nom. pl. (goddesses) — NOT 'of the goddess' (dat/gen sg)",
+              "accept 'their sons' / 'the sons'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 5,
+            "latin": "tu me vides, sed ego te non video.",
+            "ideal": "You see me, but I do not see you.",
+            "alternatives": [
+              "'tu' / 'ego' emphatic — accept plain 'you'/'I' or emphatic 'you yourself'/'I myself'",
+              "accept 'can see' for 'vides'/'video'",
+              "accept 'am not seeing'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 6,
+            "latin": "pater filio persuadet, et filius festinat.",
+            "ideal": "The father persuades his son, and the son hurries.",
+            "alternatives": [
+              "'filio' dative — 'persuades the/his son' (NOT 'persuades to the son')",
+              "accept 'rushes' for 'festinat'",
+              "accept 'is persuading' / 'is hurrying'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 7,
+            "latin": "regina filios iubet clamare.",
+            "ideal": "The queen orders the sons to shout.",
+            "alternatives": [
+              "'iubeo + acc + inf' — 'orders X to Y'",
+              "accept 'commands the sons to shout'",
+              "accept 'cry out' / 'call out' for 'clamare' (NOT 'cry' = weep)"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 8,
+            "latin": "omnes amici gladios tenent, et deos oppugnant.",
+            "ideal": "All the friends are holding swords, and are attacking the gods.",
+            "alternatives": [
+              "'omnes' = all / every — accept 'all the friends' / 'all (of the) friends'",
+              "accept 'hold' / 'are holding'",
+              "accept 'attack' / 'are attacking'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 9,
+            "latin": "dea subito apparet, et filium ibi videt.",
+            "ideal": "The goddess suddenly appears, and sees her son there.",
+            "alternatives": [
+              "'subito' flexible position — accept 'Suddenly, the goddess...'",
+              "'ibi' — accept 'there' at any natural position",
+              "accept 'comes into view' for 'apparet'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 10,
+            "latin": "pater mihi etiam persuadet, et statim festino.",
+            "ideal": "The father even persuades me, and I hurry immediately.",
+            "alternatives": [
+              "'mihi' dative — 'persuades me' (NOT 'persuades to me')",
+              "'etiam' here = even / also — accept either",
+              "'statim' flexible — accept 'at once' / 'straight away' / 'immediately'",
+              "accept 'rush' for 'festino'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "8": {
+        "label": "Imperfect & Future",
+        "sentences": [
+          {
+            "num": 11,
+            "latin": "dea filium videbat.",
+            "ideal": "The goddess was seeing her son.",
+            "alternatives": [
+              "accept 'used to see' / 'saw' / 'kept seeing' / 'was watching her son'",
+              "accept 'a/the son'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 12,
+            "latin": "pater gladios habebit.",
+            "ideal": "The father will have swords.",
+            "alternatives": [
+              "accept 'is going to have'",
+              "accept 'will be holding' only if context requires — but 'have' is the default"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 13,
+            "latin": "amici in silva apparebant, gladiosque tenebant.",
+            "ideal": "The friends were appearing in the wood, and were holding swords.",
+            "alternatives": [
+              "'-que' = and",
+              "accept 'forest' / 'woods' for 'silva'",
+              "accept 'kept appearing' / 'used to appear' for 'apparebant'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 14,
+            "latin": "regina filios iubebit domum festinare.",
+            "ideal": "The queen will order the sons to hurry home.",
+            "alternatives": [
+              "'iubeo + acc + inf'",
+              "'domum' = home / homewards — accept 'to home' / 'to their home'",
+              "accept 'commands' for 'iubebit'",
+              "accept 'rush' for 'festinare'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 15,
+            "latin": "vix dea apparebat, sed filii eam videbant.",
+            "ideal": "The goddess was scarcely appearing, but the sons were seeing her.",
+            "alternatives": [
+              "'vix' = scarcely / hardly — accept at any natural position",
+              "accept 'barely' for 'vix'",
+              "'eam' = her (acc sg fem) — refers to 'dea'",
+              "accept 'could see her' for 'videbant'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 16,
+            "latin": "statim igitur omnes amici gladios habebunt, et deos oppugnabunt.",
+            "ideal": "Therefore all the friends will immediately have swords, and will attack the gods.",
+            "alternatives": [
+              "'igitur' postpositive (2nd word) — accept 'So, immediately, all...' / 'Therefore, all the friends will immediately...' – YOU NEED NOT REPEAT “WILL” FOR THE SECOND VERB EITHER I DON’T THINK",
+              "accept 'so' / 'and so' for 'igitur'",
+              "'statim' flexible position"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 17,
+            "latin": "iterum dea patri persuadebat, et pater ad silvam festinabat.",
+            "ideal": "The goddess was again persuading the father, and the father was hurrying to the wood.",
+            "alternatives": [
+              "'iterum' = again — accept at start or after subject",
+              "'patri' dative — 'persuades the father'",
+              "accept 'towards' for 'ad'",
+              "accept 'forest' for 'silvam'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 18,
+            "latin": "filii in silva clamabant, et pater non videbat.",
+            "ideal": "The sons were shouting in the wood, and the father was not seeing (them).",
+            "alternatives": [
+              "accept 'the father could not see (them)' / 'did not see'",
+              "accept 'forest' for 'silva'",
+              "accept 'crying out' / 'calling out' for 'clamabant'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 19,
+            "latin": "filius gladium tenebit, et amicum mox iubebit clamare.",
+            "ideal": "The son will hold a sword, and will soon order his friend to shout.",
+            "alternatives": [
+              "'iubeo + acc + inf' — 'order X to Y'",
+              "'mox' = soon — accept at any natural position",
+              "accept 'commands' for 'iubebit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 20,
+            "latin": "pater filium iubebat e silva festinare, sed filius tamen non apparebat.",
+            "ideal": "The father was ordering his son to hurry out of the wood, but the son however was not appearing.",
+            "alternatives": [
+              "'iubeo + acc + inf'",
+              "'e/ex + abl' = out of / from",
+              "'tamen' = however / but / nevertheless / yet",
+              "accept 'kept ordering' / 'was ordering' / 'used to order'",
+              "accept 'forest' for 'silva'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "12": {
+        "label": "Perfect & Pluperfect",
+        "sentences": [
+          {
+            "num": 21,
+            "latin": "amicus gladium tenuit.",
+            "ideal": "The friend held the sword.",
+            "alternatives": [
+              "accept 'has held' / 'did hold'",
+              "accept 'kept hold of' — 'held' is the default"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 22,
+            "latin": "pater filium vidit.",
+            "ideal": "The father saw his son.",
+            "alternatives": [
+              "accept 'has seen'",
+              "accept 'caught sight of' only marginally — 'saw' is the default"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 23,
+            "latin": "deae iterum apparuerunt, et filii clamaverunt.",
+            "ideal": "The goddesses appeared again, and the sons shouted.",
+            "alternatives": [
+              "'iterum' flexible position",
+              "accept 'have appeared' / 'have shouted'",
+              "accept 'cried out' / 'called out' for 'clamaverunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 24,
+            "latin": "pater filio persuaserat, sed filius etiam tum non festinavit.",
+            "ideal": "The father had persuaded his son, but the son still did not hurry at that time.",
+            "alternatives": [
+              "'filio' dative",
+              "'etiam tum' = still then / even at that time — accept 'even then' / 'still at that time'",
+              "accept 'did not rush' for 'non festinavit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 25,
+            "latin": "multi amici gladios habuerant, et deos oppugnaverunt.",
+            "ideal": "Many friends had had swords, and attacked the gods.",
+            "alternatives": [
+              "'habuerant' pluperfect — 'had had' sounds odd but is correct; accept 'had owned'",
+              "accept 'have attacked' for 'oppugnaverunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 26,
+            "latin": "regina filium iusserat clamare, et filius statim clamavit.",
+            "ideal": "The queen had ordered her son to shout, and the son immediately shouted.",
+            "alternatives": [
+              "'iubeo + acc + inf' (pluperfect 'iusserat')",
+              "accept 'commanded' for 'iusserat'",
+              "'statim' flexible",
+              "accept 'cried out' / 'called out'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 27,
+            "latin": "illud ego in silva vidi; tam ingens enim erat gladius.",
+            "ideal": "I saw that in the wood; for the sword was so huge.",
+            "alternatives": [
+              "'illud' = that (thing) — accept 'that one'",
+              "'ego' emphatic — accept plain 'I' or 'I myself'",
+              "'enim' postpositive — accept 'because' for 'enim'",
+              "'tam...erat' — accept 'was so huge' / 'was so enormous' / 'was so very big'",
+              "accept 'forest' for 'silva'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 28,
+            "latin": "omnes igitur amici e navi festinaverunt, et in urbem appropinquaverunt.",
+            "ideal": "Therefore all the friends hurried out of the ship, and approached the city.",
+            "alternatives": [
+              "'igitur' — accept 'so' / 'and so'",
+              "'e/ex + abl' = out of / from",
+              "'appropinquo + in + acc' or 'appropinquo + ad + acc' both valid — accept 'approached the city' / 'came near to the city'",
+              "accept 'rushed' for 'festinaverunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 29,
+            "latin": "pater per silvam festinavit, et filium prope insulam vidit.",
+            "ideal": "The father hurried through the wood, and saw his son near the island.",
+            "alternatives": [
+              "accept 'rushed'",
+              "'prope' + acc = near / close to / next to",
+              "accept 'forest' for 'silvam'",
+              "accept 'caught sight of'? — no, 'saw' is standard; 'conspexit' = caught sight of"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 30,
+            "latin": "subito illa dea feminae apparuit, et ei persuasit.",
+            "ideal": "Suddenly that goddess appeared to the woman, and persuaded her.",
+            "alternatives": [
+              "'subito' flexible",
+              "'illa' — accept 'the' / 'that famous'",
+              "'feminae' dative — 'appeared TO the woman' (dat with 'appareo' for 'appear to someone')",
+              "'ei' dative = to him/her/it — here 'her'; 'persuadeo + dat' — 'persuaded her' (NOT 'to her')"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "14": {
+        "label": "PPP / Passive review",
+        "sentences": [
+          {
+            "num": 31,
+            "latin": "filius visus clamavit.",
+            "ideal": "The son, (having been) seen, shouted.",
+            "alternatives": [
+              "accept 'the son who had been seen shouted'",
+              "accept 'the seen son' — stiff but allowed",
+              "accept 'cried out' / 'called out' for 'clamavit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 32,
+            "latin": "gladii tenti erant.",
+            "ideal": "The swords had been held.",
+            "alternatives": [
+              "pluperfect passive — must be 'had been held'",
+              "note: 'tenti' is the PPP of 'teneo' — sometimes 'tentus' in texts"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 33,
+            "latin": "amicus iussus statim festinavit.",
+            "ideal": "The friend, (having been) ordered, immediately hurried.",
+            "alternatives": [
+              "accept 'the friend who had been ordered hurried immediately'",
+              "accept 'once ordered, the friend...'",
+              "'statim' flexible",
+              "accept 'rushed'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 34,
+            "latin": "dea visa apparuit, et omnes clamaverunt.",
+            "ideal": "The goddess, (having been) seen, appeared, and all shouted.",
+            "alternatives": [
+              "accept 'the goddess who had been seen appeared'",
+              "'omnes' = all / everyone — accept 'everyone' / 'all (of them)'",
+              "accept 'cried out' / 'called out'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 35,
+            "latin": "pater filios visos amavit.",
+            "ideal": "The father loved his sons who had been seen.",
+            "alternatives": [
+              "'visos' PPP m.pl.acc — accept 'the seen sons' / 'the sons (having been) seen'",
+              "accept 'liked' for 'amavit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 36,
+            "latin": "gladius tentus erat, sed amicus non festinavit.",
+            "ideal": "The sword had been held, but the friend did not hurry.",
+            "alternatives": [
+              "pluperfect passive — 'had been held'",
+              "accept 'did not rush'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 37,
+            "latin": "filii iussi erant clamare, et statim clamaverunt.",
+            "ideal": "The sons had been ordered to shout, and immediately shouted.",
+            "alternatives": [
+              "'iubeo' passive + inf — 'to have been ordered to Y'",
+              "accept 'had been commanded'",
+              "'statim' flexible"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 38,
+            "latin": "ingens gladius habitus erat ab amico, sed amicus eum non tenuit.",
+            "ideal": "A huge sword had been had by the friend, but the friend did not hold it.",
+            "alternatives": [
+              "'ab amico' = by the friend (agent with ab+abl)",
+              "'habitus erat' — literally 'had been had' (awkward); accept 'had been owned' / 'had been possessed' for fluency",
+              "'eum' = him/it (masc) — here refers to 'gladius' = 'it'",
+              "accept 'enormous' / 'vast' for 'ingens'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 39,
+            "latin": "multae feminae a deis visae erant, sed reginae tristes non apparuerunt.",
+            "ideal": "Many women had been seen by the gods, but the sad queens did not appear.",
+            "alternatives": [
+              "'a deis' = by the gods (agent with a/ab+abl)",
+              "accept 'unhappy' for 'tristes'",
+              "pluperfect passive — 'had been seen'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 40,
+            "latin": "omnes filii a deis oppugnati erant, et statim ex navi festinaverunt.",
+            "ideal": "All the sons had been attacked by the gods, and immediately hurried out of the ship.",
+            "alternatives": [
+              "'a deis' = by the gods",
+              "'e/ex + abl' = out of / from",
+              "accept 'all (of) the sons'",
+              "accept 'rushed'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "16": {
+        "label": "Exam-level mixed",
+        "sentences": [
+          {
+            "num": 41,
+            "latin": "ille pater filium amatum vidit, et eum statim domum iussit festinare.",
+            "ideal": "That father saw his beloved son, and immediately ordered him to hurry home.",
+            "alternatives": [
+              "'ille' — accept 'the' / 'that famous'",
+              "'amatum' PPP — accept 'loved' / 'dear' / 'who was loved'",
+              "'iubeo + acc + inf'",
+              "'domum' = home — accept 'to home' / 'homewards'",
+              "accept 'rush' for 'festinare'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 42,
+            "latin": "omnes amici in silvam festinaverunt, gladiosque tenebant.",
+            "ideal": "All the friends hurried into the wood, and were holding swords.",
+            "alternatives": [
+              "'in + acc' = into / to",
+              "'-que' = and",
+              "accept 'forest' for 'silvam'",
+              "accept 'rushed' for 'festinaverunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 43,
+            "latin": "illa dea filium vix vidit, nam silva ingens erat.",
+            "ideal": "That goddess scarcely saw her son, for the wood was huge.",
+            "alternatives": [
+              "'illa' — accept 'the' / 'that famous'",
+              "'vix' = scarcely / hardly / barely",
+              "accept 'because' for 'nam'",
+              "accept 'forest' for 'silva'",
+              "accept 'enormous' / 'vast' for 'ingens'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 44,
+            "latin": "regina filio persuaserat, sed filius tamen mox non apparuit. IS IT COMMON TO GET THE SED TAMEN COMBINATION, OR IS THIS SHOEHORNED IN?",
+            "ideal": "The queen had persuaded her son, but the son however did not soon appear.",
+            "alternatives": [
+              "'filio' dative",
+              "'tamen' = however / but / nevertheless",
+              "'mox' = soon — accept 'soon did not appear' / 'did not appear soon'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 45,
+            "latin": "amici naves habuerant, et ad insulam navigaverant.",
+            "ideal": "The friends had had ships, and had sailed to the island.",
+            "alternatives": [
+              "accept 'had owned' / 'had possessed' for 'habuerant'",
+              "accept 'towards' for 'ad'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 46,
+            "latin": "dea pulchra in silva apparuerat, sed amici eam non viderant.",
+            "ideal": "The beautiful goddess had appeared in the wood, but the friends had not seen her.",
+            "alternatives": [
+              "'eam' = her (refers to 'dea')",
+              "accept 'forest' for 'silva'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 47,
+            "latin": "tu ingentem gladium tenuisti, et omnes te viderunt.",
+            "ideal": "You held the huge sword, and everyone saw you.",
+            "alternatives": [
+              "'tu' emphatic — accept 'you yourself'",
+              "accept 'enormous' / 'vast' for 'ingentem'",
+              "'omnes' = everyone / all (of them) / all people"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 48,
+            "latin": "subito multi dei apparuerunt, et omnes perterriti clamaverunt.",
+            "ideal": "Suddenly many gods appeared, and all, terrified, shouted.",
+            "alternatives": [
+              "'subito' flexible",
+              "'perterriti' = terrified — accept 'frightened' / 'very scared'",
+              "accept 'everyone, terrified, shouted' / 'all the terrified (ones) shouted'",
+              "accept 'cried out' / 'called out'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 49,
+            "latin": "pater filios iubebat e silva festinare, sed filii tamen etiam clamabant.",
+            "ideal": "The father was ordering his sons to hurry out of the wood, but the sons however were still shouting.",
+            "alternatives": [
+              "'iubeo + acc + inf'",
+              "'e/ex + abl' = out of",
+              "'tamen' = however",
+              "'etiam' here = still / also / even — 'still' best fits",
+              "accept 'forest' for 'silva'",
+              "accept 'rush' for 'festinare'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 50,
+            "latin": "pater filios igitur iussit gladios tenere; appropinquabant enim amici. IS THIS THE ORDER YOU WOULD SEE?",
+            "ideal": "Therefore the father ordered his sons to hold swords; for the friends were approaching.",
+            "alternatives": [
+              "'igitur' postpositive — accept 'so' / 'and so'",
+              "'enim' postpositive — accept 'because' / 'for'",
+              "'iubeo + acc + inf'",
+              "accept 'drawing near' / 'coming near' for 'appropinquabant'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      }
+    }
+  },
+  "3": {
+    "label": "3rd Conjugation",
+    "sets": {
+      "4": {
+        "label": "Present",
+        "sentences": [
+          {
+            "num": 1,
+            "latin": "regina iter facit.",
+            "ideal": "The queen makes a journey.",
+            "alternatives": [
+              "'iter facere' idiom — accept 'makes a journey' / 'goes on a journey' / 'travels'",
+              "accept 'is making'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 2,
+            "latin": "comes verbum dicit.",
+            "ideal": "The companion says a word.",
+            "alternatives": [
+              "accept 'speaks a word' / 'utters a word' for 'dicit'",
+              "accept 'a/the companion'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 3,
+            "latin": "milites aliud iter petunt.",
+            "ideal": "The soldiers seek another journey.",
+            "alternatives": [
+              "'peto' = seek / look for / make for / ask for — accept 'look for' / 'are heading for'",
+              "'aliud' = another / a different — accept 'a different journey' / 'another route'",
+              "'iter' = journey / route"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 4,
+            "latin": "solus homo manum ponit.",
+            "ideal": "The lone man places his hand.",
+            "alternatives": [
+              "'solus' = alone / only / sole — accept 'the only man' / 'the lone man' / 'the man alone'",
+              "'pono' = put / place — accept either",
+              "accept 'lays his hand'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 5,
+            "latin": "dux nihil quaerit, et constituit discedere.",
+            "ideal": "The leader searches for nothing, and decides to depart.",
+            "alternatives": [
+              "'quaero' = search for / look for / ask — 'search for nothing' OR 'asks nothing' both valid; context here favours 'search for'",
+              "'constituo + inf' — 'decides to Y'",
+              "accept 'leave' for 'discedere' / 'go away'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 6,
+            "latin": "dux milites cogit, et milites ibi cum comitibus statim discedunt.",
+            "ideal": "The leader gathers the soldiers, and the soldiers immediately depart from there with their companions. THIS IS A PERFECT EXAMPLE OF WHERE YOU’VE MADE A MAJOR MISTAKE – COGO IS ONLY FORCE FOR THEM – YOU’VE BEEN TOO FLEXIBLE – THERE ARE SET TRANSLATIONS THEY MUST KNOW AT GCSE",
+            "alternatives": [
+              "'cogo' = force / compel / gather / assemble — 'gathers' or 'assembles' fits best here",
+              "'ibi' = there — accept 'from there' here given motion",
+              "'cum + abl' = with",
+              "'statim' flexible",
+              "accept 'leave' for 'discedunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 7,
+            "latin": "dea facilem mortem cupit, et se a deis liberare conatur.",
+            "ideal": "The goddess desires an easy death, and tries to free herself from the gods.",
+            "alternatives": [
+              "'cupio + acc' / 'cupio + inf' — 'wants/desires'",
+              "'se' = herself (reflexive)",
+              "'a deis' = from the gods (separation with a/ab+abl) — note NOT 'by the gods' here (conor active)",
+              "'conor' is deponent — active meaning: 'tries'",
+              "accept 'set free' for 'liberare'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 8,
+            "latin": "iuvenis iratus ducem alium prope insulam occidit.",
+            "ideal": "The angry young man kills another leader near the island.",
+            "alternatives": [
+              "'iuvenis' = young man",
+              "'iratus' = angry",
+              "'alium' = another / a different",
+              "'prope' + acc = near / close to",
+              "'occido' = kill (specifically to cut down/slay) — accept 'slays' / 'murders' / 'kills'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 9,
+            "latin": "eius comes ingentem navem conspicit, et verbum dicit.",
+            "ideal": "His companion catches sight of a huge ship, and says a word.",
+            "alternatives": [
+              "'eius' = his / her / its — 3rd-person possessive (from 'is'); accept 'his' / 'her' COULD IT NOT BE THEIR",
+              "'conspicio' = catch sight of / notice / observe — NOT just 'see' (use 'video' for that)",
+              "accept 'enormous' / 'vast' for 'ingentem'",
+              "accept 'speaks a word'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 10,
+            "latin": "dum dux milites ducit, regina iter per silvam facit.",
+            "ideal": "While the leader leads the soldiers, the queen makes a journey through the wood.",
+            "alternatives": [
+              "'dum + present' = while",
+              "'iter facere' = make a journey / travel",
+              "accept 'forest' for 'silvam'",
+              "accept 'is leading' / 'leads'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "8": {
+        "label": "Imperfect & Future",
+        "sentences": [
+          {
+            "num": 11,
+            "latin": "dux iter faciebat.",
+            "ideal": "The leader was making a journey.",
+            "alternatives": [
+              "accept 'was travelling' / 'used to make a journey' / 'kept going on a journey'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 12,
+            "latin": "comes verba dicet.",
+            "ideal": "The companion will say (the) words.",
+            "alternatives": [
+              "accept 'speak the words' / 'utter the words'",
+              "'verba' n.pl. — accept 'words' / 'the words'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 13,
+            "latin": "milites aliud iter petebant.",
+            "ideal": "The soldiers were seeking another journey.",
+            "alternatives": [
+              "accept 'were looking for' / 'were making for'",
+              "'aliud' = another / different"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 14,
+            "latin": "iuvenis caput manu ponet.",
+            "ideal": "The young man will place the head with his hand.",
+            "alternatives": [
+              "'caput' = head (only — NOT 'body' or 'chief' at GCSE)",
+              "'manu' = with his hand (abl of instrument) — accept 'by hand' / 'with a hand' / 'with his hand'",
+              "accept 'put' for 'ponet'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 15,
+            "latin": "nunc rex nihil quaerebat, tandem tamen mortem cupiet.",
+            "ideal": "Now the king was searching for nothing, but finally he will desire death.",
+            "alternatives": [
+              "'nunc' = now",
+              "'tandem' = at last / finally / eventually — accept any",
+              "'tamen' = however / but / yet",
+              "accept 'was looking for nothing' / 'wanted nothing' — context favours searching YOU NEED TO RECONSULT THE PROVIDED TRANSLATIONS I GAVE AND ALLOW FOR THEM – QUAERO SHOULD BE ASK FOR TOO",
+              "accept 'want' for 'cupiet'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 16,
+            "latin": "dum dux milites cogebat, reges effugiebant.",
+            "ideal": "While the leader was gathering the soldiers, the kings were escaping.",
+            "alternatives": [
+              "'dum + imperfect' = while (both actions ongoing)",
+              "'cogo' = gather / assemble / force — 'gather' / 'force to assemble'",
+              "'effugio' = escape / flee — accept 'were fleeing'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 17,
+            "latin": "dea conabatur se liberare, et tum solum deum relinquebat.",
+            "ideal": "The goddess was trying to free herself, and was then leaving behind the lone god. IS CONOR NOT SUPPOSED TO BE KEPT FOR LATER?",
+            "alternatives": [
+              "'conor' deponent (imperfect 'conabatur') — 'was trying to'",
+              "'se liberare' = to free herself",
+              "'solum' = alone / only / sole — accept 'the only god' / 'the lone god' / 'the solitary god'",
+              "'relinquo' = leave (behind) / abandon",
+              "'tum' flexible"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 18,
+            "latin": "simulac dux comitem cognoscet, eum ibi statim accipiet.",
+            "ideal": "As soon as the leader recognises his companion, he will immediately receive him there.",
+            "alternatives": [
+              "'simulac' = as soon as",
+              "'cognosco' — present/future: get to know / learn / find out; perfect: know / recognise — context here favours 'recognise' / 'comes to know'",
+              "'accipio' = receive / accept / welcome",
+              "'statim' flexible",
+              "'ibi' = there"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 19,
+            "latin": "pater alia verba dicebat, et filium per silvam ducebat.",
+            "ideal": "The father was saying other words, and was leading his son through the wood.",
+            "alternatives": [
+              "'alia' n.pl. = other / different — accept 'different words'",
+              "'per + acc' = through",
+              "accept 'forest' for 'silvam'",
+              "accept 'was speaking' / 'kept saying'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 20,
+            "latin": "deinde miles constituit discedere, nam dux iratus erat.",
+            "ideal": "Then the soldier decided to depart, for the leader was angry. THE IDEAL TRANSLATION SHOULDN’T BE USING ANY TRANSLATIONS THAT AREN’T WHAT’S TAUGHT EXPLICITLY ON THE FLASHCARD – SO DISCEDERE IS JUST LEAVE",
+            "alternatives": [
+              "'deinde' = then / next / afterwards",
+              "'constituit' — form ambiguous (present/perfect); in narrative past usually perfect: 'decided'",
+              "accept 'because' for 'nam'",
+              "accept 'leave' / 'go away' for 'discedere'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "12": {
+        "label": "Perfect & Pluperfect",
+        "sentences": [
+          {
+            "num": 21,
+            "latin": "dux discessit.",
+            "ideal": "The leader departed.",
+            "alternatives": [
+              "accept 'has departed' / 'has left' / 'left' / 'went away'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 22,
+            "latin": "miles reginam cognovit.",
+            "ideal": "The soldier recognised the queen.",
+            "alternatives": [
+              "'cognovit' perfect — at GCSE: 'came to know' / 'got to know' / 'found out about' / 'recognised'",
+              "accept 'learned about'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 23,
+            "latin": "comes verba iam dixerat, sed milites tandem non effugerunt.",
+            "ideal": "The companion had already said the words, but the soldiers in the end did not escape.",
+            "alternatives": [
+              "'iam' = already / now — 'already' fits perfect past here",
+              "'tandem' = at last / finally / in the end / eventually",
+              "accept 'had already spoken'",
+              "accept 'flee' / 'get away' for 'effugerunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 24,
+            "latin": "solus iuvenis ducem alium sua manu occidit, et caput in silva posuit.",
+            "ideal": "The lone young man killed another leader with his own hand, and placed the head in the wood. SEE THE RULES ABOVE – THERE WILL BE INSTANCES WHERE I’VE NOT SPOTTED, BUT THIS CAN’T BE LONE – IT MUST BE EITHER ALONE OR LONELY – LONELY MAKES MORE SENSE HERE",
+            "alternatives": [
+              "'solus' = alone / only",
+              "'alium' = another / different",
+              "'sua manu' = with his own hand (abl instrument)",
+              "'caput' = head (only)",
+              "'in + abl' (silva) = in / on",
+              "accept 'forest' for 'silva'",
+              "accept 'slew' / 'slayed' / 'murdered' for 'occidit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 25,
+            "latin": "eius regina suum iter facile constituerat, et comites milites coegerant.",
+            "ideal": "His queen had easily decided her own journey, and the companions had gathered the soldiers.",
+            "alternatives": [
+              "'eius' = his / her",
+              "'suum' = her own / his own — here 'her own' (regina is subject of 'constituerat')",
+              "'facile' = easily (adverb)",
+              "'constituo + acc' = decide / settle / establish — accept 'had settled on her journey' / 'had decided upon her journey'",
+              "'cogo' = gather / force"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 26,
+            "latin": "illa dea mortem cupiverat, sed tamen non effugit.",
+            "ideal": "That goddess had desired death, but nevertheless she did not escape.",
+            "alternatives": [
+              "'illa' — accept 'the' / 'that famous'",
+              "'cupio' = want / desire",
+              "'tamen' = however / nevertheless / yet / but",
+              "accept 'flee' for 'effugit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 27,
+            "latin": "simulac dux comitem conspexit, eum petivit.",
+            "ideal": "As soon as the leader caught sight of his companion, he made for him.",
+            "alternatives": [
+              "'simulac' = as soon as",
+              "'conspicio' = catch sight of / notice / spot",
+              "'peto' = seek / make for / attack / ask for — context here: 'made for him' / 'went after him' / 'sought him out'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 28,
+            "latin": "\"ego,\" inquit regina, \"iam tandem discedere cupio; dei mihi persuadent!\" deinde solus comes ei persuasit.",
+            "ideal": "\"I,\" said the queen, \"now at last desire to depart; the gods are persuading me!\" Then only her companion persuaded her. CUPIO IS ONLY WANT",
+            "alternatives": [
+              "'inquit' = said / says — placed after first word(s) of direct speech",
+              "'ego' emphatic — 'I (myself)'",
+              "'iam tandem' = now at last — accept 'now, finally'",
+              "'cupio + inf' = want / desire to",
+              "'persuadeo + dat' — 'mihi' = me; 'ei' = her; 'persuade me' / 'persuade her' (NO 'to')",
+              "'solus' = only / alone — 'only her companion'",
+              "'deinde' = then / next",
+              "accept 'leave' / 'go away' for 'discedere'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 29,
+            "latin": "rex nihil acceperat, et deinde ad urbem festinavit.",
+            "ideal": "The king had received nothing, and then hurried to the city.",
+            "alternatives": [
+              "'accipio' = receive / accept / welcome",
+              "'deinde' = then / next / afterwards",
+              "accept 'towards' for 'ad'",
+              "accept 'rushed' for 'festinavit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 30,
+            "latin": "tum miles conatus est effugere, sed dux eum coegit.",
+            "ideal": "Then the soldier tried to escape, but the leader forced him.",
+            "alternatives": [
+              "'conatus est' = tried (deponent perfect — active meaning)",
+              "'tum' = then / at that time — flexible",
+              "'cogo' = force / compel / gather — here 'forced' (with 'eum' = him)",
+              "accept 'flee' / 'get away' for 'effugere'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "14": {
+        "label": "PPP / Passive review",
+        "sentences": [
+          {
+            "num": 31,
+            "latin": "iter factum erat, et milites tandem discesserant.",
+            "ideal": "The journey had been made, and the soldiers had finally departed.",
+            "alternatives": [
+              "'factum erat' pluperfect passive of 'facio' — 'had been made'",
+              "'tandem' — accept 'at last' / 'finally' / 'eventually'",
+              "accept 'had left' / 'had gone away'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 32,
+            "latin": "miles coactus statim discessit.",
+            "ideal": "The soldier, (having been) forced, immediately departed.",
+            "alternatives": [
+              "'coactus' PPP of 'cogo' — 'forced' / 'gathered' / 'compelled'",
+              "accept 'the soldier who had been forced departed immediately'",
+              "'statim' flexible"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 33,
+            "latin": "caput solum positum erat in silva.",
+            "ideal": "The head alone had been placed in the wood.",
+            "alternatives": [
+              "'caput' = head (only)",
+              "'solum' = alone / only — accept 'only the head had been placed' OR 'the head alone had been placed'",
+              "'positum erat' pluperfect passive — 'had been placed' / 'had been put'",
+              "accept 'forest' for 'silva'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 34,
+            "latin": "ducem occisum pater conspexit.",
+            "ideal": "The father caught sight of the killed leader.",
+            "alternatives": [
+              "'occisum' PPP of 'occido' — 'killed' / 'slain'",
+              "accept 'the father caught sight of the leader who had been killed'",
+              "'conspicio' = catch sight of / notice / spot"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 35,
+            "latin": "iter facile constitutum erat, sed milites non discesserunt.",
+            "ideal": "The easy journey had been decided, but the soldiers did not depart.",
+            "alternatives": [
+              "'facile' here agrees with 'iter' (n. nom/acc sg) — adjective: 'easy'; NOT adverb",
+              "'constitutum erat' pluperfect passive — 'had been decided' / 'had been settled'",
+              "accept 'had been arranged' for 'constitutum erat'",
+              "accept 'leave' for 'discesserunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 36,
+            "latin": "regina relicta in insula clamabat; nihil enim acceperat.",
+            "ideal": "The queen, (having been) left behind, was shouting on the island; for she had received nothing.",
+            "alternatives": [
+              "'relicta' PPP of 'relinquo' — 'left behind' / 'abandoned' / 'left'",
+              "accept 'the queen who had been left behind was shouting...'",
+              "'enim' postpositive — accept 'because' / 'for'",
+              "'in + abl' = in / on",
+              "accept 'cried out' / 'called out'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 37,
+            "latin": "comes conspectus statim effugit.",
+            "ideal": "The companion, (having been) spotted, immediately escaped.",
+            "alternatives": [
+              "'conspectus' PPP of 'conspicio' — 'caught sight of' / 'spotted' / 'noticed'",
+              "accept 'the companion who had been caught sight of escaped immediately'",
+              "'statim' flexible",
+              "accept 'fled' / 'got away'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 38,
+            "latin": "filius quaesitus a patre tandem cognitus erat.",
+            "ideal": "The son, searched for by the father, had finally been recognised.",
+            "alternatives": [
+              "'quaesitus' PPP of 'quaero' — 'searched for' / 'sought'",
+              "'a patre' = by the father (agent)",
+              "'cognitus erat' pluperfect passive — 'had been recognised' / 'had been known' / 'had been found out'",
+              "'tandem' — accept 'at last' / 'finally'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 39,
+            "latin": "illud verbum dirum a deo dictum erat, et dux statim cognovit.",
+            "ideal": "That dreadful word had been spoken by a god, and the leader immediately found out.",
+            "alternatives": [
+              "'illud' = that",
+              "'dirum' = dreadful — accept 'terrible' / 'dire' / 'awful'",
+              "'a deo' = by a god (agent)",
+              "'dictum erat' pluperfect passive of 'dico' — 'had been said' / 'had been spoken'",
+              "'cognovit' perfect — 'learned' / 'recognised' / 'found out'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 40,
+            "latin": "iuvenis petitus effugere constituit, et cum comitibus discessit.",
+            "ideal": "The young man, (having been) sought, decided to escape, and departed with his companions.",
+            "alternatives": [
+              "'petitus' PPP of 'peto' — 'sought' / 'attacked' / 'made for'",
+              "accept 'the young man who had been sought'",
+              "'constituo + inf' = decide to",
+              "'cum + abl' = with",
+              "accept 'leave' / 'go away' for 'discessit'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "16": {
+        "label": "Exam-level mixed",
+        "sentences": [
+          {
+            "num": 41,
+            "latin": "ille dux, postquam milites coegerat, cum suis comitibus ad urbem iter facile fecit.",
+            "ideal": "That leader, after he had gathered the soldiers, easily made a journey to the city with his companions.",
+            "alternatives": [
+              "'ille' — accept 'the' / 'that famous'",
+              "'postquam + pluperf' = after",
+              "'cogo' = gather / force",
+              "'suis' = his own — accept 'with his own companions' / 'with his companions'",
+              "'facile' adverb = easily",
+              "'iter facere' idiom",
+              "accept 'towards' for 'ad'",
+              "accept 'travelled easily'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 42,
+            "latin": "solus miles alia verba dixerat, sed dux nihil acceperat.",
+            "ideal": "Only the soldier had said other words, but the leader had received nothing.",
+            "alternatives": [
+              "'solus' = only / alone — accept 'only the soldier' / 'the lone soldier'",
+              "'alia' n.pl. = other / different",
+              "accept 'had spoken' for 'dixerat'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 43,
+            "latin": "regina filium ductum a milite iam conspexit, et statim eum liberare cupiebat.",
+            "ideal": "The queen now caught sight of her son, (having been) led by a soldier, and immediately wanted to free him.",
+            "alternatives": [
+              "'ductum' PPP of 'duco' — 'led'",
+              "'a milite' = by a soldier (agent)",
+              "'iam' = now / already",
+              "'cupio + inf' = want / desire to",
+              "'eum' = him",
+              "accept 'set free' for 'liberare'",
+              "'statim' flexible"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 44,
+            "latin": "simulac comes eius ingentem navem conspexit, \"ad insulam,\" inquit, \"iter facimus!\"",
+            "ideal": "As soon as his companion caught sight of the huge ship, \"We are making a journey to the island,\" he said.",
+            "alternatives": [
+              "'simulac' = as soon as",
+              "'eius' = his / her",
+              "'conspicio' = catch sight of / spot",
+              "'inquit' splits direct speech — accept 'he said' before or after the quoted words",
+              "'iter facimus' = we make / we are making a journey",
+              "'ad' = to / towards",
+              "accept 'enormous' / 'vast' for 'ingentem'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 45,
+            "latin": "pater cum filio discedere cupiebat, sed filius in silva nunc clamabat: \"pater me relinquit!\"",
+            "ideal": "The father wanted to depart with his son, but the son was now shouting in the wood: \"The father is leaving me behind!\"",
+            "alternatives": [
+              "'cum + abl' = with",
+              "'cupio + inf'",
+              "'nunc' = now — flexible position",
+              "'relinquo' = leave (behind) / abandon",
+              "accept 'forest' for 'silva'",
+              "accept 'is abandoning me' / 'leaves me behind'",
+              "accept 'leave' / 'go away' for 'discedere'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 46,
+            "latin": "deinde omnes milites reginam petiverunt, et eam in navem posuerunt.",
+            "ideal": "Then all the soldiers made for the queen, and placed her into the ship.",
+            "alternatives": [
+              "'deinde' = then / next",
+              "'peto' — here 'made for' / 'went after' / 'attacked'; context is ambiguous; 'made for' / 'went after' fits narrative",
+              "'eam' = her",
+              "'in + acc' = into / onto",
+              "accept 'put' for 'posuerunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 47,
+            "latin": "dea tam diram mortem cupiverat; tandem suum filium reliquit et discessit.",
+            "ideal": "The goddess had desired so dreadful a death; finally she left her own son behind and departed.",
+            "alternatives": [
+              "'tam' + adj = so (adj)",
+              "'diram' = dreadful / terrible / dire",
+              "'cupio' = want / desire",
+              "'tandem' = at last / finally / eventually",
+              "'suum' = her own",
+              "'relinquo' = leave behind / abandon",
+              "accept 'such a dreadful death' for 'tam diram mortem'",
+              "accept 'left' / 'went away' for 'discessit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 48,
+            "latin": "dux iam milites cogit; deinde \"nunc,\" inquit, \"discedere constituo.\"",
+            "ideal": "The leader is now gathering the soldiers; then \"now,\" he said, \"I decide to depart.\"",
+            "alternatives": [
+              "historic present — accept 'gathers' / 'is gathering'",
+              "'iam' = now / already",
+              "'cogo' = gather / force / assemble",
+              "'deinde' = then / next",
+              "'inquit' = he says / he said",
+              "'constituo + inf'",
+              "accept 'leave' for 'discedere'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 49,
+            "latin": "filius eius patrem quaesiverat, sed tandem per silvam solus discessit.",
+            "ideal": "His son had searched for his father, but finally he departed alone through the wood.",
+            "alternatives": [
+              "'eius' = his",
+              "'quaero' = search for / look for / ask",
+              "'tandem' = at last / finally",
+              "'solus' = alone / only — 'departed alone' / 'alone departed'",
+              "accept 'forest' for 'silvam'",
+              "accept 'left' / 'went away' for 'discessit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 50,
+            "latin": "omnes comites tum dixerant: \"dux iter facile constituit!\" sed dirum erat iter.",
+            "ideal": "All the companions had then said: \"The leader has decided an easy journey!\" But the journey was dreadful.",
+            "alternatives": [
+              "'omnes' = all / everyone",
+              "'tum' = then / at that time",
+              "'iter facile' — 'facile' here adj. with 'iter' (n.) = 'an easy journey'",
+              "'constituit' perfect within quoted speech — accept 'has decided' / 'has settled on'",
+              "'dirum' = dreadful / terrible / dire"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      }
+    }
+  },
+  "4": {
+    "label": "4th Conjugation",
+    "sets": {
+      "4": {
+        "label": "Present",
+        "sentences": [
+          {
+            "num": 1,
+            "latin": "uxor in urbe dormit.",
+            "ideal": "The wife is sleeping in the city.",
+            "alternatives": [
+              "accept 'sleeps' / 'is sleeping' WHAT ABOUT IS ASLEEP?",
+              "'in + abl' (urbe) = in / inside"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 2,
+            "latin": "maritus cibum cupit.",
+            "ideal": "The husband wants food.",
+            "alternatives": [
+              "'cupio' = want / desire — accept either",
+              "accept 'food' / 'the food'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 3,
+            "latin": "unus equus prope portam dormit.",
+            "ideal": "One horse is sleeping near the gate.",
+            "alternatives": [
+              "'unus' = one / a single — accept 'one (lone) horse' / 'a single horse'",
+              "'prope' + acc = near / close to",
+              "accept 'sleeps'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 4,
+            "latin": "regina donum accipit, et vultus eius laetus est.",
+            "ideal": "The queen receives a gift, and her face is happy.",
+            "alternatives": [
+              "'accipio' = receive / accept / welcome",
+              "'vultus' = face / expression — accept either",
+              "'eius' = her",
+              "accept 'glad' / 'joyful' for 'laetus'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 5,
+            "latin": "tristis puella portam aperit, et patrem videt.",
+            "ideal": "The sad girl opens the gate, and sees her father.",
+            "alternatives": [
+              "accept 'unhappy' for 'tristis'",
+              "'aperio' = open",
+              "accept 'a/the father'",
+              "accept 'can see'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 6,
+            "latin": "hic iuvenis audit verba regis, et statim effugit.",
+            "ideal": "This young man hears the words of the king, and immediately escapes.",
+            "alternatives": [
+              "'hic' = this",
+              "'regis' gen sg = of the king / the king's",
+              "'audio' = hear / listen to",
+              "'effugio' = escape / flee",
+              "'statim' flexible"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 7,
+            "latin": "ceteri milites cibum petunt, sed pauci mariti cibum habent.",
+            "ideal": "The rest of the soldiers seek food, but few husbands have food.",
+            "alternatives": [
+              "'ceteri' = the rest / the other / the remaining — accept 'the other soldiers' / 'the remaining soldiers'",
+              "'pauci' = few / a few",
+              "'peto' = seek / look for / ask for — here 'seek' / 'look for'",
+              "accept 'but few of the husbands have food'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 8,
+            "latin": "multi equi ad portam adveniunt; regina eos iam videt.",
+            "ideal": "Many horses arrive at the gate; the queen now sees them.",
+            "alternatives": [
+              "'advenio' = arrive / come to — accept 'come to' / 'reach'",
+              "'ad' = to / towards / at",
+              "'eos' = them (m.acc.pl)",
+              "'iam' = now / already"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 9,
+            "latin": "haec uxor iam dormit, sed hic maritus donum quaerit.",
+            "ideal": "This wife is now sleeping, but this husband is searching for a gift.",
+            "alternatives": [
+              "'haec' / 'hic' = this",
+              "'iam' = now / already",
+              "'quaero' = search for / look for / ask — here 'search for' / 'look for'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 10,
+            "latin": "quamquam uxor tristis est, maritus eam amat.",
+            "ideal": "Although the wife is sad, the husband loves her.",
+            "alternatives": [
+              "'quamquam + indicative' = although",
+              "'eam' = her",
+              "accept 'unhappy' for 'tristis'",
+              "accept 'likes' for 'amat'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "8": {
+        "label": "Imperfect & Future",
+        "sentences": [
+          {
+            "num": 11,
+            "latin": "uxor in urbe dormiebat.",
+            "ideal": "The wife was sleeping in the city.",
+            "alternatives": [
+              "accept 'used to sleep' / 'kept sleeping' / 'slept'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 12,
+            "latin": "hic maritus cibum iterum cupiet.",
+            "ideal": "This husband will want food again.",
+            "alternatives": [
+              "'hic' = this",
+              "'iterum' = again — flexible position",
+              "accept 'will desire' for 'cupiet'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 13,
+            "latin": "unus equus prope portam audiebat, et statim advenit.",
+            "ideal": "One horse was listening near the gate, and immediately arrived.",
+            "alternatives": [
+              "'unus' = one / a single",
+              "'audio' here used intransitively — 'was listening' / 'was hearing things'",
+              "'advenit' form ambiguous (present/perfect) — in narrative past context, perfect 'arrived' fits best",
+              "'prope' + acc = near",
+              "'statim' flexible"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 14,
+            "latin": "regina donum accipiet, et vultus eius laetus erit.",
+            "ideal": "The queen will receive a gift, and her face will be happy.",
+            "alternatives": [
+              "'accipio' = receive / accept",
+              "'vultus' = face / expression",
+              "'eius' = her",
+              "accept 'glad' / 'joyful' for 'laetus'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 15,
+            "latin": "tristis puella portam aperiebat, et tum patrem videbat.",
+            "ideal": "The sad girl was opening the gate, and then was seeing her father.",
+            "alternatives": [
+              "accept 'unhappy' for 'tristis'",
+              "'tum' = then / at that time — flexible",
+              "accept 'used to open' / 'was opening'",
+              "accept 'saw her father' / 'could see her father' / 'kept seeing her father'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 16,
+            "latin": "haec puella verba regis audit, et mox effugiet.",
+            "ideal": "This girl hears the words of the king, and will soon escape.",
+            "alternatives": [
+              "'haec' = this",
+              "'regis' gen sg",
+              "'mox' = soon — flexible",
+              "accept 'flee' for 'effugiet'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 17,
+            "latin": "ceteri milites cibum petent, sed pauci mariti cibum iam habebunt.",
+            "ideal": "The rest of the soldiers will seek food, but few husbands will already have food.",
+            "alternatives": [
+              "'ceteri' = the rest / the other / the remaining",
+              "'pauci' = few",
+              "'iam' = already / now",
+              "'peto' = seek / look for"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 18,
+            "latin": "multos annos rex in urbe habitabat.",
+            "ideal": "For many years the king was living in the city.",
+            "alternatives": [
+              "'multos annos' accusative of duration — 'for many years'",
+              "accept 'used to live' / 'lived' / 'was living' / 'kept living'",
+              "accept 'many years the king lived' as word-order variant"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 19,
+            "latin": "quamquam uxor tristis erat, maritus mox adveniet et eam amabit.",
+            "ideal": "Although the wife was sad, the husband will soon arrive and will love her.",
+            "alternatives": [
+              "'quamquam + ind' = although",
+              "'mox' = soon",
+              "'eam' = her",
+              "accept 'unhappy' for 'tristis'",
+              "accept 'come to her' / 'reach' for 'adveniet'",
+              "accept 'like' for 'amabit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 20,
+            "latin": "cur hic filius dormiebat? quod pater eum in silvam iam ducebat.",
+            "ideal": "Why was this son sleeping? Because the father was already leading him into the wood.",
+            "alternatives": [
+              "'cur' = why",
+              "'hic' = this",
+              "'quod' here = because (conjunction)",
+              "'eum' = him",
+              "'in + acc' = into",
+              "'iam' = already / now",
+              "accept 'forest' for 'silvam'",
+              "accept 'was taking' for 'ducebat'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "12": {
+        "label": "Perfect & Pluperfect",
+        "sentences": [
+          {
+            "num": 21,
+            "latin": "uxor tandem dormivit.",
+            "ideal": "The wife finally slept.",
+            "alternatives": [
+              "'tandem' = at last / finally / eventually",
+              "accept 'has slept' / 'went to sleep' for 'dormivit' (inceptive)"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 22,
+            "latin": "maritus cibum cupiverat, et reginam rogavit.",
+            "ideal": "The husband had desired food, and asked the queen.",
+            "alternatives": [
+              "accept 'wanted' for 'cupiverat'",
+              "accept 'questioned' for 'rogavit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 23,
+            "latin": "hic rex eos iam audiverat, et cum paucis militibus discessit.",
+            "ideal": "This king had already heard them, and departed with a few soldiers.",
+            "alternatives": [
+              "'hic' = this",
+              "'eos' = them",
+              "'iam' = already",
+              "'cum + abl' = with",
+              "'pauci' = few",
+              "accept 'listened to' for 'audiverat'",
+              "accept 'left' / 'went away' for 'discessit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 24,
+            "latin": "unus equus ad portam advenit, et tristem reginam conspexit.",
+            "ideal": "One horse arrived at the gate, and caught sight of the sad queen.",
+            "alternatives": [
+              "'unus' = one / a single",
+              "'ad' = to / at / towards",
+              "'advenit' here perfect (contextual)",
+              "'conspicio' = catch sight of / spot / notice",
+              "accept 'unhappy' for 'tristem'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 25,
+            "latin": "multos annos uxor sua sola in silva habitaverat.",
+            "ideal": "For many years his wife had lived alone in the wood.",
+            "alternatives": [
+              "'multos annos' = for many years (acc of duration)",
+              "'sua' = his / her own — here (if subject is implied to be someone else's wife) accept 'his own wife' / 'his wife'",
+              "'sola' = alone / by herself / only",
+              "accept 'forest' for 'silva'",
+              "accept 'had been living alone'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 26,
+            "latin": "regina hoc donum tandem accepit, et laeta erat.",
+            "ideal": "The queen finally received this gift, and was happy.",
+            "alternatives": [
+              "'hoc' = this (n.acc)",
+              "'tandem' = at last / finally",
+              "'accipio' = receive / accept / welcome",
+              "accept 'glad' / 'joyful' for 'laeta'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 27,
+            "latin": "\"cur,\" inquit maritus, \"in urbe dormiebas?\" uxor nihil dixit.",
+            "ideal": "\"Why,\" said the husband, \"were you sleeping in the city?\" The wife said nothing.",
+            "alternatives": [
+              "'cur' = why",
+              "'inquit' splits direct speech",
+              "'dormiebas' 2sg imperfect — 'were you sleeping' / 'used you to sleep'",
+              "'nihil' = nothing — accept 'the wife said nothing' / 'the wife did not say anything'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 28,
+            "latin": "pauci milites portam aperuerunt, et ceteri effugerunt.",
+            "ideal": "A few soldiers opened the gate, and the rest escaped.",
+            "alternatives": [
+              "'pauci' = few / a few",
+              "'ceteri' = the rest / the others",
+              "'effugio' = escape / flee"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 29,
+            "latin": "maritus suam uxorem amaverat, sed quamquam eam videbat, nihil dixit.",
+            "ideal": "The husband had loved his own wife, but although he was seeing her, he said nothing.",
+            "alternatives": [
+              "'suam' = his own — accept 'his wife' / 'his own wife'",
+              "'quamquam + ind' = although",
+              "'eam' = her",
+              "accept 'liked' for 'amaverat'",
+              "accept 'could see' for 'videbat'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 30,
+            "latin": "ubi hic maritus advenit, omnes laetos vultus viderunt.",
+            "ideal": "When this husband arrived, everyone saw happy faces.",
+            "alternatives": [
+              "'ubi' = when / where — here 'when' (temporal, with indicative)",
+              "'hic' = this",
+              "'omnes' = all / everyone",
+              "'laetos vultus' = happy faces / joyful expressions",
+              "accept 'glad' / 'joyful' for 'laetos'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "14": {
+        "label": "PPP / Passive review",
+        "sentences": [
+          {
+            "num": 31,
+            "latin": "porta aperta erat.",
+            "ideal": "The gate had been opened.",
+            "alternatives": [
+              "pluperfect passive — 'had been opened'",
+              "note: could also mean 'the gate was open' (predicate adjective) — context-dependent; in an isolated sentence, accept BOTH: 'had been opened' and 'was open'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 32,
+            "latin": "verbum auditum erat.",
+            "ideal": "The word had been heard.",
+            "alternatives": [
+              "pluperfect passive — 'had been heard'",
+              "accept 'had been listened to'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 33,
+            "latin": "puella audita statim effugit.",
+            "ideal": "The girl, (having been) heard, immediately escaped.",
+            "alternatives": [
+              "'audita' PPP — 'heard' / 'who had been heard'",
+              "accept 'the girl who had been heard escaped immediately'",
+              "'statim' flexible",
+              "accept 'fled'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 34,
+            "latin": "donum tandem apertum erat, et regina laeta erat.",
+            "ideal": "The gift had finally been opened, and the queen was happy.",
+            "alternatives": [
+              "'apertum erat' pluperfect passive",
+              "'tandem' = at last / finally",
+              "accept 'glad' / 'joyful' for 'laeta'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 35,
+            "latin": "omnes verba audita non cognoverunt.",
+            "ideal": "Everyone did not recognise the words that had been heard.",
+            "alternatives": [
+              "better rendering: 'Nobody recognised the heard words' or 'Everyone failed to recognise the words (once) heard'",
+              "'audita' PPP agreeing with 'verba' (n.pl.acc) — accept 'the words that had been heard'",
+              "'cognosco' perfect = recognised / got to know / found out",
+              "accept 'knew' for 'cognoverunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 36,
+            "latin": "ubi portae apertae erant, pauci milites effugerunt.",
+            "ideal": "When the gates had been opened, a few soldiers escaped.",
+            "alternatives": [
+              "'ubi + pluperf' = when (once) — accept 'once the gates had been opened'",
+              "pluperfect passive pl fem",
+              "accept 'fled'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 37,
+            "latin": "cibus tandem acceptus erat, et maritus laetus erat.",
+            "ideal": "The food had finally been received, and the husband was happy.",
+            "alternatives": [
+              "'tandem' = finally / at last",
+              "'accipio' = receive / accept",
+              "accept 'glad' / 'joyful' for 'laetus'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 38,
+            "latin": "haec uxor quaesita erat; tandem pater eam in silva vidit.",
+            "ideal": "This wife had been searched for; finally the father saw her in the wood.",
+            "alternatives": [
+              "'haec' = this",
+              "'quaesita erat' pluperfect passive of 'quaero' — 'had been searched for' / 'had been sought'",
+              "'tandem' = at last / finally",
+              "'eam' = her",
+              "accept 'forest' for 'silva'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 39,
+            "latin": "illa porta aperta erat a marito, sed uxor iam dormiebat.",
+            "ideal": "That gate had been opened by the husband, but the wife was already sleeping.",
+            "alternatives": [
+              "'illa' — accept 'the' / 'that famous'",
+              "'a marito' = by the husband (agent with a/ab+abl)",
+              "'iam' = already / now",
+              "accept 'used to sleep' / 'kept sleeping' for 'dormiebat'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 40,
+            "latin": "ille dux relictus erat, et tristis in urbe clamabat.",
+            "ideal": "That leader had been left behind, and was shouting sadly in the city.",
+            "alternatives": [
+              "'ille' — accept 'the' / 'that famous'",
+              "'relictus erat' pluperfect passive of 'relinquo' — 'had been left behind' / 'had been abandoned'",
+              "'tristis' here agrees with 'dux' — 'sad' / 'the sad leader was shouting' / 'the leader, sad, was shouting' / 'the leader was shouting, sadly'",
+              "accept 'kept shouting' / 'used to shout' for 'clamabat'",
+              "accept 'cried out' / 'called out'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "16": {
+        "label": "Exam-level mixed",
+        "sentences": [
+          {
+            "num": 41,
+            "latin": "quamquam haec uxor tristis erat, maritus eius tandem donum pulchrum accepit.",
+            "ideal": "Although this wife was sad, her husband finally received a beautiful gift.",
+            "alternatives": [
+              "'quamquam + ind' = although",
+              "'haec' = this",
+              "'eius' = her / his — here 'her' (her husband)",
+              "'tandem' = at last / finally",
+              "'accipio' = receive / accept",
+              "accept 'unhappy' for 'tristis'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 42,
+            "latin": "ceteri milites ad portam advenerunt, et cum paucis amicis eam aperuerunt.",
+            "ideal": "The rest of the soldiers arrived at the gate, and with a few friends opened it.",
+            "alternatives": [
+              "'ceteri' = the rest / the other",
+              "'ad' = to / at",
+              "'advenio' = arrive / come to",
+              "'cum + abl' = with",
+              "'pauci' = few",
+              "'eam' = it (refers to 'porta' f.sg)"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 43,
+            "latin": "ubi unus iuvenis verba regis audivit, statim effugere conatus est.",
+            "ideal": "When one young man heard the words of the king, he immediately tried to escape.",
+            "alternatives": [
+              "'ubi + perf' = when",
+              "'unus' = one / a single",
+              "'regis' gen sg",
+              "'conatus est' deponent perfect — 'tried' (active meaning)",
+              "'statim' flexible",
+              "accept 'flee' for 'effugere'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 44,
+            "latin": "tantus erat vultus eius dei; omnes igitur milites perterriti effugerunt.",
+            "ideal": "So great was the face of that god; therefore all the terrified soldiers escaped.",
+            "alternatives": [
+              "'tantus' = so great / so big",
+              "'vultus' = face / expression",
+              "'eius' = his / that one's — here 'of that god' / 'his'",
+              "'igitur' postpositive — accept 'so' / 'and so'",
+              "'perterriti' = terrified / very frightened",
+              "accept 'fled' for 'effugerunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 45,
+            "latin": "\"cur,\" inquit regina, \"in silva multos annos dormiebas?\" ille nihil dixit.",
+            "ideal": "\"Why,\" said the queen, \"were you sleeping in the wood for many years?\" He said nothing.",
+            "alternatives": [
+              "'cur' = why",
+              "'multos annos' = for many years (acc of duration)",
+              "'dormiebas' 2sg imperfect — 'were you sleeping' / 'did you (use to) sleep'",
+              "'ille' = he / that man / that (famous) one",
+              "'nihil' = nothing",
+              "accept 'forest' for 'silva'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 46,
+            "latin": "hic equus prope portam advenit; uxor eum statim vidit.",
+            "ideal": "This horse arrived near the gate; the wife immediately saw it.",
+            "alternatives": [
+              "'hic' = this",
+              "'prope' + acc = near / close to",
+              "'advenit' perfect (context) — 'arrived'",
+              "'eum' = it / him (m.acc) — here 'it' (refers to 'equus')",
+              "'statim' flexible"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 47,
+            "latin": "quo modo ille maritus filiam quaesivit? per urbem festinavit, et portas tantas aperuit.",
+            "ideal": "How did that husband search for his daughter? He hurried through the city, and opened such huge gates.",
+            "alternatives": [
+              "'quo modo' = how / in what way",
+              "'ille' — accept 'the' / 'that famous'",
+              "'quaero' = search for / look for / ask",
+              "'tantas' = so great / so huge / such — here agreeing with 'portas' (f.pl.acc)",
+              "accept 'rushed' for 'festinavit'",
+              "accept 'so large gates' / 'such massive gates'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 48,
+            "latin": "postquam uxor dormivit, maritus suus dona in porta posuit.",
+            "ideal": "After the wife slept, her own husband placed gifts at the gate.",
+            "alternatives": [
+              "'postquam + perf' = after",
+              "'suus' = his/her own — here 'her own husband'",
+              "'in + abl' (porta) = on / at / in — here 'at the gate' / 'on the gate'",
+              "'pono' = put / place"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 49,
+            "latin": "\"cur,\" inquit pater, \"hoc donum mihi iam accipis?\" filius tandem dixit: \"quod te amo.\"",
+            "ideal": "\"Why,\" said the father, \"are you now accepting this gift for me?\" The son finally said: \"Because I love you.\"",
+            "alternatives": [
+              "'cur' = why",
+              "'hoc' = this (n.acc)",
+              "'mihi' dative — 'to me' / 'for me' / 'from me' (dat of advantage/disadvantage; context here makes 'from me' also possible — GCSE typical: 'for me')",
+              "'iam' = now / already",
+              "'tandem' = at last / finally",
+              "'quod' here = because (conjunction introducing direct speech reason)",
+              "'te' = you (acc sg)",
+              "accept 'receive' for 'accipis'",
+              "accept 'like' for 'amo'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 50,
+            "latin": "illae feminae tristes cibum cupiebant, sed pauci milites eas tandem viderunt, et in urbem duxerunt.",
+            "ideal": "Those sad women wanted food, but few soldiers finally saw them, and led them into the city.",
+            "alternatives": [
+              "'illae' — accept 'those' / 'the'",
+              "'eas' = them (f.acc.pl)",
+              "'tandem' = at last / finally",
+              "'pauci' = few",
+              "'in + acc' = into",
+              "accept 'unhappy' for 'tristes'",
+              "accept 'took' for 'duxerunt'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      }
+    }
+  },
+  "5": {
+    "label": "Irregulars & Comparison",
+    "sets": {
+      "100": {
+        "label": "§A — esse, comparative/superlative, quam, tam...quam",
+        "sentences": [
+          {
+            "num": 1,
+            "latin": "rex fortis est.",
+            "ideal": "The king is brave.",
+            "alternatives": [
+              "'fortis' = brave / strong — both accepted"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 2,
+            "latin": "omnes milites laeti erant.",
+            "ideal": "All the soldiers were happy.",
+            "alternatives": [
+              "'omnes' = all / every",
+              "accept 'glad' / 'joyful' for 'laeti'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 3,
+            "latin": "ingens navis prope portam fuit.",
+            "ideal": "A huge ship was near the gate.",
+            "alternatives": [
+              "'fuit' perfect of sum — accept 'was' / 'has been'",
+              "'prope' + acc = near / close to",
+              "accept 'enormous' / 'vast' / 'massive' for 'ingens'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 4,
+            "latin": "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE",
+            "ideal": "It is necessary to depart immediately.",
+            "alternatives": [
+              "'necesse est + inf' — 'it is necessary to X'",
+              "accept 'one must leave immediately' / 'leaving at once is necessary'",
+              "'statim' flexible",
+              "accept 'leave' / 'go away' for 'discedere'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 5,
+            "latin": "filius fortior quam pater erat.",
+            "ideal": "The son was braver than the father.",
+            "alternatives": [
+              "'fortior' comparative of 'fortis'",
+              "'quam' after comparative = than",
+              "accept 'stronger' for 'fortior'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 6,
+            "latin": "illa dea pulcherrima omnium erat.",
+            "ideal": "That goddess was the most beautiful of all.",
+            "alternatives": [
+              "'pulcherrima' superlative of 'pulcher' — 'most beautiful' / 'very beautiful'",
+              "'omnium' gen pl = of all (partitive)",
+              "'illa' — accept 'the' / 'that famous'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 7,
+            "latin": "tam tristis erat uxor quam maritus.",
+            "ideal": "The wife was as sad as the husband.",
+            "alternatives": [
+              "'tam...quam' = as...as",
+              "accept 'unhappy' for 'tristis'",
+              "accept 'the wife was just as sad as the husband'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 8,
+            "latin": "hoc iter facillimum erit.",
+            "ideal": "This journey will be very easy.",
+            "alternatives": [
+              "'hoc' = this",
+              "'facillimum' superlative of 'facilis' — 'very easy' / 'easiest' / 'extremely easy'",
+              "accept 'the easiest journey'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 9,
+            "latin": "multi comites iam fuerunt, sed nunc pauci sunt.",
+            "ideal": "Many companions have now existed, but now there are few.",
+            "alternatives": [
+              "'iam' = now / already / by now",
+              "'fuerunt' perfect = have been / existed / were there",
+              "'nunc' = now",
+              "'pauci' = few",
+              "accept 'there have been many companions, but now there are few' / 'many companions existed before, but now few remain'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 10,
+            "latin": "solus iuvenis in silva erat, perterritus et iratus.",
+            "ideal": "The young man was alone in the wood, terrified and angry.",
+            "alternatives": [
+              "'solus' = alone / only — accept 'the lone young man was in the wood' / 'the young man was alone in the wood'",
+              "'perterritus' = terrified / very frightened",
+              "'iratus' = angry",
+              "accept 'forest' for 'silva'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 11,
+            "latin": "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE",
+            "ideal": "One soldier was very brave, but the rest were not brave.",
+            "alternatives": [
+              "'unus' = one / a single",
+              "'fortissimus' superlative — 'very brave' / 'bravest' / 'the bravest'",
+              "'ceteri' = the rest / the others",
+              "accept 'strongest' / 'very strong' for 'fortissimus'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 12,
+            "latin": "tantus et dirus erat deus; omnes igitur perterriti fuerunt.",
+            "ideal": "So great and dreadful was the god; therefore all were terrified.",
+            "alternatives": [
+              "'tantus' = so great / so big",
+              "'dirus' = dreadful / terrible / dire",
+              "'igitur' postpositive — accept 'so' / 'and so'",
+              "'omnes' = all / everyone",
+              "'perterriti' = terrified",
+              "accept 'have been terrified' for 'perterriti fuerunt'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "101": {
+        "label": "§B — volo / possum / coepi / noli / necesse est + infinitive",
+        "sentences": [
+          {
+            "num": 13,
+            "latin": "regina discedere volebat.",
+            "ideal": "The queen wanted to depart.",
+            "alternatives": [
+              "'volo + inf' = want / wish to",
+              "accept 'wished to' / 'was wanting to'",
+              "accept 'leave' / 'go away' for 'discedere'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 14,
+            "latin": "dux milites iubere non potest.",
+            "ideal": "The leader is not able to order the soldiers.",
+            "alternatives": [
+              "'possum + inf' = be able to / can",
+              "accept 'cannot order the soldiers'",
+              "'iubeo + acc' (here no 'acc+inf' construction — accept 'order the soldiers' as generic command)"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 15,
+            "latin": "filius coepit clamare.",
+            "ideal": "The son began to shout.",
+            "alternatives": [
+              "'coepi + inf' = began to (coepi = perfect only)",
+              "accept 'started to shout' / 'started shouting'",
+              "accept 'cry out' / 'call out' for 'clamare'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 16,
+            "latin": "\"nolite effugere!\" inquit dux.",
+            "ideal": "\"Don't escape!\" said the leader.",
+            "alternatives": [
+              "'nolite + inf' = negative plural imperative — 'don't X (you all)'",
+              "accept 'Do not escape!' / 'Don't run away!' / 'Don't flee!'",
+              "'inquit' placed after direct speech"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 17,
+            "latin": "necesse est patri filium liberare.",
+            "ideal": "It is necessary for the father to free his son.",
+            "alternatives": [
+              "'necesse est + dat + inf' — 'it is necessary for X to Y'",
+              "'patri' dative = for the father",
+              "accept 'the father must free his son'",
+              "accept 'set free' for 'liberare'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 18,
+            "latin": "comes reginam conspicere volebat, sed non potuit.",
+            "ideal": "The companion wanted to catch sight of the queen, but could not.",
+            "alternatives": [
+              "'volo + inf' / 'possum + inf'",
+              "'conspicio' = catch sight of / spot / notice",
+              "'potuit' perfect — 'was able' / 'could'",
+              "accept 'was not able to'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 19,
+            "latin": "multi milites coeperunt urbem oppugnare.",
+            "ideal": "Many soldiers began to attack the city.",
+            "alternatives": [
+              "'coepi + inf'",
+              "accept 'started to attack' / 'started attacking'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 20,
+            "latin": "\"noli, fili, me relinquere!\" inquit pater. THIS SEEMS TOO DIFICULT FOR THEM TO GIVE IN A REAL EXAM AS A VOCATIVE",
+            "ideal": "\"Don't leave me behind, son!\" said the father.",
+            "alternatives": [
+              "'noli + inf' = negative singular imperative",
+              "'fili' vocative of 'filius' — 'son!' / 'O son!'",
+              "'relinquo' = leave (behind) / abandon",
+              "accept 'Don't abandon me, son!'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 21,
+            "latin": "possum te audire, sed non possum te videre.",
+            "ideal": "I am able to hear you, but I am not able to see you.",
+            "alternatives": [
+              "'possum + inf'",
+              "accept 'I can hear you, but I cannot see you'",
+              "'te' = you (acc sg)",
+              "accept 'listen to' for 'audire'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 22,
+            "latin": "illa dea voluit ad insulam navigare.",
+            "ideal": "That goddess wanted to sail to the island.",
+            "alternatives": [
+              "'voluit' perfect of 'volo' — 'wanted' / 'wished'",
+              "'illa' — accept 'the' / 'that famous'",
+              "accept 'towards' for 'ad'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 23,
+            "latin": "puella tristis coepit clamare, quod pater advenire non potuit.",
+            "ideal": "The sad girl began to shout, because the father was not able to arrive.",
+            "alternatives": [
+              "'coepi + inf'",
+              "'quod' here = because (conjunction)",
+              "'possum + inf' (perfect 'potuit')",
+              "accept 'unhappy' for 'tristis'",
+              "accept 'started' / 'started shouting'",
+              "accept 'could not come / reach them' for 'advenire non potuit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 24,
+            "latin": "uxor maritum videre volebat, sed maritus iam discesserat.",
+            "ideal": "The wife wanted to see her husband, but the husband had already departed.",
+            "alternatives": [
+              "'volo + inf'",
+              "'iam' = already / now",
+              "accept 'had already left' / 'had already gone away' for 'iam discesserat'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "102": {
+        "label": "§C — eo & redeo; motion prepositions review",
+        "sentences": [
+          {
+            "num": 25,
+            "latin": "rex domum iit.",
+            "ideal": "The king went home.",
+            "alternatives": [
+              "'domum' = home / homewards (acc of motion towards)",
+              "'iit' perfect of 'eo' — 'went' / 'has gone'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 26,
+            "latin": "filius ad silvam it.",
+            "ideal": "The son goes to the wood.",
+            "alternatives": [
+              "'it' present 3sg of 'eo'",
+              "'ad + acc' = to / towards",
+              "accept 'forest' for 'silvam'",
+              "accept 'is going'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 27,
+            "latin": "uxor domum rediit.",
+            "ideal": "The wife returned home.",
+            "alternatives": [
+              "'redeo' compound of 'eo' — 'return' / 'go back' / 'come back'",
+              "'rediit' perfect — 'returned' / 'has returned' / 'went back' / 'came back'",
+              "'domum' = home"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 28,
+            "latin": "milites ad urbem ibant, sed mox redierunt.",
+            "ideal": "The soldiers were going to the city, but soon returned.",
+            "alternatives": [
+              "'ibant' imperfect of 'eo' — 'were going' / 'used to go' / 'kept going'",
+              "'redierunt' perfect of 'redeo'",
+              "'mox' = soon — flexible",
+              "accept 'towards' for 'ad'",
+              "accept 'came back' / 'went back' for 'redierunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 29,
+            "latin": "hic maritus per silvam iit, deinde prope insulam advenit.",
+            "ideal": "This husband went through the wood, then arrived near the island.",
+            "alternatives": [
+              "'hic' = this",
+              "'per + acc' = through",
+              "'deinde' = then / next",
+              "'prope' + acc = near / close to",
+              "accept 'forest' for 'silvam'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 30,
+            "latin": "comes cum multis donis rediit.",
+            "ideal": "The companion returned with many gifts.",
+            "alternatives": [
+              "'cum + abl' = with",
+              "accept 'came back' / 'went back' for 'rediit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 31,
+            "latin": "dux ex urbe iit, et in silvam redire constituit.",
+            "ideal": "The leader went out of the city, and decided to return into the wood.",
+            "alternatives": [
+              "'e/ex + abl' = out of / from",
+              "'in + acc' (silvam) = into",
+              "'constituo + inf' = decide to",
+              "accept 'forest' for 'silvam'",
+              "accept 'go back to the wood' for 'in silvam redire'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 32,
+            "latin": "filius ad portam ibit, et pater domum redibit.",
+            "ideal": "The son will go to the gate, and the father will return home.",
+            "alternatives": [
+              "'ibit' future 3sg of 'eo'",
+              "'redibit' future 3sg of 'redeo'",
+              "'ad' = to / towards / at",
+              "'domum' = home",
+              "accept 'will come back' / 'will go back' for 'redibit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 33,
+            "latin": "simulac uxor domum rediit, cibum accepit.",
+            "ideal": "As soon as the wife returned home, she received food.",
+            "alternatives": [
+              "'simulac' = as soon as",
+              "'domum' = home",
+              "'accipio' = receive / accept",
+              "accept 'came home' for 'domum rediit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 34,
+            "latin": "iuvenis per urbem iter fecit; tandem domum rediit.",
+            "ideal": "The young man made a journey through the city; finally he returned home.",
+            "alternatives": [
+              "'iter facere' idiom — 'make a journey' / 'travel'",
+              "'tandem' = at last / finally / eventually",
+              "'domum' = home",
+              "accept 'travelled through the city' / 'went on a journey through the city'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 35,
+            "latin": "dea a deis rediit, et statim domum iit.",
+            "ideal": "The goddess returned from the gods, and immediately went home.",
+            "alternatives": [
+              "'a/ab + abl' with persons = from (also can be agent 'by' — here separation 'from')",
+              "'statim' flexible",
+              "'domum' = home",
+              "accept 'came back from the gods' / 'went back from the gods'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 36,
+            "latin": "dux in urbe erat, sed cum comitibus in silvam iit; mox redire constituit.",
+            "ideal": "The leader was in the city, but with his companions went into the wood; he soon decided to return.",
+            "alternatives": [
+              "'in + abl' (urbe) = in",
+              "'cum + abl' = with",
+              "'in + acc' (silvam) = into",
+              "'mox' = soon",
+              "'constituo + inf' = decide to",
+              "accept 'forest' for 'silvam'",
+              "accept 'go back' / 'come back' for 'redire'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      }
+    }
+  },
+  "6": {
+    "label": "Subjunctive & Relative Clauses",
+    "sets": {
+      "100": {
+        "label": "§A — Relative clauses (qui/quae/quod)",
+        "sentences": [
+          {
+            "num": 1,
+            "latin": "miles, qui gladium tenet, fortis est.",
+            "ideal": "The soldier, who is holding a sword, is brave.",
+            "alternatives": [
+              "'qui' m.nom.sg = who (subject, masc.)",
+              "accept 'the soldier who holds a sword is brave' (no commas also acceptable)",
+              "accept 'strong' for 'fortis'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 2,
+            "latin": "regina, quae in urbe habitat, pulcherrima est.",
+            "ideal": "The queen, who lives in the city, is very beautiful.",
+            "alternatives": [
+              "'quae' f.nom.sg = who (subject, fem.)",
+              "'pulcherrima' superlative — 'very beautiful' / 'most beautiful'",
+              "accept 'the queen who lives in the city is most beautiful'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 3,
+            "latin": "puella, quam pater amat, in silva est.",
+            "ideal": "The girl, whom the father loves, is in the wood.",
+            "alternatives": [
+              "'quam' f.acc.sg = whom (object, fem.)",
+              "accept 'the girl whom her father loves is in the wood'",
+              "accept 'likes' for 'amat'",
+              "accept 'forest' for 'silva'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 4,
+            "latin": "dei, quos milites oppugnaverunt, iam discesserunt.",
+            "ideal": "The gods, whom the soldiers attacked, have now departed.",
+            "alternatives": [
+              "'quos' m.acc.pl = whom (object, masc.pl)",
+              "'iam' + perfect = now / already — 'have now' / 'have already'",
+              "accept 'the gods whom the soldiers attacked have already left'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 5,
+            "latin": "comes, cuius vultus tristis erat, nihil dixit.",
+            "ideal": "The companion, whose face was sad, said nothing.",
+            "alternatives": [
+              "'cuius' gen.sg = whose / of whom",
+              "'vultus' = face / expression",
+              "accept 'unhappy' for 'tristis'",
+              "accept 'the companion, whose expression was sad, said nothing'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 6,
+            "latin": "dona, quae rex accepit, pulchra erant.",
+            "ideal": "The gifts, which the king received, were beautiful.",
+            "alternatives": [
+              "'quae' n.acc.pl = which (object, neuter pl)",
+              "'accipio' = receive / accept",
+              "accept 'the gifts (which) the king received were beautiful'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 7,
+            "latin": "silva, in qua puella dormit, ingens est.",
+            "ideal": "The wood, in which the girl is sleeping, is huge.",
+            "alternatives": [
+              "'in qua' = in which (prep. + rel. pronoun f.abl.sg)",
+              "accept 'the wood where the girl is sleeping is huge'",
+              "accept 'forest' for 'silva'",
+              "accept 'enormous' / 'vast' for 'ingens'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 8,
+            "latin": "iter, quod dux constituerat, facillimum fuit.",
+            "ideal": "The journey, which the leader had decided, was very easy.",
+            "alternatives": [
+              "'quod' n.acc.sg = which (object, neuter) — NOT 'because' here (rel. pronoun)",
+              "'facillimum' superlative — 'very easy' / 'easiest'",
+              "'constituo + acc' — 'had decided' / 'had settled on' / 'had arranged'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 9,
+            "latin": "omnes milites, qui coacti erant, tandem discesserunt.",
+            "ideal": "All the soldiers, who had been forced, finally departed.",
+            "alternatives": [
+              "'qui' m.nom.pl = who (subject, masc.pl)",
+              "'coacti erant' pluperfect passive of 'cogo' — 'had been forced' / 'had been gathered'",
+              "'tandem' = at last / finally",
+              "accept 'had been compelled' for 'coacti erant'",
+              "accept 'left' / 'went away' for 'discesserunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 10,
+            "latin": "verbum, quod maritus dixit, tristissimum erat.",
+            "ideal": "The word, which the husband said, was very sad.",
+            "alternatives": [
+              "'quod' n.acc.sg = which (rel., not 'because')",
+              "'tristissimum' superlative — 'very sad' / 'saddest'",
+              "accept 'very unhappy' / 'most unhappy'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 11,
+            "latin": "uxor, quam maritus amabat, cibum statim coepit accipere.",
+            "ideal": "The wife, whom the husband loved, immediately began to receive food.",
+            "alternatives": [
+              "'quam' f.acc.sg = whom",
+              "'coepi + inf' = began to",
+              "'accipio' = receive / accept",
+              "'statim' flexible",
+              "accept 'started to accept food'",
+              "accept 'liked' for 'amabat'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 12,
+            "latin": "filii, quibus pater persuaserat, statim festinaverunt.",
+            "ideal": "The sons, whom the father had persuaded, immediately hurried.",
+            "alternatives": [
+              "'quibus' dative pl = to whom / whom (dative because 'persuadeo + dat')",
+              "accept 'the sons, whom the father had persuaded, hurried at once'",
+              "accept 'rushed' for 'festinaverunt'",
+              "'statim' flexible"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "101": {
+        "label": "§B — ut + subjunctive (purpose / indirect command)",
+        "sentences": [
+          {
+            "num": 13,
+            "latin": "dux advenit ut milites cogat.",
+            "ideal": "The leader arrived in order to gather the soldiers.",
+            "alternatives": [
+              "'ut + pres subj' = purpose clause — 'in order to' / 'so that he might' / 'to'",
+              "accept 'so that he could gather the soldiers'",
+              "'advenit' here perfect (sequence of tenses with present subj is 'informal' at GCSE — accept 'arrives')",
+              "'cogo' = gather / force / compel"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 14,
+            "latin": "pater domum festinavit ut filium videret.",
+            "ideal": "The father hurried home in order to see his son.",
+            "alternatives": [
+              "'ut + imperf subj' = purpose in past",
+              "'domum' = home",
+              "accept 'so that he might see his son' / 'so that he could see his son'",
+              "accept 'rushed home' for 'domum festinavit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 15,
+            "latin": "regina verba dixit ut deos oraret.",
+            "ideal": "The queen spoke words in order to beg the gods.",
+            "alternatives": [
+              "'ut + imperf subj'",
+              "accept 'so that she might pray to the gods' / 'so that she could pray to the gods'",
+              "accept 'pleaded with' / 'prayed to' for 'oraret'",
+              "accept 'said' for 'dixit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 16,
+            "latin": "milites gladios tenuerunt ut urbem oppugnarent.",
+            "ideal": "The soldiers held swords in order to attack the city.",
+            "alternatives": [
+              "'ut + imperf subj'",
+              "accept 'so that they might attack the city' / 'so that they could attack the city'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 17,
+            "latin": "puella clamabat ut pater statim adveniret.",
+            "ideal": "The girl was shouting in order that her father might arrive immediately.",
+            "alternatives": [
+              "'ut + imperf subj'",
+              "accept 'so that her father might arrive at once' / 'so that her father would come at once'",
+              "accept 'cry out' / 'call out' for 'clamabat'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 18,
+            "latin": "comites ad silvam iverunt ut iter facerent.",
+            "ideal": "The companions went to the wood in order to make a journey.",
+            "alternatives": [
+              "'iverunt' perfect of 'eo'",
+              "'ut + imperf subj'",
+              "'iter facere' = make a journey",
+              "accept 'so that they might travel' / 'so that they could go on a journey'",
+              "accept 'forest' for 'silvam'",
+              "accept 'towards' for 'ad'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 19,
+            "latin": "dea apparuit ut reginae persuaderet.",
+            "ideal": "The goddess appeared in order to persuade the queen.",
+            "alternatives": [
+              "'ut + imperf subj'",
+              "'reginae' dative = queen (with 'persuadeo + dat')",
+              "accept 'so that she might persuade the queen' / 'so that she could persuade the queen'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 20,
+            "latin": "uxor maritum oravit ut domum rediret.",
+            "ideal": "The wife begged her husband to return home.",
+            "alternatives": [
+              "'oravit ut + subj' — 'begged (him) to'; the 'ut' here leans towards an indirect command at GCSE — accept 'begged him that he would return home' / 'begged her husband to return home'",
+              "'domum' = home",
+              "accept 'pleaded with her husband to come back home'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 21,
+            "latin": "filius clamavit ut pater audiret.",
+            "ideal": "The son shouted in order that his father might hear.",
+            "alternatives": [
+              "'ut + imperf subj'",
+              "accept 'so that his father might hear him' / 'so that his father could hear'",
+              "accept 'listen' for 'audiret'",
+              "accept 'cried out' / 'called out' for 'clamavit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 22,
+            "latin": "dux dixit ut milites effugerent.",
+            "ideal": "The leader said (an order) that the soldiers should escape.",
+            "alternatives": [
+              "'dico + ut + subj' = indirect command — 'told them to X'; preferred natural: 'The leader told the soldiers to escape'",
+              "accept 'The leader said that the soldiers should flee' / 'The leader said (something) so that the soldiers might escape'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 23,
+            "latin": "necesse erat ut rex discederet.",
+            "ideal": "It was necessary that the king should depart.",
+            "alternatives": [
+              "'necesse erat ut + subj' = it was necessary that X should Y",
+              "accept 'the king had to leave' / 'it was necessary for the king to depart'",
+              "accept 'leave' / 'go away' for 'discederet'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 24,
+            "latin": "maritus diu in urbe habitavit ut uxorem videret.",
+            "ideal": "The husband lived in the city for a long time in order to see his wife.",
+            "alternatives": [
+              "'diu' = for a long time / a long while",
+              "'ut + imperf subj'",
+              "accept 'so that he might see his wife' / 'so that he could see his wife'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "102": {
+        "label": "§C — cum + subjunctive (temporal / causal)",
+        "sentences": [
+          {
+            "num": 25,
+            "latin": "cum milites advenissent, rex laetus fuit.",
+            "ideal": "When the soldiers had arrived, the king was happy.",
+            "alternatives": [
+              "'cum + pluperf subj' = when / since / after",
+              "'advenissent' pluperfect subjunctive of 'advenio'",
+              "accept 'since the soldiers had arrived' / 'after the soldiers had arrived'",
+              "accept 'glad' / 'joyful' for 'laetus'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 26,
+            "latin": "cum dea oraret, omnes audiverunt.",
+            "ideal": "When the goddess was begging, everyone heard.",
+            "alternatives": [
+              "'cum + imperf subj' = when / since / while",
+              "'oraret' imperf subj — accept 'while the goddess was begging'",
+              "'omnes' = all / everyone",
+              "accept 'pleaded' / 'prayed' for 'oraret'",
+              "accept 'listened' for 'audiverunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 27,
+            "latin": "cum pater clamaret, filii statim festinaverunt.",
+            "ideal": "When the father was shouting, the sons immediately hurried.",
+            "alternatives": [
+              "'cum + imperf subj'",
+              "accept 'since the father was shouting' / 'while the father was shouting'",
+              "'statim' flexible",
+              "accept 'cry out' / 'call out' for 'clamaret'",
+              "accept 'rushed' for 'festinaverunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 28,
+            "latin": "cum hic rex verba dixisset, omnes discesserunt.",
+            "ideal": "When this king had said the words, everyone departed.",
+            "alternatives": [
+              "'cum + pluperf subj'",
+              "'hic' = this",
+              "'dixisset' pluperf subj of 'dico'",
+              "accept 'after this king had spoken the words' / 'since this king had said the words'",
+              "accept 'left' / 'went away' for 'discesserunt'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 29,
+            "latin": "cum uxor dormiret, maritus domum rediit.",
+            "ideal": "While the wife was sleeping, the husband returned home.",
+            "alternatives": [
+              "'cum + imperf subj'",
+              "accept 'when the wife was sleeping' / 'since the wife was sleeping'",
+              "'domum' = home",
+              "accept 'came back' / 'went back' for 'rediit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 30,
+            "latin": "cum dux iter facilius fecisset, milites coepit cogere.",
+            "ideal": "When the leader had made a fairly easy journey, he began to gather the soldiers.",
+            "alternatives": [
+              "'cum + pluperf subj'",
+              "'facilius' comparative of 'facile' (adv) or 'facilis' (n.sg) — here adjectival with 'iter': 'a fairly/quite easy journey' / 'a rather easy journey' / 'an easier journey'",
+              "'coepi + inf' = began to",
+              "'cogo' = gather / force / assemble",
+              "accept 'started gathering the soldiers'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 31,
+            "latin": "cum tandem advenissent, portam aperuerunt.",
+            "ideal": "When they had finally arrived, they opened the gate.",
+            "alternatives": [
+              "'cum + pluperf subj'",
+              "'tandem' = at last / finally",
+              "accept 'since they had finally arrived' / 'after they had finally arrived'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 32,
+            "latin": "cum tam iratus esset, dux nihil dixit.",
+            "ideal": "Since he was so angry, the leader said nothing.",
+            "alternatives": [
+              "'cum + imperf subj' — causal here (given 'tam iratus')",
+              "accept 'when he was so angry, the leader said nothing' / 'because he was so angry...'",
+              "'tam' + adj = so (angry)"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 33,
+            "latin": "cum mortem cupivisset, tandem effugere non potuit.",
+            "ideal": "Since he had desired death, he was finally not able to escape.",
+            "alternatives": [
+              "'cum + pluperf subj'",
+              "'cupio' = want / desire",
+              "'tandem' = at last / finally / in the end",
+              "'possum + inf'",
+              "accept 'although he had desired death' — wait: cum+subj doesn't mean 'although'; do NOT accept 'although' here",
+              "accept 'when he had wanted death, he could not finally escape' / 'since he had wanted to die...'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 34,
+            "latin": "cum puella tristis esset, pater eam amavit.",
+            "ideal": "Since the girl was sad, her father loved her.",
+            "alternatives": [
+              "'cum + imperf subj'",
+              "'eam' = her",
+              "accept 'when the girl was sad' / 'because the girl was sad'",
+              "accept 'unhappy' for 'tristis'",
+              "accept 'liked' for 'amavit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 35,
+            "latin": "cum omnes comites redissent, dux cibum accepit.",
+            "ideal": "When all the companions had returned, the leader received food.",
+            "alternatives": [
+              "'cum + pluperf subj' ('redissent' = redivissent contracted)",
+              "'omnes' = all",
+              "accept 'after all the companions had returned' / 'since all the companions had returned'",
+              "accept 'accepted' for 'accepit'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 36,
+            "latin": "cum verba audita essent, dei discesserunt.",
+            "ideal": "When the words had been heard, the gods departed.",
+            "alternatives": [
+              "'cum + pluperf subj passive' — 'had been heard'",
+              "accept 'after the words had been heard' / 'since the words had been heard'",
+              "accept 'left' / 'went away' for 'discesserunt'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      },
+      "103": {
+        "label": "§D — si + subjunctive (contrary-to-fact)",
+        "sentences": [
+          {
+            "num": 37,
+            "latin": "si dux milites cogeret, statim discederent.",
+            "ideal": "If the leader were gathering the soldiers, they would immediately depart.",
+            "alternatives": [
+              "present contrary-to-fact: 'si + imperf subj ... + imperf subj' — 'if X were -ing, Y would -'",
+              "'cogo' = gather / force / compel",
+              "'statim' flexible",
+              "accept 'if the leader forced the soldiers, they would leave at once'",
+              "accept 'would go away' / 'would leave' for 'discederent'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 38,
+            "latin": "si tu advenisses, filium vidisses.",
+            "ideal": "If you had arrived, you would have seen the/your son.",
+            "alternatives": [
+              "past contrary-to-fact: 'si + pluperf subj ... + pluperf subj' — 'if X had -ed, Y would have -ed'",
+              "'tu' emphatic — accept 'you yourself'",
+              "accept 'if you had come, you would have seen your son'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 39,
+            "latin": "si pater non clamaret, uxor dormiret.",
+            "ideal": "If the father were not shouting, the wife would be sleeping.",
+            "alternatives": [
+              "present contrary-to-fact",
+              "accept 'if the father did not shout, the wife would sleep'",
+              "accept 'cry out' / 'call out' for 'clamaret'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 40,
+            "latin": "si regina verba audivisset, tandem effugisset.",
+            "ideal": "If the queen had heard the words, she would have finally escaped.",
+            "alternatives": [
+              "past contrary-to-fact",
+              "'tandem' = at last / finally",
+              "accept 'had listened to the words' / 'had heard the words'",
+              "accept 'would have fled'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 41,
+            "latin": "si necesse esset, milites domum redirent.",
+            "ideal": "If it were necessary, the soldiers would return home.",
+            "alternatives": [
+              "present contrary-to-fact",
+              "'necesse esset' = were (it) necessary",
+              "'domum' = home",
+              "accept 'if it were necessary, the soldiers would go back home' / 'would come back home'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 42,
+            "latin": "si dea oraret, omnes deos audirent.",
+            "ideal": "If the goddess were begging, all would hear the gods.",
+            "alternatives": [
+              "present contrary-to-fact",
+              "accept 'were praying' / 'were pleading' for 'oraret'",
+              "'omnes' = everyone / all",
+              "accept 'would listen to the gods' for 'deos audirent'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 43,
+            "latin": "si hoc donum rex accepisset, laetus fuisset.",
+            "ideal": "If the king had received this gift, he would have been happy.",
+            "alternatives": [
+              "past contrary-to-fact",
+              "'hoc' = this",
+              "accept 'accepted' for 'accepisset'",
+              "accept 'glad' / 'joyful' for 'laetus'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 44,
+            "latin": "si puella clamaret, pater statim adveniret.",
+            "ideal": "If the girl were shouting, her father would immediately arrive.",
+            "alternatives": [
+              "present contrary-to-fact",
+              "'statim' flexible",
+              "accept 'would come at once' / 'would reach her at once' for 'statim adveniret'",
+              "accept 'cry out' / 'call out' for 'clamaret'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 45,
+            "latin": "si tam iratus esset, nihil diceret.",
+            "ideal": "If he were so angry, he would say nothing.",
+            "alternatives": [
+              "present contrary-to-fact",
+              "'tam' + adj = so (angry)",
+              "accept 'he would not say anything'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 46,
+            "latin": "si iter facilius fuisset, milites discessissent.",
+            "ideal": "If the journey had been easier, the soldiers would have departed.",
+            "alternatives": [
+              "past contrary-to-fact",
+              "'facilius' comparative — 'easier' / 'fairly easy' / 'rather easy'",
+              "accept 'would have left' / 'would have gone away' for 'discessissent'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 47,
+            "latin": "si comes rediisset, omnes cibum accepissent.",
+            "ideal": "If the companion had returned, everyone would have received food.",
+            "alternatives": [
+              "past contrary-to-fact",
+              "'rediisset' pluperf subj of 'redeo'",
+              "'omnes' = all / everyone",
+              "accept 'come back' / 'gone back' for 'rediisset'",
+              "accept 'accepted' for 'accepissent'"
+            ],
+            "teacher_notes": []
+          },
+          {
+            "num": 48,
+            "latin": "si ceteri effugere possent, solus dux nihil diceret. IS IT ALWAYS THE CASE THAT THE CONDITIONAL CLAUSE COMES FIRST?",
+            "ideal": "If the rest were able to escape, the leader alone would say nothing.",
+            "alternatives": [
+              "present contrary-to-fact",
+              "'possum + inf' — 'possent' imperf subj",
+              "'ceteri' = the rest / the others",
+              "'solus' = alone / only — 'the leader alone' / 'the lone leader' / 'only the leader'",
+              "accept 'if the others could flee, only the leader would say nothing'"
+            ],
+            "teacher_notes": []
+          }
+        ]
+      }
+    }
+  }
+}

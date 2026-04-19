@@ -1,0 +1,717 @@
+{
+  "per_node": {
+    "1": [
+      "ad",
+      "amo",
+      "appropinquo",
+      "clamo",
+      "dea",
+      "deus",
+      "domum",
+      "ego",
+      "et",
+      "etiam",
+      "femina",
+      "festino",
+      "filia",
+      "habito",
+      "ibi",
+      "ille",
+      "impero",
+      "in",
+      "ingens",
+      "insula",
+      "laetus",
+      "libero",
+      "multus",
+      "nam",
+      "navigo",
+      "navis",
+      "neco",
+      "non",
+      "oppugno",
+      "oro",
+      "pater",
+      "per",
+      "prope",
+      "puella",
+      "pulcher",
+      "puto",
+      "regina",
+      "rogo",
+      "sed",
+      "subito",
+      "sum",
+      "tam",
+      "terra",
+      "tristis",
+      "tum",
+      "urbs"
+    ],
+    "2": [
+      "a",
+      "ab",
+      "amicus",
+      "appareo",
+      "e",
+      "enim",
+      "eo",
+      "ex",
+      "filius",
+      "gladius",
+      "habeo",
+      "igitur",
+      "is",
+      "iterum",
+      "iubeo",
+      "mox",
+      "omnis",
+      "persuadeo",
+      "perterritus",
+      "silva",
+      "statim",
+      "tamen",
+      "teneo",
+      "tu",
+      "video",
+      "vix"
+    ],
+    "3": [
+      "accipio",
+      "alius",
+      "caput",
+      "cognosco",
+      "cogo",
+      "comes",
+      "conor",
+      "conspicio",
+      "constituo",
+      "cum",
+      "cupio",
+      "deinde",
+      "dico",
+      "dirus",
+      "discedo",
+      "duco",
+      "dum",
+      "dux",
+      "effugio",
+      "facilis",
+      "facio",
+      "homo",
+      "iam",
+      "inquit",
+      "iratus",
+      "iter",
+      "iuvenis",
+      "manus",
+      "miles",
+      "mors",
+      "nihil",
+      "nunc",
+      "occido",
+      "peto",
+      "pono",
+      "postquam",
+      "quaero",
+      "relinquo",
+      "rex",
+      "se",
+      "simulac",
+      "solus",
+      "suus",
+      "tandem",
+      "verbum"
+    ],
+    "4": [
+      "advenio",
+      "annus",
+      "aperio",
+      "audio",
+      "ceteri",
+      "cibus",
+      "cur",
+      "donum",
+      "dormio",
+      "equus",
+      "hic",
+      "maritus",
+      "pauci",
+      "porta",
+      "quamquam",
+      "qui",
+      "quod",
+      "tantus",
+      "ubi",
+      "unus",
+      "uxor",
+      "vultus"
+    ],
+    "5": [
+      "coepi",
+      "fortis",
+      "necesse",
+      "noli",
+      "possum",
+      "quam",
+      "redeo",
+      "volo"
+    ],
+    "6": [
+      "si",
+      "ut"
+    ]
+  },
+  "unknowns": {
+    "does": [
+      1,
+      "8",
+      "regina illa deum laetum putabat, sed dea non orabat. DOES ILLA TYPICALLY GO AFTER?"
+    ],
+    "typically": [
+      1,
+      "8",
+      "regina illa deum laetum putabat, sed dea non orabat. DOES ILLA TYPICALLY GO AFTER?"
+    ],
+    "go": [
+      1,
+      "8",
+      "regina illa deum laetum putabat, sed dea non orabat. DOES ILLA TYPICALLY GO AFTER?"
+    ],
+    "after": [
+      1,
+      "8",
+      "regina illa deum laetum putabat, sed dea non orabat. DOES ILLA TYPICALLY GO AFTER?"
+    ],
+    "do": [
+      1,
+      "12",
+      "illa dea ad feminam appropinquavit, nam tam tristis erat. DO YOU THINK WE SHOULD SAVE TAM FOR THE LATER NODE 5 ONLY?"
+    ],
+    "you": [
+      1,
+      "12",
+      "illa dea ad feminam appropinquavit, nam tam tristis erat. DO YOU THINK WE SHOULD SAVE TAM FOR THE LATER NODE 5 ONLY?"
+    ],
+    "think": [
+      1,
+      "12",
+      "illa dea ad feminam appropinquavit, nam tam tristis erat. DO YOU THINK WE SHOULD SAVE TAM FOR THE LATER NODE 5 ONLY?"
+    ],
+    "we": [
+      1,
+      "12",
+      "illa dea ad feminam appropinquavit, nam tam tristis erat. DO YOU THINK WE SHOULD SAVE TAM FOR THE LATER NODE 5 ONLY?"
+    ],
+    "should": [
+      1,
+      "12",
+      "illa dea ad feminam appropinquavit, nam tam tristis erat. DO YOU THINK WE SHOULD SAVE TAM FOR THE LATER NODE 5 ONLY?"
+    ],
+    "save": [
+      1,
+      "12",
+      "illa dea ad feminam appropinquavit, nam tam tristis erat. DO YOU THINK WE SHOULD SAVE TAM FOR THE LATER NODE 5 ONLY?"
+    ],
+    "for": [
+      1,
+      "12",
+      "illa dea ad feminam appropinquavit, nam tam tristis erat. DO YOU THINK WE SHOULD SAVE TAM FOR THE LATER NODE 5 ONLY?"
+    ],
+    "the": [
+      1,
+      "12",
+      "illa dea ad feminam appropinquavit, nam tam tristis erat. DO YOU THINK WE SHOULD SAVE TAM FOR THE LATER NODE 5 ONLY?"
+    ],
+    "later": [
+      1,
+      "12",
+      "illa dea ad feminam appropinquavit, nam tam tristis erat. DO YOU THINK WE SHOULD SAVE TAM FOR THE LATER NODE 5 ONLY?"
+    ],
+    "node": [
+      1,
+      "12",
+      "illa dea ad feminam appropinquavit, nam tam tristis erat. DO YOU THINK WE SHOULD SAVE TAM FOR THE LATER NODE 5 ONLY?"
+    ],
+    "only": [
+      1,
+      "12",
+      "illa dea ad feminam appropinquavit, nam tam tristis erat. DO YOU THINK WE SHOULD SAVE TAM FOR THE LATER NODE 5 ONLY?"
+    ],
+    "pulchram": [
+      1,
+      "12",
+      "pater mihi imperavit, et dea feminam pulchram putaverat."
+    ],
+    "-que": [
+      1,
+      "16",
+      "multi dei ad ingentem urbem navigaverunt feminasque necaverunt."
+    ],
+    "common": [
+      2,
+      "16",
+      "regina filio persuaserat, sed filius tamen mox non apparuit. IS IT COMMON TO GET THE SED TAMEN COMBINATION, OR IS THIS SHOEHORNED IN?"
+    ],
+    "to": [
+      2,
+      "16",
+      "regina filio persuaserat, sed filius tamen mox non apparuit. IS IT COMMON TO GET THE SED TAMEN COMBINATION, OR IS THIS SHOEHORNED IN?"
+    ],
+    "get": [
+      2,
+      "16",
+      "regina filio persuaserat, sed filius tamen mox non apparuit. IS IT COMMON TO GET THE SED TAMEN COMBINATION, OR IS THIS SHOEHORNED IN?"
+    ],
+    "combination": [
+      2,
+      "16",
+      "regina filio persuaserat, sed filius tamen mox non apparuit. IS IT COMMON TO GET THE SED TAMEN COMBINATION, OR IS THIS SHOEHORNED IN?"
+    ],
+    "or": [
+      2,
+      "16",
+      "regina filio persuaserat, sed filius tamen mox non apparuit. IS IT COMMON TO GET THE SED TAMEN COMBINATION, OR IS THIS SHOEHORNED IN?"
+    ],
+    "this": [
+      2,
+      "16",
+      "regina filio persuaserat, sed filius tamen mox non apparuit. IS IT COMMON TO GET THE SED TAMEN COMBINATION, OR IS THIS SHOEHORNED IN?"
+    ],
+    "shoehorned": [
+      2,
+      "16",
+      "regina filio persuaserat, sed filius tamen mox non apparuit. IS IT COMMON TO GET THE SED TAMEN COMBINATION, OR IS THIS SHOEHORNED IN?"
+    ],
+    "order": [
+      2,
+      "16",
+      "pater filios igitur iussit gladios tenere; appropinquabant enim amici. IS THIS THE ORDER YOU WOULD SEE?"
+    ],
+    "would": [
+      2,
+      "16",
+      "pater filios igitur iussit gladios tenere; appropinquabant enim amici. IS THIS THE ORDER YOU WOULD SEE?"
+    ],
+    "see": [
+      2,
+      "16",
+      "pater filios igitur iussit gladios tenere; appropinquabant enim amici. IS THIS THE ORDER YOU WOULD SEE?"
+    ],
+    "alium": [
+      3,
+      "4",
+      "iuvenis iratus ducem alium prope insulam occidit."
+    ],
+    "patre": [
+      3,
+      "14",
+      "filius quaesitus a patre tandem cognitus erat."
+    ],
+    "milite": [
+      3,
+      "16",
+      "regina filium ductum a milite iam conspexit, et statim eum liberare cupiebat."
+    ],
+    "urbe": [
+      4,
+      "4",
+      "uxor in urbe dormit."
+    ],
+    "modo": [
+      4,
+      "16",
+      "quo modo ille maritus filiam quaesivit? per urbem festinavit, et portas tantas aperuit."
+    ],
+    "didn": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "t": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "say": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "were": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "putting": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "necessary": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "with": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "other": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "words": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "that": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "take": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "infinitive": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "i": [
+      5,
+      "100",
+      "necesse est statim discedere. DIDN’T WE SAY WE WERE PUTTING THE NECESSARY WITH THE OTHER WORDS THAT TAKE THE INFINITIVE? I.E. POSSE"
+    ],
+    "sentences": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "set": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "but": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "don": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "mind": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "these": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "extra": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "sets": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "irregulards": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "because": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "there": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "s": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "so": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "much": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "practice": [
+      5,
+      "100",
+      "unus miles fortissimus erat, sed ceteri fortes non erant. DIDN’T WE SAY ONLY 10 SENTENCES PER SET? BUT I DON’T MIND THESE EXTRA SETS FOR THE IRREGULARDS BECAUSE THERE’S SO MUCH TO PRACTICE"
+    ],
+    "seems": [
+      5,
+      "101",
+      "\"noli, fili, me relinquere!\" inquit pater. THIS SEEMS TOO DIFICULT FOR THEM TO GIVE IN A REAL EXAM AS A VOCATIVE"
+    ],
+    "too": [
+      5,
+      "101",
+      "\"noli, fili, me relinquere!\" inquit pater. THIS SEEMS TOO DIFICULT FOR THEM TO GIVE IN A REAL EXAM AS A VOCATIVE"
+    ],
+    "dificult": [
+      5,
+      "101",
+      "\"noli, fili, me relinquere!\" inquit pater. THIS SEEMS TOO DIFICULT FOR THEM TO GIVE IN A REAL EXAM AS A VOCATIVE"
+    ],
+    "them": [
+      5,
+      "101",
+      "\"noli, fili, me relinquere!\" inquit pater. THIS SEEMS TOO DIFICULT FOR THEM TO GIVE IN A REAL EXAM AS A VOCATIVE"
+    ],
+    "give": [
+      5,
+      "101",
+      "\"noli, fili, me relinquere!\" inquit pater. THIS SEEMS TOO DIFICULT FOR THEM TO GIVE IN A REAL EXAM AS A VOCATIVE"
+    ],
+    "real": [
+      5,
+      "101",
+      "\"noli, fili, me relinquere!\" inquit pater. THIS SEEMS TOO DIFICULT FOR THEM TO GIVE IN A REAL EXAM AS A VOCATIVE"
+    ],
+    "exam": [
+      5,
+      "101",
+      "\"noli, fili, me relinquere!\" inquit pater. THIS SEEMS TOO DIFICULT FOR THEM TO GIVE IN A REAL EXAM AS A VOCATIVE"
+    ],
+    "as": [
+      5,
+      "101",
+      "\"noli, fili, me relinquere!\" inquit pater. THIS SEEMS TOO DIFICULT FOR THEM TO GIVE IN A REAL EXAM AS A VOCATIVE"
+    ],
+    "vocative": [
+      5,
+      "101",
+      "\"noli, fili, me relinquere!\" inquit pater. THIS SEEMS TOO DIFICULT FOR THEM TO GIVE IN A REAL EXAM AS A VOCATIVE"
+    ],
+    "qua": [
+      6,
+      "100",
+      "silva, in qua puella dormit, ingens est."
+    ],
+    "tristissimum": [
+      6,
+      "100",
+      "verbum, quod maritus dixit, tristissimum erat."
+    ],
+    "cogat": [
+      6,
+      "101",
+      "dux advenit ut milites cogat."
+    ],
+    "videret": [
+      6,
+      "101",
+      "pater domum festinavit ut filium videret."
+    ],
+    "oraret": [
+      6,
+      "101",
+      "regina verba dixit ut deos oraret."
+    ],
+    "oppugnarent": [
+      6,
+      "101",
+      "milites gladios tenuerunt ut urbem oppugnarent."
+    ],
+    "adveniret": [
+      6,
+      "101",
+      "puella clamabat ut pater statim adveniret."
+    ],
+    "iverunt": [
+      6,
+      "101",
+      "comites ad silvam iverunt ut iter facerent."
+    ],
+    "facerent": [
+      6,
+      "101",
+      "comites ad silvam iverunt ut iter facerent."
+    ],
+    "persuaderet": [
+      6,
+      "101",
+      "dea apparuit ut reginae persuaderet."
+    ],
+    "audiret": [
+      6,
+      "101",
+      "filius clamavit ut pater audiret."
+    ],
+    "effugerent": [
+      6,
+      "101",
+      "dux dixit ut milites effugerent."
+    ],
+    "discederet": [
+      6,
+      "101",
+      "necesse erat ut rex discederet."
+    ],
+    "diu": [
+      6,
+      "101",
+      "maritus diu in urbe habitavit ut uxorem videret."
+    ],
+    "advenissent": [
+      6,
+      "102",
+      "cum milites advenissent, rex laetus fuit."
+    ],
+    "clamaret": [
+      6,
+      "102",
+      "cum pater clamaret, filii statim festinaverunt."
+    ],
+    "dixisset": [
+      6,
+      "102",
+      "cum hic rex verba dixisset, omnes discesserunt."
+    ],
+    "dormiret": [
+      6,
+      "102",
+      "cum uxor dormiret, maritus domum rediit."
+    ],
+    "facilius": [
+      6,
+      "102",
+      "cum dux iter facilius fecisset, milites coepit cogere."
+    ],
+    "fecisset": [
+      6,
+      "102",
+      "cum dux iter facilius fecisset, milites coepit cogere."
+    ],
+    "cupivisset": [
+      6,
+      "102",
+      "cum mortem cupivisset, tandem effugere non potuit."
+    ],
+    "redissent": [
+      6,
+      "102",
+      "cum omnes comites redissent, dux cibum accepit."
+    ],
+    "cogeret": [
+      6,
+      "103",
+      "si dux milites cogeret, statim discederent."
+    ],
+    "discederent": [
+      6,
+      "103",
+      "si dux milites cogeret, statim discederent."
+    ],
+    "advenisses": [
+      6,
+      "103",
+      "si tu advenisses, filium vidisses."
+    ],
+    "vidisses": [
+      6,
+      "103",
+      "si tu advenisses, filium vidisses."
+    ],
+    "audivisset": [
+      6,
+      "103",
+      "si regina verba audivisset, tandem effugisset."
+    ],
+    "effugisset": [
+      6,
+      "103",
+      "si regina verba audivisset, tandem effugisset."
+    ],
+    "redirent": [
+      6,
+      "103",
+      "si necesse esset, milites domum redirent."
+    ],
+    "audirent": [
+      6,
+      "103",
+      "si dea oraret, omnes deos audirent."
+    ],
+    "accepisset": [
+      6,
+      "103",
+      "si hoc donum rex accepisset, laetus fuisset."
+    ],
+    "fuisset": [
+      6,
+      "103",
+      "si hoc donum rex accepisset, laetus fuisset."
+    ],
+    "diceret": [
+      6,
+      "103",
+      "si tam iratus esset, nihil diceret."
+    ],
+    "discessissent": [
+      6,
+      "103",
+      "si iter facilius fuisset, milites discessissent."
+    ],
+    "rediisset": [
+      6,
+      "103",
+      "si comes rediisset, omnes cibum accepissent."
+    ],
+    "accepissent": [
+      6,
+      "103",
+      "si comes rediisset, omnes cibum accepissent."
+    ],
+    "always": [
+      6,
+      "103",
+      "si ceteri effugere possent, solus dux nihil diceret. IS IT ALWAYS THE CASE THAT THE CONDITIONAL CLAUSE COMES FIRST?"
+    ],
+    "case": [
+      6,
+      "103",
+      "si ceteri effugere possent, solus dux nihil diceret. IS IT ALWAYS THE CASE THAT THE CONDITIONAL CLAUSE COMES FIRST?"
+    ],
+    "conditional": [
+      6,
+      "103",
+      "si ceteri effugere possent, solus dux nihil diceret. IS IT ALWAYS THE CASE THAT THE CONDITIONAL CLAUSE COMES FIRST?"
+    ],
+    "clause": [
+      6,
+      "103",
+      "si ceteri effugere possent, solus dux nihil diceret. IS IT ALWAYS THE CASE THAT THE CONDITIONAL CLAUSE COMES FIRST?"
+    ],
+    "first": [
+      6,
+      "103",
+      "si ceteri effugere possent, solus dux nihil diceret. IS IT ALWAYS THE CASE THAT THE CONDITIONAL CLAUSE COMES FIRST?"
+    ]
+  }
+}
