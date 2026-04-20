@@ -1,16 +1,10 @@
 {
-  "name": "y11_latin_gcse",
+  "name": "ks4latin",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-"scripts": {
-  "start": "node server.js"
-},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "docx": "^9.6.1"
+    "express": "^4.18.2"
   }
 }
